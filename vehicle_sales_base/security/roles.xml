@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="0">
+
+
+        <record id="vehicle_sales_base.group_sale_salesman" model="res.groups">
+            <field name="name">品系顾问</field>
+            <field name="category_id" ref="vehicle_sales_base.module_category_vehicle_sales"/>
+            <field name="implied_ids"
+                   eval="[(4, ref('base.group_user')),(4, ref('base.group_sale_salesman'))]"/>
+        </record>
+
+        <record id="vehicle_sales_base.group_sale_salesman_all_leads" model="res.groups">
+            <field name="name">品系经理</field>
+            <field name="category_id" ref="vehicle_sales_base.module_category_vehicle_sales"/>
+            <field name="implied_ids"
+                   eval="[(4, ref('vehicle_sales_base.group_sale_salesman')),(4, ref('base.group_sale_salesman_all_leads'))]"/>
+        </record>
+
+        <record id="vehicle_sales_base.group_sale_manager" model="res.groups">
+            <field name="name">销售副总</field>
+            <field name="category_id" ref="vehicle_sales_base.module_category_vehicle_sales"/>
+            <field name="implied_ids"
+                   eval="[(4, ref('vehicle_sales_base.group_sale_salesman_all_leads')),(4, ref('base.group_sale_manager'))]"/>
+        </record>
+
+        <record id="vehicle_sales_base.group_finance_manager" model="res.groups">
+            <field name="name">财务经理</field>
+            <field name="category_id" ref="vehicle_sales_base.module_category_vehicle_sales"/>
+        </record>
+
+
+        <record id="vehicle_sales_base.group_stock_keeper" model="res.groups">
+            <field name="name">仓库保管员</field>
+            <field name="category_id" ref="vehicle_sales_base.module_category_vehicle_sales"/>
+            <field name="implied_ids"
+                   eval="[(4, ref('stock.group_stock_user'))]"/>
+        </record>
+
+        <record id="vehicle_sales_base.group_stock_planner" model="res.groups">
+            <field name="name">计划员</field>
+            <field name="category_id" ref="vehicle_sales_base.module_category_vehicle_sales"/>
+            <field name="implied_ids"
+                   eval="[(4, ref('purchase.group_purchase_user'))]"/>
+        </record>
+
+        <record id="vehicle_sales_base.group_system" model="res.groups">
+            <field name="name">系统管理员</field>
+            <field name="category_id" ref="vehicle_sales_base.module_category_vehicle_sales"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_system'))]"/>
+        </record>
+
+
+    </data>
+
+    <data noupdate="1">
+
+
+
+        <!--<record id="crm_rule_personal_lead" model="ir.rule">-->
+        <!--<field name="name">Personal Leads</field>-->
+        <!--<field ref="model_crm_lead" name="model_id"/>-->
+        <!--<field name="domain_force">['|',('user_id','=',user.id),('user_id','=',False)]</field>-->
+        <!--<field name="groups" eval="[(4, ref('base.group_sale_salesman'))]"/>-->
+        <!--</record>-->
+        <!--<record id="crm_rule_all_lead" model="ir.rule">-->
+        <!--<field name="name">All Leads</field>-->
+        <!--<field ref="model_crm_lead" name="model_id"/>-->
+        <!--<field name="domain_force">[(1,'=',1)]</field>-->
+        <!--<field name="groups" eval="[(4, ref('base.group_sale_salesman_all_leads'))]"/>-->
+        <!--</record>-->
+
+        <!--<record id="calendar_event_global" model="ir.rule">-->
+        <!--<field name="name">Hide Private Meetings</field>-->
+        <!--<field ref="model_calendar_event" name="model_id"/>-->
+        <!--<field eval="1" name="global"/>-->
+        <!--<field name="domain_force">['|',('user_id','=',user.id),('show_as','=','busy')]</field>-->
+        <!--</record>-->
+
+        <!--<record id="crm_rule_personal_phonecall" model="ir.rule">-->
+        <!--<field name="name">Personal Phone Calls</field>-->
+        <!--<field ref="model_crm_phonecall" name="model_id"/>-->
+        <!--<field name="domain_force">['|',('user_id','=',user.id),('user_id','=',False)]</field>-->
+        <!--<field name="groups" eval="[(4, ref('base.group_sale_salesman'))]"/>-->
+        <!--</record>-->
+        <!--<record id="crm_rule_all_phones" model="ir.rule">-->
+        <!--<field name="name">All Phones</field>-->
+        <!--<field ref="model_crm_phonecall" name="model_id"/>-->
+        <!--<field name="domain_force">[(1,'=',1)]</field>-->
+        <!--<field name="groups" eval="[(4, ref('base.group_sale_salesman_all_leads'))]"/>-->
+        <!--</record>-->
+
+        <!--<record id="crm_rule_personal_lead_report" model="ir.rule">-->
+        <!--<field name="name">Personal Leads Analysis</field>-->
+        <!--<field ref="model_crm_lead_report" name="model_id"/>-->
+        <!--<field name="domain_force">['|',('user_id','=',user.id),('user_id','=',False)]</field>-->
+        <!--<field name="groups" eval="[(4, ref('base.group_sale_salesman'))]"/>-->
+        <!--</record>-->
+
+        <!--<record id="crm_rule_all_lead_report" model="ir.rule">-->
+        <!--<field name="name">All Leads Analysis</field>-->
+        <!--<field ref="model_crm_lead_report" name="model_id"/>-->
+        <!--<field name="domain_force">[(1,'=',1)]</field>-->
+        <!--<field name="groups" eval="[(4, ref('base.group_sale_salesman_all_leads'))]"/>-->
+        <!--</record>-->
+
+    </data>
+</openerp>
