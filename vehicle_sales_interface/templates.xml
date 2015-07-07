@@ -1,0 +1,32 @@
+<openerp>
+    <data>
+
+        <menuitem name="客户查询" id="crm.menu_crm_leads" parent="base.menu_sales"/>
+
+        <record model="ir.actions.act_window" id="crm.crm_case_category_act_leads_all">
+            <field name="name">客户查询</field>
+        </record>
+
+        <menuitem name="销售线索" id="crm.menu_crm_opportunities" parent="base.menu_sales"/>
+
+        <record model="ir.actions.act_window" id="crm.crm_case_category_act_oppor11">
+            <field name="name">销售线索</field>
+        </record>
+
+        <menuitem name="客户" id="base.menu_partner_form" parent="base.menu_sales" sequence="9"/>
+
+        <menuitem name="销售合同草稿" id="sale.menu_sale_quotations" parent="base.menu_sales" sequence="5"/>
+
+        <menuitem name="销售合同" id="sale.menu_sale_order" parent="base.menu_sales" sequence="6"/>
+
+        <record id="sale.action_quotations" model="ir.actions.act_window">
+            <field name="name">销售合同草稿</field>
+        </record>
+
+        <record id="sale.action_orders" model="ir.actions.act_window">
+            <field name="name">销售合同</field>
+        </record>
+
+
+    </data>
+</openerp>
