@@ -1,0 +1,44 @@
+<openerp>
+    <data>
+
+        <record id="product_category_vehicle_1" model="product.category">
+            <field name="parent_id" ref="product.product_category_1"/>
+            <field name="name">中工车</field>
+        </record>
+
+        <record id="product_category_vehicle_2" model="product.category">
+            <field name="parent_id" ref="product.product_category_1"/>
+            <field name="name">中载车</field>
+        </record>
+
+        <record id="product_category_vehicle_3" model="product.category">
+            <field name="parent_id" ref="product.product_category_1"/>
+            <field name="name">混泥土搅拌车</field>
+        </record>
+
+        <record id="product_category_vehicle_4" model="product.category">
+            <field name="parent_id" ref="product.product_category_1"/>
+            <field name="name">牵引车</field>
+        </record>
+
+        <record id="product_category_vehicle_5" model="product.category">
+            <field name="parent_id" ref="product.product_category_1"/>
+            <field name="name">重工车</field>
+        </record>
+
+        <record id="product_category_vehicle_6" model="product.category">
+            <field name="parent_id" ref="product.product_category_1"/>
+            <field name="name">重载车</field>
+        </record>
+
+        <record id="product_attribute_vehicle_1" model="product.attribute">
+            <field name="name">颜色</field>
+        </record>
+
+        <record id="base.cn" model="res.country">
+            <field name="address_format">%(country_name)s %(state_name)s %(city)s %(street2)s %(street)s %(zip)s
+            </field>
+        </record>
+
+    </data>
+</openerp>

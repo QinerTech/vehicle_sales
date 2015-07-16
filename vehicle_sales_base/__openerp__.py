@@ -27,11 +27,11 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['crm', 'sale'],
+    'depends': ['crm', 'sale', 'purchase', 'account_accountant', 'stock'],
 
     # always loaded
     'data': [
-        # 'security/ir.model.access.csv',
+        'data.xml',
         'templates.xml',
         'security/roles.xml',
     ],
