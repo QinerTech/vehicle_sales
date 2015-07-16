@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <report
+                id="report_vehicle_sales_contract"
+                string="格式合同"
+                model="sale.order"
+                report_type="qweb-pdf"
+                file="vehicle_sales_contract_print.report_contract"
+                name="vehicle_sales_contract_print.report_contract"
+                />
+    </data>
+</openerp>

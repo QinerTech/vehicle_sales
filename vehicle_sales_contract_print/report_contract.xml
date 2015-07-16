@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <template id="report_contract_document">
+            <t t-call="report.external_layout">
+                <div class="page">
+                    <div class="oe_structure"/>
+
+                    <p></p>
+<p align="center">汽车产品购销合同</p>
+                    <p align="right">合同编号：<span t-field="o.name"/></p>
+<p></p>
+<p>甲方（出卖人）：<span style="text-decoration: underline;" t-field="o.company_id.name" >  </span></p>
+<p>乙方（买受人）：<span style="text-decoration: underline;" t-field="o.partner_id.name" > </span></p>
+<p></p>
+<p>甲、乙双方依据《中华人民共和国合同法》及其他有关法律法规的规定，在平等、自愿、协商一致的基础上，就买卖汽车事宜，订立本合同。</p>
+<p>第一条 标的物</p>
+<p>经双方协商，甲方售出如下商品车辆（以下简称车辆）给乙方：</p>
+<p>1．基本信息：</p>
+<table style="width: 816px;" border="1" cellspacing="0" cellpadding="0" class="table table-bordered ">
+    <thead>
+        <tr>
+<td width="200" >
+<p align="center" >车辆类型</p>
+</td>
+<td  width="200">
+<p align="center">厂牌型号</p>
+</td>
+<td width="32">
+<p align="center" >数量（辆）</p>
+</td>
+<td  width="64">
+<p align="center">单价</p>
+</td>
+<td  width="64">
+<p align="center">总价</p>
+</td>
+<td width="256">
+<p align="center" >备注</p>
+</td>
+</tr>
+
+    </thead>
+
+<tbody>
+
+<tr t-foreach="o.order_line" t-as="l">
+<td >
+<p align="center"  ><span t-field="l.product_id.product_tmpl_id.default_code"/></p>
+</td>
+<td >
+<p align="center"><span t-field="l.product_id.default_code"/></p>
+</td>
+<td>
+<p align="center"  ><span t-field="l.product_uom_qty"/></p>
+</td>
+<td >
+<p align="center"  ><span t-field="l.price_unit"/></p>
+</td>
+<td >
+<p align="center" ><span t-field="l.price_subtotal"/></p>
+</td>
+<td>
+<p align="center"><span t-field="l.name"/> </p>
+</td>
+</tr>
+<tr>
+<td colspan="6" width="611">
+<p align="center">合计人民币金额（大写）：<span style="text-decoration: underline;" t-esc='rmb_upper(o.amount_total)'   /></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>2．《产品技术参数表》：附件一。</p>
+<p>3．车辆运输：<span style="text-decoration: underline;" t-field="o.note_shipping" > </span></p>
+<p>第二条 付款方式</p>
+<p>乙方确认以下述第<span style="text-decoration: underline;"> 1 </span>种方式付款，并按该方式所定时间足额将车款支付给甲方。</p>
+<p><strong>1</strong><strong>．订购性付款：</strong>签订本合同时乙方预付订金（人民币）<span style="text-decoration: underline;" t-field="o.deposit"/>元，大写<span style="text-decoration: underline;" t-esc='rmb_upper(o.deposit)' />。车辆交付时向甲方一次性付清合同价款，计人民币<span style="text-decoration: underline;" t-esc='o.amount_total - o.deposit' > 0 </span>元，大写<span style="text-decoration: underline;" t-esc='rmb_upper(o.amount_total - o.deposit)' /></p>
+<p><strong>2</strong><strong>．消费贷款：</strong></p>
+<p>2.1 签订本合同时预付订金（人民币）<span style="text-decoration: underline;" t-field="o.deposit"/>元，大写<span style="text-decoration: underline;" t-esc='rmb_upper(o.deposit)' />。拟定贷款方案详见《附件三》。</p>
+<p>2.2 拟定贷款方案不是最终方案，最终方案以《东风汽车财务有限公司商用车消费信贷申请回复书》或《汽车贷款合同》为依据，如遇本合同约定贷款方案与金融机构最终方案发生冲突，双方同意以金融机构最终方案为依据并向甲方交纳首付款项及办理贷款相关费用（详见附件三）。</p>
+<p>2.3 附件三《东风商用车贷款客户受理单》</p>
+<p><strong>3</strong><strong>．融资租赁：</strong></p>
+<p>3.1 签订本合同时预付订金（人民币）<span style="text-decoration: underline;" t-field="o.deposit"/>元，大写<span style="text-decoration: underline;" t-esc='rmb_upper(o.deposit)' />。拟定融资租赁方案详见《附件四》。</p>
+<p>3.2 拟定融资租赁方案不是最终方案，最终方案以《东风汽车财务有限公司商用车消费信贷申请回复书》或《汽车贷款合同》为依据，如遇本合同约定融资租赁方案与金融机构最终方案发生冲突，双方同意以金融机构最终方案为依据并向甲方交纳首付款项及办理融资租赁相关费用（详见附件四）。</p>
+<p>3.3 附件四《东风商用车融资租赁受理单》</p>
+<p><strong>4</strong><strong>．其他付款方式： </strong></p><p><span style="text-decoration: underline;" t-field="o.note_payment"/>  </p>
+<p><strong><span style="text-decoration: underline;"> </span></strong></p>
+<p>第三条 质量</p>
+<p>1．甲方向乙方出售的车辆，其质量必须符合汽车厂家产品质量标准，以产品说明书中规定的指标为准。</p>
+<p>2．甲方向乙方出售的车辆，是经国家有关部门公布、备案的汽车产品目录上的产品或合法进口的产品，可以上牌行驶的汽车。</p>
+<p>3．甲方提供的随车资料，应附有中文使用说明书和必要的使用维修指引。</p>
+<p>4．甲方保证向乙方出售的车辆，在交给乙方使用前己作必要的检验和清洁。</p>
+<p>第四条 交车时间与地点、交付及验收方式</p>
+<p>1．交车时间：<span style="text-decoration: underline;" t-esc="o.commitment_date.split()[0]" ></span>  </p>
+<p>2．提车方式：□自提 □代送 □其他<span style="text-decoration: underline;"> </span></p>
+<p>3．交车地点：<span t-field="o.warehouse_id.name"/>   <![CDATA[ &nbsp;&nbsp;&nbsp;&nbsp; ]]> 可选：□武汉 □荆州 □随州 □恩施 □黄石 □荆门 □其他<span style="text-decoration: underline;"> </span></p>
+<p>4．车辆交接时应当场验收，乙方应对所购车辆外观和使用功能等进行认真检查、确认，如有异议，当场提出。特殊要求应在本合同第八条备注说明，特殊要求的验收以第八条的约定为准。</p>
+<p>5．验收合格的，甲方向乙方交付汽车及随车文件，双方签署《商品车辆交接书》（见附件），即为该车辆正式交付。正式交付完毕后，车辆如发生质量问题由甲方协助乙方根据车辆质量保证书的规定进行处理，不影响本合同及其他相关补充协议的履行。</p>
+<p>6．车辆正式交付之时起，该车辆的风险责任由甲方转移至乙方。</p>
+<p>7．车款付清前，车辆交付不发生所有权转移，车辆所有权仍属于甲方，乙方无权处置车辆。</p>
+<p>8．若乙方委托提车，代理人办理交车手续时所作任何行为视同委托人行为，车辆离开甲方后该车辆的风险责任概由委托人负责。</p>
+<p>第五条 关于维修、保养的约定</p>
+<p>1．甲方向乙方出售的车辆，按照生产厂家承诺的内容维修、保养。</p>
+<p>2．生产厂家服务手册中特约维修站网点均可提供维修、保养等售后服务。甲方提供必要的协助。</p>
+<p>3．乙方除自身按照保修手册进行维修、保养外，同时有责任督促车辆维修站按照保养、保修手册和用户手册规定的内容对所售车辆进行维修、保养。</p>
+<p>4．乙方使用车辆前应仔细阅读说明书、用户使用手册或保修、保养手册等相关资料。如属乙方使用。保养不当或擅自改装、装演导致车辆出现故障，由乙方自行解决。</p>
+<p>5．乙方所购汽车如在保修期内出现质量问题，应凭保修凭证到生产厂家的特约维修站进行维修、保养。</p>
+<p>6．由于人为损坏、使用、保养不当，或到公布、指定以外的修理点进行装潢、改装、修理致使车辆出现故障的，由乙方自行承担责任。</p>
+<p>第六条 违约责任</p>
+<p>1．乙方不能按时支付车款的，自延期之日起至实际付款日止，每日按逾期应付款的<span style="text-decoration: underline;"> 1 </span>％向甲方支付违约金。延期付款超过<span style="text-decoration: underline;"> 7 </span>个工作日，甲方有权解除合同，乙方无权要求返还定金。</p>
+<p>2．甲方不按时交付车辆的，自延期之日起至实际交付日止，每日按乙方己付款<span style="text-decoration: underline;"> 1 </span>％向乙方支付违约金。延期交付车辆超过<span style="text-decoration: underline;"> 7 </span>个工作日，乙方有权解除合同，甲方应当返还定金。</p>
+<p>3．甲、乙双方因不可抗力不能履行本合同的，根据不可抗力的影响部分或者全部免除责任，但法律另有规定的除外。甲、乙双方迟延履行后发生不可抗力的，不能免除责任。</p>
+<p>4．甲乙任何一方因不可抗力不能履行本合同的，应及时通知对方，以减少可能给对方造成的损失，并应当在合理的期限提供相关证明。</p>
+<p>5．乙方在购车前，己事先获得有关部门的批准、许可或符合当地相关的规定所要求的资格，并且己了解乙方入户所在地对入户车辆的一些限制性法规，否则因此造成甲方损失的，乙方应承担赔偿责任。</p>
+<p>第七条 双方特别约定：</p>
+<p> <span style="text-decoration: underline;" t-field="o.note_agreement" ></span></p>
+<p>第八条 解决争议的方法</p>
+<p>1．甲、乙双方在履行本合同过程中发生争议，应协商解决，也可请求消费者协会主持调解。协商不能解决或调解不成的，依法向甲方所在地人民法院起诉。</p>
+<p>2．双方对车辆质量有异议的，确定由专业检测机构进行鉴定。鉴定结果符合该产品手册的技术质量的，鉴定费由对质量提出异议的一方承担，否则鉴定费由另一方承担。</p>
+<p>第九条 双方的联系方式及资料</p>
+<p>1．甲方联系资料：</p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="2" valign="top" width="480">
+<p>地址：<span style="text-decoration: underline;"> <span t-field="o.company_id.partner_id"  t-field-options='{"widget": "contact", "fields": ["address"], "no_marker": true}'  /> </span> <![CDATA[ &nbsp;&nbsp;&nbsp;&nbsp; ]]></p>
+</td>
+<td valign="top" width="200">
+<p>邮政编码：<span style="text-decoration: underline;"> <span t-field="o.company_id.partner_id.zip"/> </span></p>
+</td>
+</tr>
+<tr>
+<td  valign="top" width="200">
+<p>联系部门：<span style="text-decoration: underline;"> 销售部 </span> <![CDATA[ &nbsp;&nbsp;&nbsp;&nbsp; ]]></p>
+</td>
+<td  valign="top" width="280">
+<p>联系电话：（日间）<span style="text-decoration: underline;"><span t-field="o.company_id.partner_id.phone"/> </span> <![CDATA[ &nbsp;&nbsp;&nbsp;&nbsp; ]]></p>
+</td>
+<td valign="top" width="200">
+<p>(夜间）<span style="text-decoration: underline;"><span t-field="o.company_id.partner_id.phone"/> </span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="200">
+ 传真号码：<span style="text-decoration: underline;"><span t-field="o.company_id.partner_id.fax"/> </span> <![CDATA[ &nbsp;&nbsp;&nbsp;&nbsp; ]]>
+</td>
+<td valign="top" width="280">
+<p>工作手机号码：<span style="text-decoration: underline;"><span t-field="o.company_id.partner_id.phone"/> </span> <![CDATA[ &nbsp;&nbsp;&nbsp;&nbsp; ]]></p>
+</td>
+<td valign="top" width="200">
+<p>电子邮箱：<span style="text-decoration: underline;"><span t-field="o.company_id.partner_id.email"/> </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>2．乙方联系资料：</p>
+<table border="1" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td colspan="2" valign="top" width="480">
+<p>地址：<span style="text-decoration: underline;"> <span t-field="o.partner_id" t-field-options='{"widget": "contact", "fields": ["address"], "no_marker": true}' /> </span> <![CDATA[ &nbsp;&nbsp;&nbsp;&nbsp; ]]></p>
+</td>
+<td valign="top" width="200">
+<p>邮政编码：<span style="text-decoration: underline;"> <span t-field="o.partner_id.zip"/> </span></p>
+</td>
+</tr>
+<tr>
+<td  valign="top" width="200">
+<p>联系部门：<span style="text-decoration: underline;"> <span t-field="o.partner_id.function"/> </span> <![CDATA[ &nbsp;&nbsp;&nbsp;&nbsp; ]]></p>
+</td>
+<td  valign="top" width="280">
+<p>联系电话：（日间）<span style="text-decoration: underline;"><span t-field="o.partner_id.phone"/> </span> <![CDATA[ &nbsp;&nbsp;&nbsp;&nbsp; ]]></p>
+</td>
+<td valign="top" width="200">
+<p>(夜间）<span style="text-decoration: underline;"><span t-field="o.partner_id.phone"/> </span></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="200">
+ 传真号码：<span style="text-decoration: underline;"><span t-field="o.partner_id.fax"/> </span> <![CDATA[ &nbsp;&nbsp;&nbsp;&nbsp; ]]>
+</td>
+<td valign="top" width="280">
+<p>工作手机号码：<span style="text-decoration: underline;"><span t-field="o.partner_id.phone"/> </span> <![CDATA[ &nbsp;&nbsp;&nbsp;&nbsp; ]]></p>
+</td>
+<td valign="top" width="200">
+<p>电子邮箱：<span style="text-decoration: underline;"><span t-field="o.partner_id.email"/> </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>3．以上通讯方式若有改变，应及时书面通知对方，否则由此造成的损失及相关责任由变更方负责。手机或其他移动通讯工具的短信仅作为普通信息传递之用，不作为重要事项的通知方式。</p>
+<p>4．由于乙方改变通讯方式，令甲方无法及时通知乙方提车的，甲方有权保留乙方订购的车辆7天，超过7天甲方可以不为乙方保留车辆，不退还定金。</p>
+<p>第十条 其他</p>
+<p>1．本合同的未尽事宜及本合同在履行过程中需变更的事宜，双方应通过订立补充条款或补充协议进行约定。补充条款、补充协议及本合同附件均为不可分割的部分，具有同等效力。</p>
+<p>2．本合同自双方签字、盖章且定金到账之日生效。本合同一式三份，甲方执二份，乙方执一份，具有同等效力。</p>
+<p>附件一、产品技术参数表；</p>
+<p>附件二、商品车辆交接书；</p>
+<p>附件三、东风商用车贷款客户受理单；</p>
+<p>附件四、东风商用车融资租赁受理单；</p>
+<p></p>
+<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td valign="top" width="50%">
+<p>甲 方：<span style="text-decoration: underline;"> <span t-field="o.company_id.name"/>  </span></p>
+<p>代表人或代理人：<span style="text-decoration: underline;"> <span t-field="o.user_id.name"/>  </span></p>
+<p>电 话：<span style="text-decoration: underline;"> </span></p>
+<p>传 真：<span style="text-decoration: underline;"> </span></p>
+<p>开户银行：<span style="text-decoration: underline;"> </span></p>
+<p>帐 号：<span style="text-decoration: underline;"> </span></p>
+</td>
+<td valign="top" width="50%">
+<p>乙 方：<span style="text-decoration: underline;"><span t-field="o.partner_id.name"/> </span></p>
+<p>法定代表人或代理人：<span style="text-decoration: underline;"><span t-field="o.partner_id.name"/> </span></p>
+<p>电 话：<span style="text-decoration: underline;"> </span></p>
+<p>传 真：<span style="text-decoration: underline;"> </span></p>
+<p>开户银行：<span style="text-decoration: underline;"> </span></p>
+<p>帐 号：<span style="text-decoration: underline;"> </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+                    <div class="oe_structure"/>
+                </div>
+            </t>
+        </template>
+
+        <template id="report_contract">
+            <t t-call="report.html_container">
+                <t t-foreach="doc_ids" t-as="doc_id">
+                    <t t-raw="translate_doc(doc_id, doc_model, 'partner_id.lang', 'vehicle_sales_contract_print.report_contract_document')"/>
+                </t>
+            </t>
+        </template>
+    </data>
+</openerp>
