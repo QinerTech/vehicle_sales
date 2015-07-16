@@ -1,0 +1,5562 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * crm
+#
+# Translators:
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014
+# jeffery chen fan <jeffery9@gmail.com>, 2015
+# maie <m@maie.name>, 2015
+# maie <m@maie.name>, 2015
+# mrshelly <mrshelly@hotmail.com>, 2015
+# niulinlnc <admin@niulin.net>, 2015
+# THL <wt39181819@gmail.com>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-01-21 14:07+0000\n"
+"PO-Revision-Date: 2015-07-07 02:05+0000\n"
+"Last-Translator: mrshelly <mrshelly@hotmail.com>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/odoo-8/"
+"language/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: crm
+#: field:crm.lead,meeting_count:0 field:res.partner,meeting_count:0
+msgid "# Meetings"
+msgstr "#会议"
+
+#. module: crm
+#: field:crm.lead.report,nbr_cases:0 field:crm.opportunity.report,nbr_cases:0
+#: field:crm.phonecall.report,nbr:0
+msgid "# of Cases"
+msgstr "# 案件"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.relate_partner_opportunities
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                Click to create an opportunity related to this customer.\n"
+"              </p><p>\n"
+"                Use opportunities to keep track of your sales pipeline, "
+"follow\n"
+"                up potential sales and better forecast your future "
+"revenues.\n"
+"              </p><p>\n"
+"                You will be able to plan meetings and phone calls from\n"
+"                opportunities, convert them into quotations, attach related\n"
+"                documents, track all discussions, and much more.\n"
+"              </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                单击以便创建一个关联到此客户的线索。\n"
+"              </p><p>\n"
+"                使用线索来跟踪你的合同漏斗，把握潜在合同机会并且更好地预测未"
+"来产值。\n"
+"              </p><p>\n"
+"               您可以从线索中安排会面和电话沟通，并把线索转换为购车意向、附加"
+"到相关文档、跟踪所有讨论和更多功能。\n"
+"              </p>\n"
+"            "
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_tracking_medium_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                Click to define a new channel.\n"
+"              </p><p>\n"
+"                Use channels to track the type of source of your leads and "
+"opportunities. Channels\n"
+"                are mostly used in reporting to analyse sales performance\n"
+"                related to marketing efforts.\n"
+"              </p><p>\n"
+"                Some examples of channels: company website, phone call\n"
+"                campaign, reseller, banner, etc.\n"
+"              </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"单击新建渠道。\n"
+"</p><p>\n"
+"渠道用于管理问询或线索的来源。渠道\n"
+"主要用来合同分析报表\n"
+"展现市场策略的有效性。\n"
+"</p><p>\n"
+"可选的渠道有：公司网站、电话市场活动，分销商等。\n"
+"</p>\n"
+"            "
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_segmentation_tree-act
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                Click to define a new customer segmentation.\n"
+"              </p><p>\n"
+"                Create specific categories which you can assign to your\n"
+"                contacts to better manage your interactions with them. The\n"
+"                segmentation tool is able to assign categories to contacts\n"
+"                according to criteria you set.\n"
+"              </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                                                                         点击"
+"创建新客户分组\n"
+"                                                                </p><p>\n"
+"                                                                         创建"
+"指定的分类用于赋值给你的联系人\n"
+"                                                                         以便"
+"更好管理你和他们的联系。分组工具\n"
+"                                                                         可以"
+"根据你预设的条件给联系人分配组。\n"
+"                                                                </p>\n"
+"            "
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_lead_categ_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                Click to define a new sales tag.\n"
+"              </p><p>\n"
+"                Create specific tags that fit your company's activities\n"
+"                to better classify and analyse your leads and "
+"opportunities.\n"
+"                Such categories could for instance reflect your product\n"
+"                structure or the different types of sales you do.\n"
+"              </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                                                                       点击新"
+"建一个合同标签\n"
+"                                                             </p><p>\n"
+"                                                                       创建指"
+"定的适合公司活动的标签\n"
+"                                                                       用于更"
+"好地分析你的问询和线索。\n"
+"                                                                       标签分"
+"类可以反映你的商品结构或者\n"
+"                                                                       不同的"
+"合同类型。\n"
+"                                                            </p>\n"
+"            "
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_tracking_source_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                Click to define a new source.\n"
+"              </p><p>\n"
+"                Use channels to track the source of your leads and "
+"opportunities. Channels\n"
+"                are mostly used in reporting to analyse sales performance\n"
+"                related to marketing efforts.\n"
+"              </p><p>\n"
+"                Some examples of channels: partner's website, google.com, \n"
+"                email list name, etc.\n"
+"              </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                单击新建渠道.\n"
+"              </p><p>\n"
+"                渠道用于管理问询或线索的来源 渠道\n"
+"                主要用来合同分析报表\n"
+"                展现市场策略的有效性.\n"
+"              </p><p>\n"
+"                可选的渠道有：公司网站、电话\n"
+"                市场活动，分销商等。\n"
+"              </p>\n"
+"            "
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_lead_stage_act
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                Click to set a new stage in your lead/opportunity pipeline.\n"
+"              </p><p>\n"
+"                Stages will allow salespersons to easily track how a "
+"specific\n"
+"                lead or opportunity is positioned in the sales cycle.\n"
+"              </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                                                                        点击"
+"设置你的问询/线索管道的新阶段。\n"
+"                                                                </p><p>\n"
+"                                                                        阶段"
+"允许合同人员记录特定的问询或线索\n"
+"                                                                        在销"
+"售循环中的位置。\n"
+"                                                                 </p>\n"
+"            "
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_phonecall_categ_action
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"            Click to add a new category.\n"
+"          </p><p>\n"
+"            Create specific phone call categories to better define the type "
+"of\n"
+"            calls tracked in the system.\n"
+"          </p>\n"
+"        "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                                                         点击创建新类型\n"
+"                                                </p><p>\n"
+"                                                         创建指定的电话类型，"
+"更好地定义系统中记录的电话类型\n"
+"                                                </p>\n"
+"        "
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_case_categ_phone_incoming0
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"            Click to log the summary of a phone call. \n"
+"          </p><p>\n"
+"            Odoo allows you to log inbound calls on the fly to track the\n"
+"            history of the communication with a customer or to inform "
+"another\n"
+"            team member.\n"
+"          </p><p>\n"
+"            In order to follow up on the call, you can trigger a request "
+"for\n"
+"            another call, a meeting or an opportunity.\n"
+"          </p>\n"
+"        "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"            单击来新建来电记录。 \n"
+"          </p><p>\n"
+"            Odoo 支持快速记录来电并跟踪\n"
+"            与某个客户的沟通历史，用来提醒其他\n"
+"            团队成员。\n"
+"          </p><p>\n"
+"            为了对这个来电继续跟进, 你可以安排一次\n"
+"            回电、会面或者新建一个线索。\n"
+"          </p>\n"
+"        "
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_case_categ_phone_outgoing0
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"            Click to schedule a call \n"
+"          </p><p>\n"
+"            Odoo allows you to easily define all the calls to be done\n"
+"            by your sales team and follow up based on their summary.\n"
+"          </p><p>  \n"
+"            You can use the import feature to massively import a new list "
+"of\n"
+"            prospects to qualify.\n"
+"          </p>\n"
+"        "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"            单击来创建一个通话计划。\n"
+"          </p><p>\n"
+"            Odoo能让你为你的团队成员安排通话计划。\n"
+"            并跟踪去电情况。\n"
+"          </p><p>  \n"
+"            你可以用导入功能批量添加要\n"
+"            跟进的潜在客户。\n"
+"          </p>\n"
+"        "
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_case_form_view_salesteams_opportunity
+msgid ""
+"<p>\n"
+"                    Odoo helps you keep track of your sales pipeline to "
+"follow\n"
+"                    up potential sales and better forecast your future "
+"revenues.\n"
+"                </p><p>\n"
+"                    You will be able to plan meetings and phone calls from\n"
+"                    opportunities, convert them into quotations, attach "
+"related\n"
+"                    documents, track all discussions, and much more.\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p>\n"
+" Odoo 帮助你记录合同渠道信息\n"
+"跟踪潜在合同机会，并能更好地预测将来的收入。\n"
+"</p><p>\n"
+"你能够根据线索来安排会见与电话联系\n"
+"将线索转换为购车意向, 添加相关文件,\n"
+"文档，跟踪所有的讨论，以及更多\n"
+"</p>\n"
+"           "
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_case_form_view_salesteams_lead
+msgid ""
+"<p>\n"
+"                    Use leads if you need a qualification step before "
+"creating an\n"
+"                    opportunity or a customer. It can be a business card you "
+"received,\n"
+"                    a contact form filled in your website, or a file of "
+"unqualified\n"
+"                    prospects you import, etc.\n"
+"                </p><p>\n"
+"                    Once qualified, the lead can be converted into a "
+"business\n"
+"                    opportunity and/or a new customer in your address book.\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p>\n"
+"在创建线索或客户之前，如果你需要一个验证的步骤，\n"
+"你就可以使用问询。它可以是你收到的名片，\n"
+"在你的网站填写的联系方式表格，或你导入的未验证的\n"
+"意向，等等\n"
+"</p><p>\n"
+"一旦验证通过，这个问询能被转换成线索， 并在你的通讯录中添加一个新客户。\n"
+"</p>\n"
+"        "
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_case_category_act_oppor11
+msgid ""
+"<p>\n"
+"                Odoo helps you keep track of your sales pipeline to follow\n"
+"                up potential sales and better forecast your future "
+"revenues.\n"
+"            </p><p>\n"
+"                You will be able to plan meetings and phone calls from\n"
+"                opportunities, convert them into quotations, attach related\n"
+"                documents, track all discussions, and much more.\n"
+"            </p>\n"
+"        "
+msgstr ""
+"<p>\n"
+"Odoo 帮助你记录合同渠道信息\n"
+"跟踪潜在合同机会，并能更好地预测将来的收入。\n"
+"</p><p>\n"
+"你能够根据线索来安排会见与电话联系\n"
+"将线索转换为购车意向, 添加相关文件,\n"
+"文档，跟踪所有的讨论，以及更多\n"
+"</p>\n"
+"            "
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.crm_case_category_act_leads_all
+msgid ""
+"<p>\n"
+"                Use leads if you need a qualification step before creating "
+"an\n"
+"                opportunity or a customer. It can be a business card you "
+"received,\n"
+"                a contact form filled in your website, or a file of "
+"unqualified\n"
+"                prospects you import, etc.\n"
+"            </p><p>\n"
+"                Once qualified, the lead can be converted into a business\n"
+"                opportunity and/or a new customer in your address book.\n"
+"            </p>\n"
+"        "
+msgstr ""
+"<p>\n"
+"在创建线索或客户之前，如果你需要一个验证合格的步骤，\n"
+"你就可以使用问询。它可以是你收到的名片，\n"
+"在你的网站填写联系方式表格，或你导入的未验证的文件\n"
+"意愿，等等\n"
+"</p><p>\n"
+"一旦合格，这个问询能转换成线索， 并在你的通讯录中添加一个新客户。\n"
+"</p>\n"
+"        "
+
+#. module: crm
+#: model:email.template,body_html:crm.email_template_opportunity_reminder_mail
+msgid ""
+"<p>This opportunity did not have any activity since at least 5 days. Here "
+"are some details:</p>\n"
+"<ul>\n"
+"<li>Name: ${object.name}</li>\n"
+"<li>ID: ${object.id}</li>\n"
+"<li>Description: ${object.description}</field></li>\n"
+"</ul>"
+msgstr ""
+"<p>这个线索至少 5 天没有任何活动。这里是一些详细信息：</p>\n"
+"<ul>\n"
+"<li>名称: ${对象名}</li>\n"
+"<li>ID: ${对象ID}</li>\n"
+"<li>描述: ${对象描述}</field></li>\n"
+"</ul>"
+
+#. module: crm
+#: view:crm.phonecall:crm.crm_case_phone_form_view
+msgid "A Meeting"
+msgstr "一次会议"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,exclude_contact:0
+msgid "A user associated to the contact"
+msgstr "与系统用户相关的联系人"
+
+#. module: crm
+#: view:crm.case.section:crm.sales_team_form_view_in_crm
+msgid "Accept Emails From"
+msgstr "接收邮件从"
+
+#. module: crm
+#: field:crm.phonecall2phonecall,action:0
+msgid "Action"
+msgstr "行动"
+
+#. module: crm
+#: field:crm.lead,active:0 field:crm.phonecall,active:0
+#: field:crm.tracking.medium,active:0
+msgid "Active"
+msgstr "有效"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead:crm.crm_case_form_view_oppor
+msgid "Address"
+msgstr "地址"
+
+#. module: crm
+#: view:sale.config.settings:crm.view_sale_config_settings
+msgid "After-Sale Services"
+msgstr "售后服务"
+
+#. module: crm
+#: field:crm.case.section,alias_id:0
+msgid "Alias"
+msgstr "别名"
+
+#. module: crm
+#: field:sale.config.settings,alias_domain:0
+msgid "Alias Domain"
+msgstr "别名域"
+
+#. module: crm
+#: code:addons/crm/base_partner_merge.py:304
+#, python-format
+msgid ""
+"All contacts must have the same email. Only the Administrator can merge "
+"contacts with different emails."
+msgstr ""
+"所有的联系人都必须具有相同的电子邮件。只有管理员可以合并不同的电子邮件联系"
+"人。"
+
+#. module: crm
+#: view:sale.config.settings:crm.view_sale_config_settings
+msgid ""
+"All emails sent to this address and processed by the mailgateway\n"
+"                                will create a new lead."
+msgstr ""
+"所有发送到此邮箱并经邮件网关处理的邮件将\n"
+"                               自动创建一个新的问询。"
+
+#. module: crm
+#: help:sale.config.settings,module_crm_helpdesk:0
+msgid ""
+"Allows you to communicate with Customer, process Customer query, and provide "
+"better help and support.\n"
+"-This installs the module crm_helpdesk."
+msgstr ""
+"允许您与客户沟通，处理客户的查询，并提供更好的帮助和支持。\n"
+"-它将安装 crm_helpdesk 模块."
+
+#. module: crm
+#: help:sale.config.settings,group_fund_raising:0
+msgid "Allows you to trace and manage your activities for fund raising."
+msgstr "允许跟踪及管理您的集资活动。"
+
+#. module: crm
+#: help:sale.config.settings,module_crm_claim:0
+msgid ""
+"Allows you to track your customers/suppliers claims and grievances.\n"
+"-This installs the module crm_claim."
+msgstr ""
+"可以让你跟踪你的客户/供应商索赔和不满。\n"
+"这将安装 crm_claim模块。"
+
+#. module: crm
+#: field:crm.lead2opportunity.partner.mass,deduplicate:0
+msgid "Apply deduplication"
+msgstr "应用删除"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Are you sure to execute the automatic merge of your contacts ?"
+msgstr "确实要执行自动合并您的联系人?"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Are you sure to execute the list of automatic merges of your contacts ?"
+msgstr "你确定要执行自动合并列表联系人？"
+
+#. module: crm
+#: field:crm.phonecall2phonecall,user_id:0
+msgid "Assign To"
+msgstr "分配到"
+
+#. module: crm
+#: view:crm.lead2opportunity.partner:crm.view_crm_lead2opportunity_partner
+#: view:crm.lead2opportunity.partner.mass:crm.view_crm_lead2opportunity_partner_mass
+#: view:crm.merge.opportunity:crm.merge_opportunity_form
+msgid "Assign opportunities to"
+msgstr "指派线索给"
+
+#. module: crm
+#: field:crm.lead.report,opening_date:0
+#: field:crm.opportunity.report,opening_date:0
+msgid "Assignation Date"
+msgstr "指定日期"
+
+#. module: crm
+#: field:crm.lead,date_open:0
+msgid "Assigned"
+msgstr "指派"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.action_partner_merge
+msgid "Automatic Merge"
+msgstr "自动合并"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Automatic Merge Wizard"
+msgstr "自动合并向导"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+msgid "Available for mass mailing"
+msgstr "用于大批量邮件"
+
+#. module: crm
+#: selection:crm.case.stage,type:0
+msgid "Both"
+msgstr "全部"
+
+#. module: crm
+#: field:crm.lead,message_bounce:0
+msgid "Bounce"
+msgstr "反弹"
+
+#. module: crm
+#: model:ir.filters,name:crm.filter_leads_country
+#: model:ir.filters,name:crm.filter_opportunity_country
+msgid "By Country"
+msgstr "国家"
+
+#. module: crm
+#: model:ir.filters,name:crm.filter_crm_phonecall_sales_team
+msgid "By Sales Team"
+msgstr "按合同团队"
+
+#. module: crm
+#: model:ir.filters,name:crm.filter_leads_salesperson
+#: model:ir.filters,name:crm.filter_opportunity_salesperson
+msgid "By Salespersons"
+msgstr "品系顾问"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_lead_report
+msgid "CRM Lead Analysis"
+msgstr "CRM 问询分析"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_opportunity_report
+msgid "CRM Opportunity Analysis"
+msgstr "客户关系管理问询分析"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_payment_mode
+msgid "CRM Payment Mode"
+msgstr "CRM 付款模式"
+
+#. module: crm
+#: field:crm.phonecall,name:0
+msgid "Call Summary"
+msgstr "电话摘要"
+
+#. module: crm
+#: field:crm.phonecall2phonecall,name:0
+msgid "Call summary"
+msgstr "电话摘要"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead:crm.crm_case_form_view_oppor
+#: view:crm.lead:crm.crm_case_kanban_view_leads
+#: view:res.partner:crm.view_partners_form_crm1
+msgid "Calls"
+msgstr "电话"
+
+#. module: crm
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+msgid "Calls Date by Month"
+msgstr "通话日期按月"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: field:crm.lead,campaign_id:0 field:crm.lead.report,campaign_id:0
+#: field:crm.opportunity.report,campaign_id:0
+#: view:crm.tracking.campaign:crm.crm_tracking_campaign_form
+#: view:crm.tracking.campaign:crm.crm_tracking_campaign_tree
+#: field:crm.tracking.mixin,campaign_id:0
+#: model:ir.model,name:crm.model_crm_tracking_campaign
+msgid "Campaign"
+msgstr "营销活动"
+
+#. module: crm
+#: field:crm.tracking.campaign,name:0
+msgid "Campaign Name"
+msgstr "营销活动名称"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_tracking_campaign_act
+#: model:ir.ui.menu,name:crm.menu_crm_tracking_campaign_act
+msgid "Campaigns"
+msgstr "营销活动"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+#: view:crm.lead2opportunity.partner:crm.view_crm_lead2opportunity_partner
+#: view:crm.lead2opportunity.partner.mass:crm.view_crm_lead2opportunity_partner_mass
+#: view:crm.merge.opportunity:crm.merge_opportunity_form
+#: view:crm.phonecall2phonecall:crm.phonecall_to_phonecall_view
+msgid "Cancel"
+msgstr "取消"
+
+#. module: crm
+#: selection:crm.phonecall,state:0 selection:crm.phonecall.report,state:0
+msgid "Cancelled"
+msgstr "已取消"
+
+#. module: crm
+#: view:crm.case.categ:crm.crm_case_categ-view
+#: view:crm.case.categ:crm.crm_case_categ_tree-view
+msgid "Case Category"
+msgstr "案件类别"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_case_section_act_tree
+msgid "Cases by Sales Team"
+msgstr "案件，按合同团队"
+
+#. module: crm
+#: model:ir.ui.menu,name:crm.menu_crm_case_phonecall-act
+msgid "Categories"
+msgstr "归类"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+msgid "Categorization"
+msgstr "归类"
+
+#. module: crm
+#: field:crm.phonecall,categ_id:0 field:crm.phonecall.report,categ_id:0
+#: field:crm.phonecall2phonecall,categ_id:0
+msgid "Category"
+msgstr "类别"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_case_categ
+msgid "Category of Case"
+msgstr "案件的类别"
+
+#. module: crm
+#: field:crm.case.stage,on_change:0
+msgid "Change Probability Automatically"
+msgstr "自动修改概率"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: field:crm.lead,medium_id:0 field:crm.lead.report,medium_id:0
+#: field:crm.opportunity.report,medium_id:0
+#: view:crm.tracking.medium:crm.crm_tracking_medium_view_form
+#: field:crm.tracking.mixin,medium_id:0
+#: view:crm.tracking.source:crm.crm_tracking_source_view_form
+msgid "Channel"
+msgstr "途径"
+
+#. module: crm
+#: field:crm.tracking.medium,name:0
+msgid "Channel Name"
+msgstr "渠道名称"
+
+#. module: crm
+#: view:crm.tracking.medium:crm.crm_tracking_medium_view_tree
+#: view:crm.tracking.source:crm.crm_tracking_source_view_tree
+#: model:ir.actions.act_window,name:crm.crm_tracking_medium_action
+#: model:ir.model,name:crm.model_crm_tracking_medium
+msgid "Channels"
+msgstr "渠道"
+
+#. module: crm
+#: help:crm.segmentation,exclusif:0
+msgid ""
+"Check if the category is limited to partners that match the segmentation "
+"criterions.                        \n"
+"If checked, remove the category from partners that doesn't match "
+"segmentation criterions"
+msgstr ""
+"检测如果这业务伙伴在类型的细分规则下是受限制。\n"
+"如果要选定，请删除在业务伙伴类型细分规则中不匹配的规则"
+
+#. module: crm
+#: help:crm.segmentation,sales_purchase_active:0
+msgid ""
+"Check if you want to use this tab as part of the segmentation rule. If not "
+"checked, the criteria beneath will be ignored"
+msgstr "勾选此项, 如果你要使用此标签上的细分规则. 如果不选下面的标准将被忽略"
+
+#. module: crm
+#: help:crm.case.section,use_opportunities:0
+msgid "Check this box to manage opportunities in this sales team."
+msgstr "勾选它来使用这个合同团队管理线索。"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead:crm.crm_case_form_view_oppor field:crm.lead,city:0
+msgid "City"
+msgstr "城市"
+
+#. module: crm
+#: help:crm.lead,categ_ids:0
+msgid ""
+"Classify and analyze your lead/opportunity categories like: Training, Service"
+msgstr "对问询/线索进行分析和分类， 诸如：培训，服务"
+
+#. module: crm
+#: view:crm.case.section:crm.crm_case_section_salesteams_view_kanban
+msgid "Click to see a detailed analysis of leads."
+msgstr "单击以查看潜在顾客的详细的分析。"
+
+#. module: crm
+#: view:crm.case.section:crm.crm_case_section_salesteams_view_kanban
+msgid "Click to see a detailed analysis of opportunities."
+msgstr "点击看到一条详细的线索分析"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Close"
+msgstr "结束"
+
+#. module: crm
+#: field:crm.lead.report,date_closed:0
+#: field:crm.opportunity.report,date_closed:0
+#: field:crm.phonecall.report,date_closed:0
+msgid "Close Date"
+msgstr "结束日期"
+
+#. module: crm
+#: field:crm.lead,date_closed:0 field:crm.phonecall,date_closed:0
+msgid "Closed"
+msgstr "已关闭"
+
+#. module: crm
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:105
+#, python-format
+msgid "Closed/Dead leads cannot be converted into opportunities."
+msgstr "关闭不能转化为机遇的问询"
+
+#. module: crm
+#: field:crm.lead,color:0
+msgid "Color Index"
+msgstr "颜色索引"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: field:crm.lead,company_id:0
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: field:crm.lead.report,company_id:0
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+#: field:crm.opportunity.report,company_id:0 field:crm.phonecall,company_id:0
+#: field:crm.phonecall.report,company_id:0
+msgid "Company"
+msgstr "公司"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+msgid "Company Name"
+msgstr "公司名称"
+
+#. module: crm
+#: view:crm.segmentation:crm.crm_segmentation-view
+msgid "Compute Segmentation"
+msgstr "计算细分"
+
+#. module: crm
+#: selection:crm.phonecall,state:0
+msgid "Confirmed"
+msgstr "已确认"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor7
+msgid "Consulting"
+msgstr "咨询"
+
+#. module: crm
+#: field:crm.phonecall,partner_id:0
+#: field:crm.phonecall2phonecall,contact_name:0
+msgid "Contact"
+msgstr "联系人"
+
+#. module: crm
+#: field:crm.lead,contact_name:0
+msgid "Contact Name"
+msgstr "联系人姓名"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,partner_ids:0
+msgid "Contacts"
+msgstr "联系人列表"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_segmentation_tree-act
+#: model:ir.ui.menu,name:crm.menu_crm_segmentation-act
+msgid "Contacts Segmentation"
+msgstr "联系人细分"
+
+#. module: crm
+#: view:crm.segmentation:crm.crm_segmentation-view
+msgid "Continue Process"
+msgstr "继续处理"
+
+#. module: crm
+#: field:crm.segmentation.line,expr_name:0
+msgid "Control Variable"
+msgstr "控制变量"
+
+#. module: crm
+#: field:crm.lead2opportunity.partner,name:0
+#: field:crm.lead2opportunity.partner.mass,name:0
+msgid "Conversion Action"
+msgstr "转换操作"
+
+#. module: crm
+#: view:crm.lead2opportunity.partner.mass:crm.view_crm_lead2opportunity_partner_mass
+msgid "Conversion Options"
+msgstr "转换选项"
+
+#. module: crm
+#: view:crm.phonecall:crm.crm_case_phone_form_view
+msgid "Convert To"
+msgstr "转换为"
+
+#. module: crm
+#: view:crm.phonecall:crm.crm_case_phone_form_view
+msgid "Convert To Opportunity"
+msgstr "转换为线索"
+
+#. module: crm
+#: view:crm.lead2opportunity.partner.mass:crm.view_crm_lead2opportunity_partner_mass
+msgid "Convert to Opportunities"
+msgstr "转为线索"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead2opportunity.partner:crm.view_crm_lead2opportunity_partner
+#: view:crm.lead2opportunity.partner.mass:crm.view_crm_lead2opportunity_partner_mass
+#: view:crm.phonecall:crm.crm_case_inbound_phone_tree_view
+#: view:crm.phonecall:crm.crm_case_phone_tree_view
+msgid "Convert to Opportunity"
+msgstr "转换为线索"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.action_crm_send_mass_convert
+msgid "Convert to opportunities"
+msgstr "转为线索"
+
+#. module: crm
+#: selection:crm.lead2opportunity.partner,name:0
+#: selection:crm.lead2opportunity.partner.mass,name:0
+#: model:ir.actions.act_window,name:crm.action_crm_lead2opportunity_partner
+msgid "Convert to opportunity"
+msgstr "转换为线索"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead:crm.crm_case_form_view_oppor
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: field:crm.lead,country_id:0
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: field:crm.lead.report,country_id:0
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+#: field:crm.opportunity.report,country_id:0
+msgid "Country"
+msgstr "国家"
+
+#. module: crm
+#: field:crm.phonecall.report,create_date:0
+msgid "Create Date"
+msgstr "建立日期"
+
+#. module: crm
+#: view:crm.lead2opportunity.partner:crm.view_crm_lead2opportunity_partner
+msgid "Create Opportunity"
+msgstr "创建线索"
+
+#. module: crm
+#: selection:crm.lead2opportunity.partner,action:0
+#: selection:crm.partner.binding,action:0
+msgid "Create a new customer"
+msgstr "创建新客户"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,create_uid:0
+#: field:base.partner.merge.line,create_uid:0
+#: field:crm.case.categ,create_uid:0 field:crm.case.stage,create_uid:0
+#: field:crm.lead,create_uid:0 field:crm.lead2opportunity.partner,create_uid:0
+#: field:crm.lead2opportunity.partner.mass,create_uid:0
+#: field:crm.merge.opportunity,create_uid:0
+#: field:crm.partner.binding,create_uid:0 field:crm.payment.mode,create_uid:0
+#: field:crm.phonecall,create_uid:0 field:crm.phonecall2phonecall,create_uid:0
+#: field:crm.segmentation,create_uid:0
+#: field:crm.segmentation.line,create_uid:0
+#: field:crm.tracking.campaign,create_uid:0
+#: field:crm.tracking.medium,create_uid:0
+#: field:crm.tracking.source,create_uid:0
+msgid "Created by"
+msgstr "创建人"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,create_date:0
+#: field:base.partner.merge.line,create_date:0
+#: field:crm.case.categ,create_date:0 field:crm.case.stage,create_date:0
+#: field:crm.lead2opportunity.partner,create_date:0
+#: field:crm.lead2opportunity.partner.mass,create_date:0
+#: field:crm.merge.opportunity,create_date:0
+#: field:crm.partner.binding,create_date:0
+#: field:crm.payment.mode,create_date:0
+#: field:crm.phonecall2phonecall,create_date:0
+#: field:crm.segmentation,create_date:0
+#: field:crm.segmentation.line,create_date:0
+#: field:crm.tracking.campaign,create_date:0
+#: field:crm.tracking.medium,create_date:0
+#: field:crm.tracking.source,create_date:0
+msgid "Created on"
+msgstr "创建"
+
+#. module: crm
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+msgid "Creation"
+msgstr "创建时间"
+
+#. module: crm
+#: field:crm.lead,create_date:0 field:crm.lead.report,create_date:0
+#: field:crm.opportunity.report,create_date:0
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+#: field:crm.phonecall,create_date:0
+msgid "Creation Date"
+msgstr "创建日期"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+msgid "Creation Month"
+msgstr "创建月份"
+
+#. module: crm
+#: field:crm.segmentation,segmentation_line:0
+msgid "Criteria"
+msgstr "条件"
+
+#. module: crm
+#: field:crm.lead,company_currency:0
+msgid "Currency"
+msgstr "币种"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,current_line_id:0
+msgid "Current Line"
+msgstr "当前行"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:998 view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead:crm.crm_case_form_view_oppor
+#: view:crm.lead:crm.crm_case_tree_view_oppor
+#: view:crm.lead:crm.view_crm_case_leads_filter
+#: field:crm.lead2opportunity.partner,partner_id:0
+#: field:crm.lead2opportunity.partner.mass,partner_id:0
+#: field:crm.partner.binding,partner_id:0
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+#, python-format
+msgid "Customer"
+msgstr "客户"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:1000
+#, python-format
+msgid "Customer Email"
+msgstr "客户邮件"
+
+#. module: crm
+#: field:crm.lead,partner_name:0
+msgid "Customer Name"
+msgstr "客户名称"
+
+#. module: crm
+#: field:crm.phonecall,date:0 field:crm.phonecall2phonecall,date:0
+msgid "Date"
+msgstr "日期"
+
+#. module: crm
+#: help:crm.lead,message_last_post:0 help:crm.phonecall,message_last_post:0
+msgid "Date of the last message posted on the record."
+msgstr "发布到记录上的最后信息的日期"
+
+#. module: crm
+#: field:crm.lead,day_open:0
+msgid "Days to Assign"
+msgstr "分配的天数"
+
+#. module: crm
+#: field:crm.lead,day_close:0
+msgid "Days to Close"
+msgstr "结束日期"
+
+#. module: crm
+#: model:crm.case.stage,name:crm.stage_lead2
+msgid "Dead"
+msgstr "失去"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.base_partner_merge_automatic_act
+#: model:ir.ui.menu,name:crm.partner_merge_automatic_menu
+msgid "Deduplicate Contacts"
+msgstr "合并重复的联系人"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Deduplicate the other Contacts"
+msgstr "排除其他联系人"
+
+#. module: crm
+#: field:sale.config.settings,alias_prefix:0
+msgid "Default Alias Name for Leads"
+msgstr "默认的问询别名名称"
+
+#. module: crm
+#: field:crm.case.stage,case_default:0
+msgid "Default to New Sales Team"
+msgstr "默认分配给新建合同团队"
+
+#. module: crm
+#: model:ir.filters,name:crm.filter_crm_phonecall_delay_to_close
+msgid "Delay To Close"
+msgstr "延迟关闭"
+
+#. module: crm
+#: field:crm.lead.report,delay_open:0
+#: field:crm.opportunity.report,delay_open:0
+msgid "Delay to Assign"
+msgstr "指定分配"
+
+#. module: crm
+#: field:crm.lead.report,delay_close:0
+#: field:crm.opportunity.report,delay_close:0
+msgid "Delay to Close"
+msgstr "延迟关闭"
+
+#. module: crm
+#: field:crm.phonecall.report,delay_close:0
+msgid "Delay to close"
+msgstr "延迟关闭"
+
+#. module: crm
+#: field:crm.phonecall.report,delay_open:0
+msgid "Delay to open"
+msgstr "延迟开启"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_kanban_view_leads
+msgid "Delete"
+msgstr "删除"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+msgid "Describe the lead..."
+msgstr "问询的说明..."
+
+#. module: crm
+#: field:crm.phonecall,description:0 field:crm.segmentation,description:0
+msgid "Description"
+msgstr "说明"
+
+#. module: crm
+#: view:crm.phonecall:crm.crm_case_phone_form_view
+msgid "Description..."
+msgstr "说明..."
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor5
+msgid "Design"
+msgstr "设计"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,dst_partner_id:0
+msgid "Destination Contact"
+msgstr "最终联系人"
+
+#. module: crm
+#: selection:crm.lead2opportunity.partner,action:0
+#: selection:crm.lead2opportunity.partner.mass,action:0
+#: selection:crm.partner.binding,action:0
+msgid "Do not link to a customer"
+msgstr "不要链接到某个客户"
+
+#. module: crm
+#: selection:crm.phonecall.report,state:0
+msgid "Draft"
+msgstr "草稿"
+
+#. module: crm
+#: model:ir.filters,name:crm.filter_draft_lead
+msgid "Draft Leads"
+msgstr "问询草稿"
+
+#. module: crm
+#: field:crm.phonecall,duration:0 field:crm.phonecall.report,duration:0
+msgid "Duration"
+msgstr "持续时间"
+
+#. module: crm
+#: help:crm.phonecall,duration:0
+msgid "Duration in minutes and seconds."
+msgstr "抓紧时间."
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_kanban_view_leads
+msgid "Edit..."
+msgstr "编辑..."
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,group_by_email:0
+#: view:crm.lead:crm.crm_case_form_view_oppor field:crm.lead,email_from:0
+#: field:crm.phonecall,email_from:0
+msgid "Email"
+msgstr "电子邮件"
+
+#. module: crm
+#: view:crm.case.section:crm.sales_team_form_view_in_crm
+msgid "Email Alias"
+msgstr "电子邮件别名"
+
+#. module: crm
+#: help:crm.lead,email_from:0
+msgid "Email address of the contact"
+msgstr "联系人邮箱地址"
+
+#. module: crm
+#: code:addons/crm/base_partner_merge.py:301
+#: code:addons/crm/base_partner_merge.py:304
+#: code:addons/crm/base_partner_merge.py:316
+#: code:addons/crm/base_partner_merge.py:445
+#, python-format
+msgid "Error"
+msgstr "错误"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:434
+#, python-format
+msgid "Error!"
+msgstr "错误!"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead:crm.crm_case_form_view_oppor
+msgid "Escalate"
+msgstr "提升"
+
+#. module: crm
+#: help:crm.lead,date_deadline:0
+msgid "Estimate of the date on which the opportunity will be won."
+msgstr "预计线索落单日期."
+
+#. module: crm
+#: model:ir.model,name:crm.model_calendar_event
+msgid "Event"
+msgstr "事件"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Exclude contacts having"
+msgstr "不合并下列联系人"
+
+#. module: crm
+#: view:crm.segmentation:crm.crm_segmentation-view
+msgid "Excluded Answers :"
+msgstr "排除的答案:"
+
+#. module: crm
+#: field:crm.segmentation,exclusif:0
+msgid "Exclusive"
+msgstr "排它的"
+
+#. module: crm
+#: field:crm.segmentation,state:0
+msgid "Execution Status"
+msgstr "执行状态"
+
+#. module: crm
+#: field:crm.lead.report,date_deadline:0
+#: field:crm.opportunity.report,date_deadline:0
+msgid "Exp. Closing"
+msgstr "预计结束日期"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: field:crm.lead,date_deadline:0 help:crm.lead.report,date_deadline:0
+#: help:crm.opportunity.report,date_deadline:0
+msgid "Expected Closing"
+msgstr "预期结束"
+
+#. module: crm
+#: field:crm.lead,planned_revenue:0 field:crm.lead.report,probable_revenue:0
+#: field:crm.opportunity.report,expected_revenue:0
+msgid "Expected Revenue"
+msgstr "预期收益"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_kanban_view_leads
+#: view:crm.lead:crm.crm_case_tree_view_oppor
+msgid "Expected Revenues"
+msgstr "预期收益"
+
+#. module: crm
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+msgid "Expiration Closing"
+msgstr "到期关闭"
+
+#. module: crm
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+msgid "Expiration Closing Month"
+msgstr "到期关闭月份"
+
+#. module: crm
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+msgid "Extended Filters"
+msgstr "扩展过滤器"
+
+#. module: crm
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+msgid "Extended Filters..."
+msgstr "扩展的过滤器..."
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+msgid "Extra Info"
+msgstr "额外信息"
+
+#. module: crm
+#: field:crm.lead,fax:0
+msgid "Fax"
+msgstr "传真"
+
+#. module: crm
+#: selection:base.partner.merge.automatic.wizard,state:0
+msgid "Finished"
+msgstr "已完成"
+
+#. module: crm
+#: field:crm.case.stage,fold:0
+msgid "Folded in Kanban View"
+msgstr "在看板视图中折叠"
+
+#. module: crm
+#: field:crm.lead,message_follower_ids:0
+#: field:crm.phonecall,message_follower_ids:0
+msgid "Followers"
+msgstr "关注者"
+
+#. module: crm
+#: code:addons/crm/base_partner_merge.py:301
+#, python-format
+msgid ""
+"For safety reasons, you cannot merge more than 3 contacts together. You can "
+"re-open the wizard several times if needed."
+msgstr ""
+"出于安全原因，您不能在一起合并超过 3 联系人.如果需要 您可以重新打开该向导几"
+"次。"
+
+#. module: crm
+#: field:crm.lead2opportunity.partner.mass,force_assignation:0
+msgid "Force assignation"
+msgstr "强制分配"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:564
+#, python-format
+msgid "From %s : %s"
+msgstr "来自: %s:%s"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.action_report_crm_phonecall
+msgid ""
+"From this report, you can analyse the performance of your sales team, based "
+"on their phone calls. You can group or filter the information according to "
+"several criteria and drill down the information, by adding more groups in "
+"the report."
+msgstr ""
+"在这报表中，你能分析你的合同团队在电话访问上的业绩。你能根据几个标准和向下钻"
+"取数据组织或过滤信息。它能在报表中加入更多的组。"
+
+#. module: crm
+#: field:crm.lead,function:0
+msgid "Function"
+msgstr "职务"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_oppor
+msgid "Fund Raising"
+msgstr "集资"
+
+#. module: crm
+#: field:crm.lead,email_cc:0
+msgid "Global CC"
+msgstr "完整抄送"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+msgid "Group By"
+msgstr "分组"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,number_group:0
+msgid "Group of Contacts"
+msgstr "联系人组"
+
+#. module: crm
+#: model:ir.model,name:crm.model_ir_http
+msgid "HTTP routing"
+msgstr "HTTP 路由"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_partner_binding
+msgid "Handle partner binding or generation in CRM wizards."
+msgstr "在CRM向导中处理合作伙伴的绑定或生成。"
+
+#. module: crm
+#: selection:crm.phonecall,state:0
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+#: selection:crm.phonecall.report,state:0
+msgid "Held"
+msgstr "保持"
+
+#. module: crm
+#: selection:crm.lead,priority:0 selection:crm.lead.report,priority:0
+#: selection:crm.opportunity.report,priority:0
+#: selection:crm.phonecall,priority:0
+#: selection:crm.phonecall.report,priority:0
+msgid "High"
+msgstr "高"
+
+#. module: crm
+#: help:crm.lead,message_summary:0 help:crm.phonecall,message_summary:0
+msgid ""
+"Holds the Chatter summary (number of messages, ...). This summary is "
+"directly in html format in order to be inserted in kanban views."
+msgstr ""
+"显示Chatter中的消息摘要（包括消息个数等）。此摘要格式为html，可直接在看板视图"
+"中显示。"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,id:0
+#: field:base.partner.merge.line,id:0 field:crm.case.categ,id:0
+#: field:crm.case.stage,id:0 field:crm.lead,id:0 field:crm.lead.report,id:0
+#: field:crm.lead2opportunity.partner,id:0
+#: field:crm.lead2opportunity.partner.mass,id:0
+#: field:crm.merge.opportunity,id:0 field:crm.opportunity.report,id:0
+#: field:crm.partner.binding,id:0 field:crm.payment.mode,id:0
+#: field:crm.phonecall,id:0 field:crm.phonecall.report,id:0
+#: field:crm.phonecall2phonecall,id:0 field:crm.segmentation,id:0
+#: field:crm.segmentation.line,id:0 field:crm.tracking.campaign,id:0
+#: field:crm.tracking.medium,id:0 field:crm.tracking.mixin,id:0
+#: field:crm.tracking.source,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: crm
+#: field:base.partner.merge.line,aggr_ids:0
+msgid "Ids"
+msgstr "标识"
+
+#. module: crm
+#: help:crm.lead,message_unread:0 help:crm.phonecall,message_unread:0
+msgid "If checked new messages require your attention."
+msgstr "如果勾选此项，有新消息会提醒你"
+
+#. module: crm
+#: help:crm.lead,opt_out:0
+msgid ""
+"If opt-out is checked, this contact has refused to receive emails for mass "
+"mailing and marketing campaign. Filter 'Available for Mass Mailing' allows "
+"users to filter the leads when performing mass mailing."
+msgstr ""
+"如果选中”不参与“，则此联系人将不会接收到群发邮件，如市场营销广告等。当进行邮"
+"件群发时，可根据此字段筛选出允许接受群发的对象。"
+
+#. module: crm
+#: help:crm.lead2opportunity.partner.mass,force_assignation:0
+msgid "If unchecked, this will leave the salesman of duplicated opportunities"
+msgstr "如果不勾选，合同人员会建立重复的线索"
+
+#. module: crm
+#: help:crm.case.stage,case_default:0
+msgid ""
+"If you check this field, this stage will be proposed by default on each "
+"sales team. It will not assign this stage to existing teams."
+msgstr ""
+"如果你勾选了这里，这个阶段会作为每个合同团队的默认阶段。对已有的合同团队无"
+"效。"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_phone1
+msgid "Inbound"
+msgstr "来电"
+
+#. module: crm
+#: view:crm.segmentation:crm.crm_segmentation-view
+msgid "Included Answers :"
+msgstr "包括的答案:"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor4
+msgid "Information"
+msgstr "资料"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead:crm.crm_case_form_view_oppor
+msgid "Internal Notes"
+msgstr "内部备注"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,group_by_is_company:0
+msgid "Is Company"
+msgstr "是公司"
+
+#. module: crm
+#: field:crm.lead,message_is_follower:0
+#: field:crm.phonecall,message_is_follower:0
+msgid "Is a Follower"
+msgstr "是一个关注者"
+
+#. module: crm
+#: code:addons/crm/crm_phonecall.py:291
+#, python-format
+msgid "It's only possible to convert one phonecall at a time."
+msgstr "每次只能转换一个电话"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,exclude_journal_item:0
+msgid "Journal Items associated to the contact"
+msgstr "与日记账相关的联系人"
+
+#. module: crm
+#: field:crm.lead,date_action_last:0 field:crm.phonecall,date_action_last:0
+msgid "Last Action"
+msgstr "最近行动"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+msgid "Last Message"
+msgstr "最后的消息"
+
+#. module: crm
+#: field:crm.lead,message_last_post:0 field:crm.phonecall,message_last_post:0
+msgid "Last Message Date"
+msgstr "最后信息日期"
+
+#. module: crm
+#: field:crm.lead,date_last_stage_update:0
+#: field:crm.lead.report,date_last_stage_update:0
+#: field:crm.opportunity.report,date_last_stage_update:0
+msgid "Last Stage Update"
+msgstr "最后的阶段升级"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,write_uid:0
+#: field:base.partner.merge.line,write_uid:0 field:crm.case.categ,write_uid:0
+#: field:crm.case.stage,write_uid:0 field:crm.lead,write_uid:0
+#: field:crm.lead2opportunity.partner,write_uid:0
+#: field:crm.lead2opportunity.partner.mass,write_uid:0
+#: field:crm.merge.opportunity,write_uid:0
+#: field:crm.partner.binding,write_uid:0 field:crm.payment.mode,write_uid:0
+#: field:crm.phonecall,write_uid:0 field:crm.phonecall2phonecall,write_uid:0
+#: field:crm.segmentation,write_uid:0 field:crm.segmentation.line,write_uid:0
+#: field:crm.tracking.campaign,write_uid:0
+#: field:crm.tracking.medium,write_uid:0 field:crm.tracking.source,write_uid:0
+msgid "Last Updated by"
+msgstr "最后更新"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,write_date:0
+#: field:base.partner.merge.line,write_date:0
+#: field:crm.case.categ,write_date:0 field:crm.case.stage,write_date:0
+#: field:crm.lead2opportunity.partner,write_date:0
+#: field:crm.lead2opportunity.partner.mass,write_date:0
+#: field:crm.merge.opportunity,write_date:0
+#: field:crm.partner.binding,write_date:0 field:crm.payment.mode,write_date:0
+#: field:crm.phonecall,write_date:0 field:crm.phonecall2phonecall,write_date:0
+#: field:crm.segmentation,write_date:0
+#: field:crm.segmentation.line,write_date:0
+#: field:crm.tracking.campaign,write_date:0
+#: field:crm.tracking.medium,write_date:0
+#: field:crm.tracking.source,write_date:0
+msgid "Last Updated on"
+msgstr "最后一次更新"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:893 selection:crm.case.stage,type:0
+#: view:crm.lead:crm.crm_case_form_view_oppor selection:crm.lead,type:0
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: selection:crm.lead.report,type:0
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+#: selection:crm.opportunity.report,type:0
+#, python-format
+msgid "Lead"
+msgstr "问询"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+msgid "Lead / Customer"
+msgstr "问询/客户"
+
+#. module: crm
+#: model:mail.message.subtype,name:crm.mt_lead_create
+#: model:mail.message.subtype,name:crm.mt_salesteam_lead
+msgid "Lead Created"
+msgstr "问询已创建"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_lead2opportunity_partner
+msgid "Lead To Opportunity Partner"
+msgstr "问询转换为合作伙伴或线索"
+
+#. module: crm
+#: model:mail.message.subtype,description:crm.mt_lead_create
+msgid "Lead created"
+msgstr "问询已创建"
+
+#. module: crm
+#: field:crm.phonecall,opportunity_id:0 model:ir.model,name:crm.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "问询/线索"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.action_lead_mass_mail
+msgid "Lead/Opportunity Mass Mail"
+msgstr "问询/线索 大量 邮件"
+
+#. module: crm
+#: view:crm.case.section:crm.crm_case_section_salesteams_view_kanban
+#: view:crm.case.section:crm.sales_team_form_view_in_crm
+#: field:crm.case.section,use_leads:0
+#: view:crm.lead:crm.crm_case_tree_view_leads
+#: model:ir.actions.act_window,name:crm.crm_case_category_act_leads_all
+#: model:ir.actions.act_window,name:crm.crm_case_form_view_salesteams_lead
+#: model:ir.ui.menu,name:crm.menu_crm_leads
+msgid "Leads"
+msgstr "问询"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:84
+#, python-format
+msgid "Leads / Opportunities"
+msgstr "问询/线索"
+
+#. module: crm
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: view:crm.lead.report:crm.view_report_crm_lead_graph
+#: view:crm.lead.report:crm.view_report_crm_lead_graph_two
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_graph
+#: model:ir.actions.act_window,name:crm.action_report_crm_lead
+#: model:ir.actions.act_window,name:crm.action_report_crm_lead_salesteam
+#: model:ir.ui.menu,name:crm.menu_report_crm_leads_tree
+msgid "Leads Analysis"
+msgstr "问询分析"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.action_report_crm_lead
+#: model:ir.actions.act_window,help:crm.action_report_crm_lead_salesteam
+msgid ""
+"Leads Analysis allows you to check different CRM related information like "
+"the treatment delays or number of leads per state. You can sort out your "
+"leads analysis by different groups to get accurate grained analysis."
+msgstr ""
+"问询分析允许你检查不同的关联CRM的信息，例如延迟或每个状态的问询的数量。你可以"
+"使用不同的分组对问询分析进行整理已获得精确细致的分析结果。"
+
+#. module: crm
+#: view:sale.config.settings:crm.view_sale_config_settings
+msgid "Leads Email Alias"
+msgstr "（接收）问询邮箱别名"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+msgid "Leads Form"
+msgstr "问询表单"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_calendar_view_leads
+msgid "Leads Generation"
+msgstr "问询产生"
+
+#. module: crm
+#: field:res.partner,opportunity_ids:0
+msgid "Leads and Opportunities"
+msgstr "问询与线索"
+
+#. module: crm
+#: model:ir.filters,name:crm.filter_usa_lead
+msgid "Leads from USA"
+msgstr "来自USA的问询"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+msgid "Leads that are assigned to me"
+msgstr "分配给我的问询"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+msgid "Leads that did not ask not to be included in mass mailing campaigns"
+msgstr "未要求的问询不要包括到批量邮件营销活动中"
+
+#. module: crm
+#: view:crm.lead2opportunity.partner.mass:crm.view_crm_lead2opportunity_partner_mass
+msgid ""
+"Leads that you selected that have duplicates. If the list is empty, it means "
+"that no duplicates were found"
+msgstr "你选择的问询有重复。如果列表为空，表明没有发现重复问询。"
+
+#. module: crm
+#: view:crm.lead2opportunity.partner.mass:crm.view_crm_lead2opportunity_partner_mass
+msgid "Leads with existing duplicates (for information)"
+msgstr "存在的重复问询（信息）"
+
+#. module: crm
+#: field:crm.merge.opportunity,opportunity_ids:0
+msgid "Leads/Opportunities"
+msgstr "问询/线索"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,line_ids:0
+msgid "Lines"
+msgstr "明细"
+
+#. module: crm
+#: help:crm.case.stage,section_ids:0
+msgid ""
+"Link between stages and sales teams. When set, this limitate the current "
+"stage to the selected sales teams."
+msgstr ""
+"在阶段和合同团队之间建立链接。设置后将限制此阶段只能用于被选中的合同团队。"
+
+#. module: crm
+#: selection:crm.lead2opportunity.partner,action:0
+#: selection:crm.partner.binding,action:0
+msgid "Link to an existing customer"
+msgstr "链接到现有客户"
+
+#. module: crm
+#: help:crm.lead,partner_id:0
+msgid "Linked partner (optional). Usually created when converting the lead."
+msgstr "关联业务伙伴(可选), 通常用于在问询转换时自动创建业务伙伴."
+
+#. module: crm
+#: view:crm.phonecall2phonecall:crm.phonecall_to_phonecall_view
+msgid "Log Call"
+msgstr "记录电话"
+
+#. module: crm
+#: selection:crm.phonecall2phonecall,action:0
+msgid "Log a call"
+msgstr "记录一个电话"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_case_categ_phone_incoming0
+#: model:ir.ui.menu,name:crm.menu_crm_case_phone_inbound
+msgid "Logged Calls"
+msgstr "记录的电话"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:1058
+#, python-format
+msgid "Logged a call for %(date)s. %(description)s"
+msgstr "登记电话：%(date)s. %(description)s"
+
+#. module: crm
+#: model:ir.filters,name:crm.filter_leads_long_term_revenue
+msgid "Long Term Revenue"
+msgstr "长期收益"
+
+#. module: crm
+#: model:crm.case.stage,name:crm.stage_lead7
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+msgid "Lost"
+msgstr "丢失"
+
+#. module: crm
+#: selection:crm.lead,priority:0 selection:crm.lead.report,priority:0
+#: selection:crm.opportunity.report,priority:0
+#: selection:crm.phonecall,priority:0
+#: selection:crm.phonecall.report,priority:0
+msgid "Low"
+msgstr "低"
+
+#. module: crm
+#: model:crm.tracking.source,name:crm.crm_source_mailing
+msgid "Mailing Partner"
+msgstr "邮件业务伙伴"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead:crm.crm_case_form_view_oppor
+msgid "Mailings"
+msgstr "邮件"
+
+#. module: crm
+#: field:sale.config.settings,module_crm_claim:0
+msgid "Manage Customer Claims"
+msgstr "管理客户诉求"
+
+#. module: crm
+#: model:res.groups,name:crm.group_fund_raising
+#: field:sale.config.settings,group_fund_raising:0
+msgid "Manage Fund Raising"
+msgstr "管理集资"
+
+#. module: crm
+#: field:sale.config.settings,module_crm_helpdesk:0
+msgid "Manage Helpdesk and Support"
+msgstr "管理帮助平台与客户支持"
+
+#. module: crm
+#: field:crm.segmentation.line,operator:0
+msgid "Mandatory / Optional"
+msgstr "强制的/ 可选的"
+
+#. module: crm
+#: selection:crm.segmentation.line,operator:0
+msgid "Mandatory Expression"
+msgstr "强制的表达式"
+
+#. module: crm
+#: model:ir.actions.server,name:crm.action_mark_as_lost
+msgid "Mark As Lost"
+msgstr "标记为已失去"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_oppor
+msgid "Mark Lost"
+msgstr "标记失去"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_oppor
+msgid "Mark Won"
+msgstr "标记为已赢得"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_lead2opportunity_partner_mass
+msgid "Mass Lead To Opportunity Partner"
+msgstr "批量转换问询为线索或合作伙伴"
+
+#. module: crm
+#: field:crm.segmentation,partner_id:0
+msgid "Max Partner ID processed"
+msgstr "已处理的最大业务伙伴ID"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,maximum_group:0
+msgid "Maximum of Group of Contacts"
+msgstr "联系人组的最多联系人数量"
+
+#. module: crm
+#: view:crm.phonecall:crm.crm_case_inbound_phone_tree_view
+#: view:crm.phonecall:crm.crm_case_phone_tree_view
+msgid "Meeting"
+msgstr "会议"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:1072
+#, python-format
+msgid "Meeting scheduled at '%s'<br> Subject: %s <br> Duration: %s hour(s)"
+msgstr "计划会见于 '%s'<br>   主题：%s <br> 需要时间: %s 小时"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_oppor
+#: model:ir.actions.act_window,name:crm.act_crm_opportunity_calendar_event_new
+#: model:ir.actions.act_window,name:crm.calendar_event_partner
+#: view:res.partner:crm.crm_lead_partner_kanban_view
+#: view:res.partner:crm.view_partners_form_crm1
+#: field:res.partner,meeting_ids:0
+msgid "Meetings"
+msgstr "会议"
+
+#. module: crm
+#: view:crm.merge.opportunity:crm.merge_opportunity_form
+msgid "Merge"
+msgstr "合并"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Merge Automatically"
+msgstr "自动合并"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Merge Automatically all process"
+msgstr "自动进行所有合并过程"
+
+#. module: crm
+#: view:crm.merge.opportunity:crm.merge_opportunity_form
+msgid "Merge Leads/Opportunities"
+msgstr "合并问询和线索"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Merge Selection"
+msgstr "合并选择"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.action_merge_opportunities
+#: model:ir.actions.act_window,name:crm.merge_opportunity_act
+msgid "Merge leads/opportunities"
+msgstr "合并问询/线索"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_merge_opportunity
+msgid "Merge opportunities"
+msgstr "合并线索"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Merge the following contacts"
+msgstr "合并以下联系人"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Merge with Manual Check"
+msgstr "手动检查与合并"
+
+#. module: crm
+#: help:crm.lead2opportunity.partner.mass,deduplicate:0
+msgid "Merge with existing leads/opportunities of each partner"
+msgstr "将每一个合作伙伴已存在的问询或线索合并"
+
+#. module: crm
+#: selection:crm.lead2opportunity.partner,name:0
+#: selection:crm.lead2opportunity.partner.mass,name:0
+msgid "Merge with existing opportunities"
+msgstr "与已存在的线索合并"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:549
+#, python-format
+msgid "Merged lead"
+msgstr "合并问询"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:543
+#, python-format
+msgid "Merged leads"
+msgstr "合并的问询"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:545
+#, python-format
+msgid "Merged opportunities"
+msgstr "合并的线索"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:549
+#, python-format
+msgid "Merged opportunity"
+msgstr "合并线索"
+
+#. module: crm
+#: code:addons/crm/base_partner_merge.py:326
+#, python-format
+msgid "Merged with the following partners:"
+msgstr "合并以下合作伙伴:"
+
+#. module: crm
+#: field:crm.lead,message_ids:0 field:crm.phonecall,message_ids:0
+msgid "Messages"
+msgstr "消息"
+
+#. module: crm
+#: help:crm.lead,message_ids:0 help:crm.phonecall,message_ids:0
+msgid "Messages and communication history"
+msgstr "消息和通信历史记录"
+
+#. module: crm
+#: field:base.partner.merge.line,min_id:0
+msgid "MinID"
+msgstr "最小ID"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead:crm.crm_case_form_view_oppor
+msgid "Misc"
+msgstr "杂项"
+
+#. module: crm
+#: field:crm.lead,mobile:0 field:crm.phonecall,partner_mobile:0
+msgid "Mobile"
+msgstr "手机"
+
+#. module: crm
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+msgid "Month"
+msgstr "月份"
+
+#. module: crm
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+msgid "Month of call"
+msgstr "电话月份"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+msgid "My Leads"
+msgstr "我的问询"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+msgid "My Opportunities"
+msgstr "我的线索"
+
+#. module: crm
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+msgid "My Phone Calls"
+msgstr "我的电话"
+
+#. module: crm
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+msgid "My Phonecalls"
+msgstr "我的电话"
+
+#. module: crm
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+msgid "My Sales Team(s)"
+msgstr "我的合同团队"
+
+#. module: crm
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+msgid "My Team"
+msgstr "我的团队"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,group_by_name:0
+#: field:crm.case.categ,name:0 field:crm.payment.mode,name:0
+#: field:crm.segmentation,name:0
+msgid "Name"
+msgstr "名称"
+
+#. module: crm
+#: model:crm.case.stage,name:crm.stage_lead5
+msgid "Negotiation"
+msgstr "谈判"
+
+#. module: crm
+#: model:crm.case.stage,name:crm.stage_lead1
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+msgid "New"
+msgstr "新建"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+msgid "New Mail"
+msgstr "新邮件"
+
+#. module: crm
+#: model:crm.tracking.source,name:crm.crm_source_newsletter
+msgid "Newsletter"
+msgstr "时事通信"
+
+#. module: crm
+#: field:crm.lead,date_action_next:0 field:crm.lead,title_action:0
+#: field:crm.phonecall,date_action_next:0
+msgid "Next Action"
+msgstr "下一行动"
+
+#. module: crm
+#: field:crm.lead,date_action:0
+msgid "Next Action Date"
+msgstr "下一行动日期"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:1013
+#, python-format
+msgid "No Subject"
+msgstr "无主题"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:770
+#, python-format
+msgid ""
+"No customer name defined. Please fill one of the following fields: Company "
+"Name, Contact Name or Email (\"Name <email@address>\")"
+msgstr ""
+"客户名称未定义。请在下列字段中填入一个：公司名称，联系人名称或者Email( \"名"
+"称  <email@address> \")"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+msgid "No salesperson"
+msgstr "没有品系顾问"
+
+#. module: crm
+#: selection:crm.lead,priority:0 selection:crm.lead.report,priority:0
+#: selection:crm.opportunity.report,priority:0
+#: selection:crm.phonecall,priority:0
+#: selection:crm.phonecall.report,priority:0
+msgid "Normal"
+msgstr "普通"
+
+#. module: crm
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+msgid "Not Held"
+msgstr "未保持"
+
+#. module: crm
+#: selection:crm.segmentation,state:0
+msgid "Not Running"
+msgstr "未运行"
+
+#. module: crm
+#: field:crm.phonecall2phonecall,note:0
+msgid "Note"
+msgstr "备注"
+
+#. module: crm
+#: field:crm.lead,description:0
+msgid "Notes"
+msgstr "备注"
+
+#. module: crm
+#: help:crm.lead.report,delay_close:0
+#: help:crm.opportunity.report,delay_close:0
+#: help:crm.phonecall.report,delay_close:0
+msgid "Number of Days to close the case"
+msgstr "到期天数"
+
+#. module: crm
+#: help:crm.lead.report,delay_open:0 help:crm.opportunity.report,delay_open:0
+#: help:crm.phonecall.report,delay_open:0
+msgid "Number of Days to open the case"
+msgstr "业务开启的天数"
+
+#. module: crm
+#: field:crm.case.categ,object_id:0
+msgid "Object Name"
+msgstr "对象名"
+
+#. module: crm
+#: code:addons/crm/base_partner_merge.py:316
+#, python-format
+msgid ""
+"Only the destination contact may be linked to existing Journal Items. Please "
+"ask the Administrator if you need to merge several contacts linked to "
+"existing Journal Items."
+msgstr ""
+"只有目标联系人可链接到现有日志项。如果您需要合并几个联系人链接到现有日志项，"
+"请询问管理员。"
+
+#. module: crm
+#: view:crm.case.section:crm.crm_case_section_salesteams_view_kanban
+#: field:crm.case.section,monthly_open_leads:0
+msgid "Open Leads per Month"
+msgstr "每月公开的问询信息"
+
+#. module: crm
+#: model:ir.actions.client,name:crm.action_client_crm_menu
+msgid "Open Sale Menu"
+msgstr "打开合同菜单"
+
+#. module: crm
+#: field:crm.phonecall,date_open:0
+msgid "Opened"
+msgstr "已开启"
+
+#. module: crm
+#: field:crm.phonecall.report,opening_date:0
+msgid "Opening Date"
+msgstr "开启日期"
+
+#. module: crm
+#: field:crm.segmentation.line,expr_operator:0
+msgid "Operator"
+msgstr "运算符"
+
+#. module: crm
+#: view:crm.case.section:crm.crm_case_section_salesteams_view_kanban
+#: field:crm.case.section,use_opportunities:0
+#: view:crm.lead:crm.crm_case_form_view_oppor
+#: view:crm.lead:crm.crm_case_graph_view_leads
+#: view:crm.lead:crm.crm_case_tree_view_oppor
+#: view:crm.lead2opportunity.partner:crm.view_crm_lead2opportunity_partner
+#: field:crm.lead2opportunity.partner,opportunity_ids:0
+#: field:crm.lead2opportunity.partner.mass,opportunity_ids:0
+#: model:ir.actions.act_window,name:crm.crm_case_category_act_oppor11
+#: model:ir.actions.act_window,name:crm.crm_case_form_view_salesteams_opportunity
+#: model:ir.actions.act_window,name:crm.relate_partner_opportunities
+#: model:ir.ui.menu,name:crm.menu_crm_opportunities
+#: view:res.partner:crm.crm_lead_partner_kanban_view
+#: view:res.partner:crm.view_partners_form_crm1
+msgid "Opportunities"
+msgstr "线索"
+
+#. module: crm
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+#: model:ir.actions.act_window,name:crm.action_report_crm_opportunity
+#: model:ir.actions.act_window,name:crm.action_report_crm_opportunity_salesteam
+#: model:ir.ui.menu,name:crm.menu_report_crm_opportunities_tree
+msgid "Opportunities Analysis"
+msgstr "线索分析"
+
+#. module: crm
+#: model:ir.actions.act_window,help:crm.action_report_crm_opportunity
+#: model:ir.actions.act_window,help:crm.action_report_crm_opportunity_salesteam
+msgid ""
+"Opportunities Analysis gives you an instant access to your opportunities "
+"with information such as the expected revenue, planned cost, missed "
+"deadlines or the number of interactions per opportunity. This report is "
+"mainly used by the sales manager in order to do the periodic review with the "
+"teams of the sales pipeline."
+msgstr ""
+"线索分析给你随时访问线索的信息如：预期收入、计划成本、错过的最后时限或者每个"
+"线索的互动次数。这个报表主要给合同经理定期审查这团队里的品系顾问。"
+
+#. module: crm
+#: model:ir.filters,name:crm.filter_opportunity_opportunities_cohort
+msgid "Opportunities Cohort"
+msgstr "机会组合"
+
+#. module: crm
+#: model:ir.filters,name:crm.filter_opportunity_opportunities_won_per_team
+msgid "Opportunities Won Per Team"
+msgstr "赢的机会的组"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+msgid "Opportunities that are assigned to me"
+msgstr "分配给我的线索"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:873 field:calendar.event,opportunity_id:0
+#: selection:crm.case.stage,type:0 view:crm.lead:crm.crm_case_tree_view_oppor
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: selection:crm.lead,type:0
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: selection:crm.lead.report,type:0
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+#: selection:crm.opportunity.report,type:0
+#: view:crm.phonecall:crm.crm_case_phone_form_view
+#: field:res.partner,opportunity_count:0
+#, python-format
+msgid "Opportunity"
+msgstr "线索"
+
+#. module: crm
+#: model:mail.message.subtype,name:crm.mt_lead_lost
+#: model:mail.message.subtype,name:crm.mt_salesteam_lead_lost
+msgid "Opportunity Lost"
+msgstr "丢失的线索"
+
+#. module: crm
+#: model:mail.message.subtype,name:crm.mt_salesteam_lead_stage
+msgid "Opportunity Stage Changed"
+msgstr "线索状态已改变"
+
+#. module: crm
+#: model:mail.message.subtype,name:crm.mt_lead_won
+#: model:mail.message.subtype,name:crm.mt_salesteam_lead_won
+msgid "Opportunity Won"
+msgstr "获胜的线索"
+
+#. module: crm
+#: model:mail.message.subtype,description:crm.mt_lead_lost
+msgid "Opportunity lost"
+msgstr "失去的线索"
+
+#. module: crm
+#: model:mail.message.subtype,description:crm.mt_lead_won
+msgid "Opportunity won"
+msgstr "获胜的线索"
+
+#. module: crm
+#: field:crm.lead,opt_out:0
+msgid "Opt-Out"
+msgstr "不参与（自动订阅邮件）"
+
+#. module: crm
+#: selection:base.partner.merge.automatic.wizard,state:0
+msgid "Option"
+msgstr "选项"
+
+#. module: crm
+#: selection:crm.segmentation.line,operator:0
+msgid "Optional Expression"
+msgstr "可选表达式"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Options"
+msgstr "选项"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor8
+msgid "Other"
+msgstr "其它"
+
+#. module: crm
+#: view:crm.phonecall:crm.crm_case_phone_form_view
+msgid "Other Call"
+msgstr "其他电话"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_phone2
+msgid "Outbound"
+msgstr "致电"
+
+#. module: crm
+#: field:crm.lead.report,delay_expected:0
+#: field:crm.opportunity.report,delay_expected:0
+#: model:ir.filters,name:crm.filter_leads_overpassed_deadline
+msgid "Overpassed Deadline"
+msgstr "超越截止日期"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,group_by_parent_id:0
+msgid "Parent Company"
+msgstr "母公司"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter field:crm.lead,partner_id:0
+#: field:crm.lead.report,partner_id:0
+#: field:crm.opportunity.report,partner_id:0
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+#: field:crm.phonecall.report,partner_id:0
+#: field:crm.phonecall2phonecall,partner_id:0
+#: model:ir.model,name:crm.model_res_partner
+msgid "Partner"
+msgstr "合作伙伴"
+
+#. module: crm
+#: field:crm.segmentation,categ_id:0
+msgid "Partner Category"
+msgstr "业务伙伴类别"
+
+#. module: crm
+#: field:crm.lead,partner_address_email:0
+msgid "Partner Contact Email"
+msgstr "合作伙伴联系电邮"
+
+#. module: crm
+#: field:crm.lead,partner_address_name:0
+msgid "Partner Contact Name"
+msgstr "合作伙伴联系姓名"
+
+#. module: crm
+#: view:crm.segmentation:crm.crm_segmentation-view
+#: model:ir.model,name:crm.model_crm_segmentation
+msgid "Partner Segmentation"
+msgstr "合作伙伴细分"
+
+#. module: crm
+#: view:crm.segmentation.line:crm.crm_segmentation_line-view
+#: view:crm.segmentation.line:crm.crm_segmentation_line_tree-view
+msgid "Partner Segmentation Lines"
+msgstr "业务伙伴细分明细"
+
+#. module: crm
+#: view:crm.segmentation:crm.crm_segmentation_tree-view
+msgid "Partner Segmentations"
+msgstr "合作伙伴细分"
+
+#. module: crm
+#: code:addons/crm/crm_phonecall.py:301
+#, python-format
+msgid "Partner has been <b>created</b>."
+msgstr "合作伙伴已<b>创建</b>"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Partners"
+msgstr "业务伙伴"
+
+#. module: crm
+#: field:crm.lead,payment_mode:0
+#: view:crm.payment.mode:crm.view_crm_payment_mode_form
+#: view:crm.payment.mode:crm.view_crm_payment_mode_tree
+#: model:ir.actions.act_window,name:crm.action_crm_payment_mode
+msgid "Payment Mode"
+msgstr "付款方式"
+
+#. module: crm
+#: model:ir.ui.menu,name:crm.menu_crm_payment_mode_act
+msgid "Payment Modes"
+msgstr "付款方式"
+
+#. module: crm
+#: selection:crm.phonecall,state:0 selection:crm.phonecall.report,state:0
+msgid "Pending"
+msgstr "待处理"
+
+#. module: crm
+#: field:crm.lead,phone:0 view:crm.phonecall:crm.crm_case_phone_form_view
+#: field:crm.phonecall,partner_phone:0 field:crm.phonecall2phonecall,phone:0
+msgid "Phone"
+msgstr "电话"
+
+#. module: crm
+#: code:addons/crm/crm_phonecall.py:219
+#: view:crm.phonecall:crm.crm_case_phone_form_view
+#, python-format
+msgid "Phone Call"
+msgstr "电话"
+
+#. module: crm
+#: view:crm.phonecall:crm.crm_case_inbound_phone_tree_view
+#: view:crm.phonecall:crm.crm_case_phone_calendar_view
+#: view:crm.phonecall:crm.crm_case_phone_tree_view
+#: model:ir.actions.act_window,name:crm.crm_case_categ_phone0
+#: model:ir.ui.menu,name:crm.menu_crm_case_phone
+#: model:ir.ui.menu,name:crm.menu_crm_config_phonecall
+msgid "Phone Calls"
+msgstr "电话"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.action_report_crm_phonecall
+#: model:ir.ui.menu,name:crm.menu_report_crm_phonecalls_tree
+msgid "Phone Calls Analysis"
+msgstr "电话分析"
+
+#. module: crm
+#: model:ir.filters,name:crm.filter_crm_phonecall_phone_call_to_do
+msgid "Phone Calls To Do"
+msgstr "待拨打电话"
+
+#. module: crm
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+msgid "Phone Calls that are assigned to me"
+msgstr "指派给我的电话"
+
+#. module: crm
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_graph
+#: model:ir.actions.act_window,name:crm.act_crm_opportunity_crm_phonecall_new
+msgid "Phone calls"
+msgstr "电话"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_phonecall_report
+msgid "Phone calls by user and section"
+msgstr "电话，按用户和部门"
+
+#. module: crm
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+msgid "Phone calls that are assigned to one of the sale teams I manage"
+msgstr "分配给某个我所管理的合同团队的电话。"
+
+#. module: crm
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+msgid "Phone calls which are in closed state"
+msgstr "处于关闭状态的电话"
+
+#. module: crm
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+msgid "Phone calls which are in draft and open state"
+msgstr "处于草稿和开放状态的电话"
+
+#. module: crm
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+msgid "Phone calls which are in pending state"
+msgstr "处于待定状态的电话"
+
+#. module: crm
+#: field:calendar.event,phonecall_id:0
+#: model:ir.model,name:crm.model_crm_phonecall
+msgid "Phonecall"
+msgstr "电话"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_phonecall_categ_action
+msgid "Phonecall Categories"
+msgstr "电话类别"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_phonecall2phonecall
+msgid "Phonecall To Phonecall"
+msgstr "电话到电话"
+
+#. module: crm
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+#: field:res.partner,phonecall_count:0 field:res.partner,phonecall_ids:0
+msgid "Phonecalls"
+msgstr "电话"
+
+#. module: crm
+#: field:crm.lead,planned_cost:0
+msgid "Planned Costs"
+msgstr "计划成本"
+
+#. module: crm
+#: view:crm.phonecall2phonecall:crm.phonecall_to_phonecall_view
+msgid "Planned Date"
+msgstr "计划日期"
+
+#. module: crm
+#: view:crm.case.section:crm.crm_case_section_salesteams_view_kanban
+#: field:crm.case.section,monthly_planned_revenue:0
+msgid "Planned Revenue per Month"
+msgstr "每月收入计划"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:643
+#, python-format
+msgid ""
+"Please select more than one element (lead or opportunity) from the list view."
+msgstr "请从列表视图中选择一个以上元素（问询或机会）。"
+
+#. module: crm
+#: view:sale.config.settings:crm.view_sale_config_settings
+msgid "Pre-Sale Services"
+msgstr "售前服务"
+
+#. module: crm
+#: field:crm.lead,priority:0 field:crm.lead.report,priority:0
+#: field:crm.opportunity.report,priority:0 field:crm.phonecall,priority:0
+#: field:crm.phonecall.report,priority:0
+msgid "Priority"
+msgstr "优先级(0=紧急)"
+
+#. module: crm
+#: field:crm.lead.report,probability:0
+#: field:crm.opportunity.report,probability:0
+msgid "Probability"
+msgstr "概率"
+
+#. module: crm
+#: field:crm.case.stage,probability:0
+msgid "Probability (%)"
+msgstr "概率(%)"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor1
+msgid "Product"
+msgstr "产品"
+
+#. module: crm
+#: view:crm.segmentation:crm.crm_segmentation-view
+msgid "Profiling"
+msgstr "特征"
+
+#. module: crm
+#: view:crm.segmentation:crm.crm_segmentation-view
+msgid "Profiling Options"
+msgstr "特征选项"
+
+#. module: crm
+#: model:crm.case.stage,name:crm.stage_lead4
+msgid "Proposition"
+msgstr "建议"
+
+#. module: crm
+#: selection:crm.segmentation.line,expr_name:0
+msgid "Purchase Amount"
+msgstr "采购金额"
+
+#. module: crm
+#: model:crm.case.stage,name:crm.stage_lead3
+msgid "Qualification"
+msgstr "资格条件"
+
+#. module: crm
+#: field:crm.lead,ref:0
+msgid "Reference"
+msgstr "参考"
+
+#. module: crm
+#: field:crm.lead,ref2:0
+msgid "Reference 2"
+msgstr "参考2"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_oppor
+msgid "References"
+msgstr "参考"
+
+#. module: crm
+#: field:crm.lead,referred:0
+msgid "Referred By"
+msgstr "参考来自"
+
+#. module: crm
+#: field:crm.lead2opportunity.partner,action:0
+#: field:crm.lead2opportunity.partner.mass,action:0
+#: field:crm.partner.binding,action:0
+msgid "Related Customer"
+msgstr "相关客户"
+
+#. module: crm
+#: model:email.template,subject:crm.email_template_opportunity_reminder_mail
+msgid ""
+"Reminder on Lead: ${object.id} from ${object.partner_id != False and object."
+"partner_id.name or object.contact_name}"
+msgstr ""
+"关于问询的提醒 : ${object.id} 来自 ${object.partner_id != False and object."
+"partner_id.name or object.contact_name}"
+
+#. module: crm
+#: model:ir.actions.server,name:crm.action_email_reminder_lead
+msgid "Reminder to User"
+msgstr "提醒用户"
+
+#. module: crm
+#: view:crm.case.stage:crm.crm_case_stage_form
+#: field:crm.case.stage,requirements:0
+msgid "Requirements"
+msgstr "必备条件"
+
+#. module: crm
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+#: field:crm.phonecall,user_id:0
+msgid "Responsible"
+msgstr "负责人"
+
+#. module: crm
+#: model:ir.filters,name:crm.filter_leads_revenue_per_lead
+msgid "Revenue Per Lead"
+msgstr "每组收益"
+
+#. module: crm
+#: field:crm.segmentation.line,name:0
+msgid "Rule Name"
+msgstr "规则名称"
+
+#. module: crm
+#: selection:crm.segmentation,state:0
+msgid "Running"
+msgstr "运行中"
+
+#. module: crm
+#: selection:crm.segmentation.line,expr_name:0
+msgid "Sale Amount"
+msgstr "合同金额"
+
+#. module: crm
+#: view:sale.config.settings:crm.view_sale_config_settings
+msgid "Sale Services"
+msgstr "售后服务"
+
+#. module: crm
+#: view:crm.segmentation:crm.crm_segmentation-view
+msgid "Sales Purchase"
+msgstr "合同采购"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_lead_categ_action
+#: model:ir.ui.menu,name:crm.menu_crm_lead_categ
+msgid "Sales Tags"
+msgstr "合同标签"
+
+#. module: crm
+#: field:crm.case.categ,section_id:0
+#: view:crm.lead:crm.view_crm_case_leads_filter
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: field:crm.lead,section_id:0
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: field:crm.lead.report,section_id:0
+#: field:crm.lead2opportunity.partner,section_id:0
+#: field:crm.lead2opportunity.partner.mass,section_id:0
+#: field:crm.merge.opportunity,section_id:0
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+#: field:crm.opportunity.report,section_id:0
+#: field:crm.payment.mode,section_id:0
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+#: field:crm.phonecall,section_id:0
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+#: field:crm.phonecall2phonecall,section_id:0
+#: field:crm.tracking.campaign,section_id:0
+msgid "Sales Team"
+msgstr "合同团队"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_case_section
+msgid "Sales Teams"
+msgstr "合同团队"
+
+#. module: crm
+#: help:crm.phonecall,section_id:0
+msgid "Sales team to which Case belongs to."
+msgstr "合同团队属于那个业务"
+
+#. module: crm
+#: field:crm.lead2opportunity.partner.mass,user_ids:0
+msgid "Salesmen"
+msgstr "品系顾问"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: field:crm.lead,user_id:0
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: field:crm.lead2opportunity.partner,user_id:0
+#: field:crm.lead2opportunity.partner.mass,user_id:0
+#: field:crm.merge.opportunity,user_id:0
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+msgid "Salesperson"
+msgstr "品系顾问"
+
+#. module: crm
+#: view:crm.phonecall:crm.crm_case_phone_form_view
+msgid "Schedule"
+msgstr "进度表"
+
+#. module: crm
+#: view:crm.phonecall2phonecall:crm.phonecall_to_phonecall_view
+msgid "Schedule Call"
+msgstr "安排的电话"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_kanban_view_leads
+msgid "Schedule Meeting"
+msgstr "会议计划"
+
+#. module: crm
+#: view:crm.phonecall:crm.crm_case_inbound_phone_tree_view
+#: model:ir.actions.act_window,name:crm.phonecall_to_phonecall_act
+msgid "Schedule Other Call"
+msgstr "安排其它电话"
+
+#. module: crm
+#: selection:crm.phonecall2phonecall,action:0
+msgid "Schedule a call"
+msgstr "安排一个电话"
+
+#. module: crm
+#: field:sale.config.settings,group_scheduled_calls:0
+msgid "Schedule calls to manage call center"
+msgstr "安排电话以管理呼叫中心"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead:crm.crm_case_form_view_oppor
+msgid "Schedule/Log"
+msgstr "日程安排/日志"
+
+#. module: crm
+#: view:crm.phonecall2phonecall:crm.phonecall_to_phonecall_view
+msgid "Schedule/Log a Call"
+msgstr "安排/记录一个电话"
+
+#. module: crm
+#: model:ir.actions.act_window,name:crm.crm_case_categ_phone_outgoing0
+#: model:ir.ui.menu,name:crm.menu_crm_case_phone_outbound
+msgid "Scheduled Calls"
+msgstr "安排的电话"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:1060
+#, python-format
+msgid "Scheduled a call for %(date)s. %(description)s"
+msgstr "安排电话： %(date)s. %(description)s"
+
+#. module: crm
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+msgid "Search"
+msgstr "查找"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+msgid "Search Leads"
+msgstr "查询问询"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+msgid "Search Opportunities"
+msgstr "搜索线索"
+
+#. module: crm
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+msgid "Search Phonecalls"
+msgstr "搜索电话"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Search duplicates based on duplicated data in"
+msgstr "基于重复数据的重复搜索项"
+
+#. module: crm
+#: model:crm.tracking.source,name:crm.crm_source_search_engine
+msgid "Search engine"
+msgstr "搜索引擎"
+
+#. module: crm
+#: field:crm.phonecall.report,section_id:0
+msgid "Section"
+msgstr "部分"
+
+#. module: crm
+#: field:crm.case.stage,section_ids:0
+msgid "Sections"
+msgstr "部门"
+
+#. module: crm
+#: view:crm.segmentation:crm.crm_segmentation-view
+#: field:crm.segmentation.line,segmentation_id:0
+#: model:ir.actions.act_window,name:crm.crm_segmentation-act
+msgid "Segmentation"
+msgstr "细分"
+
+#. module: crm
+#: view:crm.segmentation:crm.crm_segmentation-view
+msgid "Segmentation Description"
+msgstr "细分说明"
+
+#. module: crm
+#: view:crm.segmentation:crm.crm_segmentation-view
+msgid "Segmentation Test"
+msgstr "细分测试"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_segmentation_line
+msgid "Segmentation line"
+msgstr "细分明细"
+
+#. module: crm
+#: view:crm.merge.opportunity:crm.merge_opportunity_form
+msgid "Select Leads/Opportunities"
+msgstr "选择线索/问询"
+
+#. module: crm
+#: view:crm.case.section:crm.sales_team_form_view_in_crm
+msgid "Select Stages for this Sales Team"
+msgstr "为这个合同团队选择阶段"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid ""
+"Select the list of fields used to search for\n"
+"                            duplicated records. If you select several "
+"fields,\n"
+"                            Odoo will propose you to merge only those "
+"having\n"
+"                            all these fields in common. (not one of the "
+"fields)."
+msgstr ""
+"选择用于搜索相同记录的字段。\n"
+"                            如果选择多个字段,\n"
+"                            Odoo会建议你合并这些字段都相同的记录。\n"
+"                           （而不是只有一个字段相同的记录）。"
+
+#. module: crm
+#: selection:base.partner.merge.automatic.wizard,state:0
+msgid "Selection"
+msgstr "选中内容"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_kanban_view_leads
+msgid "Send Email"
+msgstr "发送电子邮件"
+
+#. module: crm
+#: field:crm.case.stage,sequence:0
+msgid "Sequence"
+msgstr "序列"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor3
+msgid "Services"
+msgstr "服务"
+
+#. module: crm
+#: model:ir.actions.server,name:crm.action_set_team_sales_department
+msgid "Set team to Sales Department"
+msgstr "设置团队 到合同部"
+
+#. module: crm
+#: help:crm.case.stage,on_change:0
+msgid ""
+"Setting this stage will change the probability automatically on the "
+"opportunity."
+msgstr "设置为这个阶段，会自动改变线索的成功可能性"
+
+#. module: crm
+#: model:res.groups,name:crm.group_scheduled_calls
+msgid "Show Scheduled Calls Menu"
+msgstr "显示“安排的电话”菜单"
+
+#. module: crm
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+msgid "Show only lead"
+msgstr "仅显示问询"
+
+#. module: crm
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+msgid "Show only opportunity"
+msgstr "仅显示线索"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "Skip these contacts"
+msgstr "跳过这些联系人"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor2
+msgid "Software"
+msgstr "软件"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: field:crm.lead,source_id:0 field:crm.lead.report,source_id:0
+#: field:crm.opportunity.report,source_id:0
+#: field:crm.tracking.mixin,source_id:0
+#: model:ir.actions.act_window,name:crm.crm_tracking_source_action
+#: model:ir.model,name:crm.model_crm_tracking_source
+#: model:ir.ui.menu,name:crm.menu_crm_tracking_source
+msgid "Source"
+msgstr "原文"
+
+#. module: crm
+#: field:crm.tracking.source,name:0
+msgid "Source Name"
+msgstr "源名称"
+
+#. module: crm
+#: view:crm.case.stage:crm.crm_case_stage_form
+#: view:crm.lead:crm.view_crm_case_leads_filter
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: field:crm.lead,stage_id:0
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: field:crm.lead.report,stage_id:0
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+#: field:crm.opportunity.report,stage_id:0
+msgid "Stage"
+msgstr "阶段"
+
+#. module: crm
+#: model:mail.message.subtype,name:crm.mt_lead_stage
+msgid "Stage Changed"
+msgstr "阶段已改变"
+
+#. module: crm
+#: field:crm.case.stage,name:0
+msgid "Stage Name"
+msgstr "阶段名称"
+
+#. module: crm
+#: view:crm.case.stage:crm.crm_lead_stage_search
+msgid "Stage Search"
+msgstr "阶段搜索"
+
+#. module: crm
+#: model:mail.message.subtype,description:crm.mt_lead_stage
+msgid "Stage changed"
+msgstr "阶段已改变"
+
+#. module: crm
+#: model:ir.model,name:crm.model_crm_case_stage
+msgid "Stage of case"
+msgstr "案件的阶段"
+
+#. module: crm
+#: view:crm.case.section:crm.sales_team_form_view_in_crm
+#: field:crm.case.section,stage_ids:0
+#: view:crm.case.stage:crm.crm_case_stage_tree
+#: model:ir.actions.act_window,name:crm.crm_case_stage_act
+#: model:ir.actions.act_window,name:crm.crm_lead_stage_act
+#: model:ir.ui.menu,name:crm.menu_crm_lead_stage_act
+msgid "Stages"
+msgstr "阶段"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,state:0
+#: view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead:crm.crm_case_form_view_oppor field:crm.lead,state_id:0
+msgid "State"
+msgstr "省/ 州"
+
+#. module: crm
+#: field:crm.phonecall,state:0
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+#: field:crm.phonecall.report,state:0
+msgid "Status"
+msgstr "状态"
+
+#. module: crm
+#: view:crm.segmentation:crm.crm_segmentation-view
+msgid "Stop Process"
+msgstr "停止处理"
+
+#. module: crm
+#: field:crm.lead,street:0
+msgid "Street"
+msgstr "街道"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead:crm.crm_case_form_view_oppor
+msgid "Street..."
+msgstr "街道..."
+
+#. module: crm
+#: field:crm.lead,street2:0
+msgid "Street2"
+msgstr "街道 2"
+
+#. module: crm
+#: field:crm.lead,name:0
+msgid "Subject"
+msgstr "主题"
+
+#. module: crm
+#: field:crm.lead,probability:0
+msgid "Success Rate (%)"
+msgstr "成功率(%)"
+
+#. module: crm
+#: field:crm.lead,message_summary:0 field:crm.phonecall,message_summary:0
+msgid "Summary"
+msgstr "摘要"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+msgid "Tag"
+msgstr "标签"
+
+#. module: crm
+#: field:crm.lead,categ_ids:0
+msgid "Tags"
+msgstr "标签"
+
+#. module: crm
+#: help:crm.case.section,alias_id:0
+msgid ""
+"The email address associated with this team. New emails received will "
+"automatically create new leads assigned to the team."
+msgstr "此邮件地址关联此团队。收到的新邮件将自动创建问询并分配给此团队。"
+
+#. module: crm
+#: help:crm.case.section,use_leads:0
+msgid ""
+"The first contact you get with a potential customer is a lead you qualify "
+"before converting it into a real business opportunity. Check this box to "
+"manage leads in this sales team."
+msgstr ""
+"第一次接触潜在客户是一个将它转换为真正的商业机会的问询。选中这个框，管理合同"
+"团队的问询。"
+
+#. module: crm
+#: help:crm.lead,partner_name:0
+msgid ""
+"The name of the future partner company that will be created while converting "
+"the lead into opportunity"
+msgstr "在合同问询转化为线索时对应创建业务伙伴的公司名称."
+
+#. module: crm
+#: help:crm.segmentation,name:0
+msgid "The name of the segmentation."
+msgstr "细分名称"
+
+#. module: crm
+#: help:crm.segmentation,categ_id:0
+msgid ""
+"The partner category that will be added to partners that match the "
+"segmentation criterions after computation."
+msgstr "该业务伙伴分类将加到计算匹配业务伙伴的业务伙伴细分规则中"
+
+#. module: crm
+#: sql_constraint:crm.lead:0
+msgid "The probability of closing the deal should be between 0% and 100%!"
+msgstr "这笔交易达成的概率应该在0%到100%之间！"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid ""
+"The selected contacts will be merged together. All\n"
+"                                documents linking to one of these contacts "
+"will be\n"
+"                                redirected to the aggregated contact. You "
+"can remove\n"
+"                                contacts from this list to avoid merging "
+"them."
+msgstr ""
+"选定的联系人将被合并在一起。所有\n"
+"                        文件连接到将要联系的人\n"
+"                              重定向到合并的联系人。您可以删除\n"
+"                                从这个列表中的联系人，以避免合并它们。"
+
+#. module: crm
+#: help:crm.phonecall,state:0
+msgid ""
+"The status is set to Confirmed, when a case is created.\n"
+"When the call is over, the status is set to Held.\n"
+"If the callis not applicable anymore, the status can be set to Cancelled."
+msgstr ""
+"当一个案件创建时，其状态被设置为确认。\n"
+"当电话结束后，其状态被设置为保持。\n"
+"如果电话不再适用了，其状态可以设置为取消。"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+msgid "There is no more contacts to merge for this request..."
+msgstr "没有更多的联系人合并的请求..."
+
+#. module: crm
+#: help:crm.lead,email_cc:0
+msgid ""
+"These email addresses will be added to the CC field of all inbound and "
+"outbound emails for this record before being sent. Separate multiple email "
+"addresses with a comma"
+msgstr ""
+"这些邮件地址将添加到之前发送记录的发送和接收邮件的抄送字段，分隔多个邮件地址"
+"有逗号。"
+
+#. module: crm
+#: help:crm.phonecall,email_from:0
+msgid "These people will receive email."
+msgstr "这些人将收到电子邮件。"
+
+#. module: crm
+#: help:sale.config.settings,group_scheduled_calls:0
+msgid "This adds the menu 'Scheduled Calls' under 'Sales / Phone Calls'"
+msgstr "这将在  '合同 / 电话' 菜单下添加   '安排的电话' "
+
+#. module: crm
+#: help:crm.case.stage,type:0
+msgid ""
+"This field is used to distinguish stages related to Leads from stages "
+"related to Opportunities, or to specify stages available for both types."
+msgstr ""
+"此域用于区分用于问询的阶段和用于线索的阶段，或者指示同时可用于两个类型。"
+
+#. module: crm
+#: help:crm.lead,campaign_id:0 help:crm.lead.report,campaign_id:0
+#: help:crm.opportunity.report,campaign_id:0
+#: help:crm.tracking.mixin,campaign_id:0
+msgid ""
+"This is a name that helps you keep track of your different campaign efforts "
+"Ex: Fall_Drive, Christmas_Special"
+msgstr ""
+"这里是一个帮助跟踪您不同市场活动尝试的名称。例如：Fall_Drive，"
+"Christmas_Special"
+
+#. module: crm
+#: help:crm.lead,medium_id:0 help:crm.lead.report,medium_id:0
+#: help:crm.opportunity.report,medium_id:0 help:crm.tracking.mixin,medium_id:0
+msgid "This is the method of delivery. Ex: Postcard, Email, or Banner Ad"
+msgstr "这里是交付的方式。例如： 明信片、 电子邮件、 或横幅广告"
+
+#. module: crm
+#: help:crm.lead,source_id:0 help:crm.lead.report,source_id:0
+#: help:crm.opportunity.report,source_id:0 help:crm.tracking.mixin,source_id:0
+msgid ""
+"This is the source of the link Ex: Search Engine, another domain, or name of "
+"email list"
+msgstr "这是链接的来源，例如：搜索引擎，其他领域，或者邮件列表名称"
+
+#. module: crm
+#: help:crm.case.stage,probability:0
+msgid ""
+"This percentage depicts the default/average probability of the Case for this "
+"stage to be a success"
+msgstr "这默认百分比描述业务在这阶段的平均的成功概率"
+
+#. module: crm
+#: help:crm.case.stage,fold:0
+msgid ""
+"This stage is folded in the kanban view whenthere are no records in that "
+"stage to display."
+msgstr "如果在这一阶段没有记录，则在看板上这个阶段被折叠。"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead:crm.crm_case_form_view_oppor field:crm.lead,title:0
+msgid "Title"
+msgstr "称谓"
+
+#. module: crm
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+msgid "To Do"
+msgstr "待办事项"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:397
+#, python-format
+msgid ""
+"To relieve your sales pipe and group all Lost opportunities, configure one "
+"of your sales stage as follow:\n"
+"probability = 0 %, select \"Change Probability Automatically\".\n"
+"Create a specific stage or edit an existing one by editing columns of your "
+"opportunity pipe."
+msgstr ""
+"缓解您合同渠道和所有组合赢得了机会，一个合同阶段配置如下:\n"
+"概率 = 0 % and 选择 \"自动更改概率\".\n"
+"创建一个特定的阶段或编辑一个现有线索列。"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:417
+#, python-format
+msgid ""
+"To relieve your sales pipe and group all Won opportunities, configure one of "
+"your sales stage as follow:\n"
+"probability = 100 % and select \"Change Probability Automatically\".\n"
+"Create a specific stage or edit an existing one by editing columns of your "
+"opportunity pipe."
+msgstr ""
+"缓解您合同渠道和所有组合赢得了机会，一个合同阶段配置如下:\n"
+"概率 = 100 % and 选择 \"自动更改概率\".\n"
+"创建一个特定的阶段或编辑一个现有线索列。"
+
+#. module: crm
+#: view:crm.phonecall.report:crm.view_report_crm_phonecall_filter
+#: selection:crm.phonecall.report,state:0
+msgid "Todo"
+msgstr "待办"
+
+#. module: crm
+#: model:ir.ui.menu,name:crm.root_menu
+msgid "Tools"
+msgstr "工具"
+
+#. module: crm
+#: model:ir.filters,name:crm.filter_opportunity_top_opportunities
+msgid "Top Opportunities"
+msgstr "最佳机会"
+
+#. module: crm
+#: field:crm.lead.report,planned_revenue:0
+#: field:crm.opportunity.report,total_revenue:0
+msgid "Total Revenue"
+msgstr "总收入"
+
+#. module: crm
+#: model:crm.case.categ,name:crm.categ_oppor6
+msgid "Training"
+msgstr "培训"
+
+#. module: crm
+#: field:crm.case.stage,type:0 field:crm.lead,type:0
+#: field:crm.lead.report,type:0 field:crm.opportunity.report,type:0
+msgid "Type"
+msgstr "类型"
+
+#. module: crm
+#: help:crm.lead,type:0 help:crm.lead.report,type:0
+#: help:crm.opportunity.report,type:0
+msgid "Type is used to separate Leads and Opportunities"
+msgstr "类型用于区分合同问询和线索"
+
+#. module: crm
+#: view:crm.lead:crm.view_crm_case_leads_filter
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: view:crm.phonecall:crm.view_crm_case_phonecalls_filter
+msgid "Unassigned"
+msgstr "未分配"
+
+#. module: crm
+#: field:crm.lead,message_unread:0 field:crm.phonecall,message_unread:0
+msgid "Unread Messages"
+msgstr "未读消息"
+
+#. module: crm
+#: field:crm.lead,write_date:0
+msgid "Update Date"
+msgstr "更新日期"
+
+#. module: crm
+#: field:crm.segmentation,sales_purchase_active:0
+msgid "Use The Sales Purchase Rules"
+msgstr "使用这合同采购规则"
+
+#. module: crm
+#: selection:crm.lead2opportunity.partner.mass,action:0
+msgid "Use existing partner or create"
+msgstr "使用已有的合作伙伴或新建"
+
+#. module: crm
+#: help:crm.case.section,resource_calendar_id:0
+msgid "Used to compute open days"
+msgstr "用于计算开启天数"
+
+#. module: crm
+#: help:crm.case.stage,sequence:0
+msgid "Used to order stages. Lower is better."
+msgstr "用于阶段的排序，数字越小越好。"
+
+#. module: crm
+#: field:crm.lead.report,user_id:0 field:crm.opportunity.report,user_id:0
+#: field:crm.phonecall.report,user_id:0
+msgid "User"
+msgstr "用户"
+
+#. module: crm
+#: field:crm.lead,user_email:0
+msgid "User Email"
+msgstr "用户电子邮件"
+
+#. module: crm
+#: field:crm.lead,user_login:0
+msgid "User Login"
+msgstr "用户登录"
+
+#. module: crm
+#: field:base.partner.merge.automatic.wizard,group_by_vat:0
+msgid "VAT"
+msgstr "增值税"
+
+#. module: crm
+#: field:crm.segmentation.line,expr_value:0
+msgid "Value"
+msgstr "值"
+
+#. module: crm
+#: selection:crm.lead,priority:0 selection:crm.lead.report,priority:0
+#: selection:crm.opportunity.report,priority:0
+msgid "Very High"
+msgstr "很高"
+
+#. module: crm
+#: selection:crm.lead,priority:0 selection:crm.lead.report,priority:0
+#: selection:crm.opportunity.report,priority:0
+msgid "Very Low"
+msgstr "非常低"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:396 code:addons/crm/crm_lead.py:416
+#: code:addons/crm/crm_lead.py:643 code:addons/crm/crm_lead.py:769
+#: code:addons/crm/crm_phonecall.py:291
+#: code:addons/crm/wizard/crm_lead_to_opportunity.py:105
+#, python-format
+msgid "Warning!"
+msgstr "警告!"
+
+#. module: crm
+#: help:crm.lead,section_id:0
+msgid ""
+"When sending mails, the default email address is taken from the sales team."
+msgstr "发送邮件的时候，默认的邮件地址来自合同团队。"
+
+#. module: crm
+#: field:base.partner.merge.line,wizard_id:0
+msgid "Wizard"
+msgstr "向导"
+
+#. module: crm
+#: model:crm.case.stage,name:crm.stage_lead6
+#: view:crm.lead:crm.view_crm_case_opportunities_filter
+#: view:crm.lead.report:crm.view_report_crm_lead_filter
+#: view:crm.opportunity.report:crm.view_report_crm_opportunity_filter
+msgid "Won"
+msgstr "已赢得"
+
+#. module: crm
+#: field:crm.case.section,resource_calendar_id:0
+msgid "Working Time"
+msgstr "工作时间"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:434
+#, python-format
+msgid ""
+"You are already at the top level of your sales-team category.\n"
+"Therefore you cannot escalate furthermore."
+msgstr ""
+"你已经在您合同团队类别中的最高级了。\n"
+"因此，你不能再上报了。"
+
+#. module: crm
+#: code:addons/crm/base_partner_merge.py:446
+#, python-format
+msgid "You have to specify a filter for your selection"
+msgstr "您必须指定一个你选择的过滤器"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_leads
+#: view:crm.lead:crm.crm_case_form_view_oppor
+msgid "ZIP"
+msgstr "邮政编码"
+
+#. module: crm
+#: field:crm.lead,zip:0
+msgid "Zip"
+msgstr "邮政编码"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_oppor
+msgid "at"
+msgstr "在"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_form_view_oppor
+msgid "e.g. Call for proposal"
+msgstr "例如：关于提案的电话"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:971
+#, python-format
+msgid "lead"
+msgstr "问询"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:91
+#, python-format
+msgid "leads"
+msgstr "问询"
+
+#. module: crm
+#: view:crm.phonecall:crm.crm_case_phone_form_view
+msgid "min(s)"
+msgstr "分钟(秒)"
+
+#. module: crm
+#: view:crm.lead:crm.crm_case_kanban_view_leads
+msgid "oe_kanban_text_red"
+msgstr "oe_kanban_text_red"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:969
+#, python-format
+msgid "opportunity"
+msgstr "线索"
+
+#. module: crm
+#: view:base.partner.merge.automatic.wizard:crm.base_partner_merge_automatic_wizard_form
+#: view:crm.lead2opportunity.partner:crm.view_crm_lead2opportunity_partner
+#: view:crm.lead2opportunity.partner.mass:crm.view_crm_lead2opportunity_partner_mass
+#: view:crm.merge.opportunity:crm.merge_opportunity_form
+#: view:crm.phonecall2phonecall:crm.phonecall_to_phonecall_view
+msgid "or"
+msgstr "或"
+
+#. module: crm
+#: code:addons/crm/crm_lead.py:1069
+#, python-format
+msgid "unknown"
+msgstr "未知"
+
+#. module: sale
+#: model:email.template,body_html:sale.email_template_edi_sale
+msgid ""
+"\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-"
+"serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"\n"
+"    <p>Hello ${object.partner_id.name},</p>\n"
+"    \n"
+"    <p>Here is your ${object.state in ('draft', 'sent') and 'quotation' or "
+"'order confirmation'} from ${object.company_id.name}: </p>\n"
+"\n"
+"    <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
+"       &nbsp;&nbsp;<strong>REFERENCES</strong><br />\n"
+"       &nbsp;&nbsp;Order number: <strong>${object.name}</strong><br />\n"
+"       &nbsp;&nbsp;Order total: <strong>${object.amount_total} ${object."
+"pricelist_id.currency_id.name}</strong><br />\n"
+"       &nbsp;&nbsp;Order date: ${object.date_order}<br />\n"
+"       % if object.origin:\n"
+"       &nbsp;&nbsp;Order reference: ${object.origin}<br />\n"
+"       % endif\n"
+"       % if object.client_order_ref:\n"
+"       &nbsp;&nbsp;Your reference: ${object.client_order_ref}<br />\n"
+"       % endif\n"
+"       % if object.user_id:\n"
+"       &nbsp;&nbsp;Your contact: <a href=\"mailto:${object.user_id.email or "
+"''}?subject=Order%20${object.name}\">${object.user_id.name}</a>\n"
+"       % endif\n"
+"    </p>\n"
+"    <p>\n"
+"        You can view your quotation online:\n"
+"    </p>\n"
+"    <a style=\"display:block; width: 150px; height:20px; margin-left: 120px; "
+"color: #DDD; font-family: 'Lucida Grande', Helvetica, Arial, sans-serif; "
+"font-size: 13px; font-weight: bold; text-align: center; text-decoration: "
+"none !important; line-height: 1; padding: 5px 0px 0px 0px; background-color: "
+"#8E0000; border-radius: 5px 5px; background-repeat: repeat no-repeat;\"\n"
+"        href=\"/quote/${object.id}/${object.access_token}\">View ${object."
+"state in ('draft', 'sent') and 'Quotation' or 'Order'}</a>\n"
+"\n"
+"    % if object.paypal_url:\n"
+"    <br/>\n"
+"    <p>It is also possible to directly pay with Paypal:</p>\n"
+"        <a style=\"margin-left: 120px;\" href=\"${object.paypal_url}\">\n"
+"            <img class=\"oe_edi_paypal_button\" src=\"https://www.paypal.com/"
+"en_US/i/btn/btn_paynowCC_LG.gif\"/>\n"
+"        </a>\n"
+"    % endif\n"
+"\n"
+"    <br/>\n"
+"    <p>If you have any question, do not hesitate to contact us.</p>\n"
+"    <p>Thank you for choosing ${object.company_id.name or 'us'}!</p>\n"
+"    <br/>\n"
+"    <br/>\n"
+"    <div style=\"width: 375px; margin: 0px; padding: 0px; background-color: "
+"#8E0000; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; "
+"background-repeat: repeat no-repeat;\">\n"
+"        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: "
+"#DDD;\">\n"
+"            <strong style=\"text-transform:uppercase;\">${object.company_id."
+"name}</strong></h3>\n"
+"    </div>\n"
+"    <div style=\"width: 347px; margin: 0px; padding: 5px 14px; line-height: "
+"16px; background-color: #F2F2F2;\">\n"
+"        <span style=\"color: #222; margin-bottom: 5px; display: block; \">\n"
+"        % if object.company_id.street:\n"
+"            ${object.company_id.street}<br/>\n"
+"        % endif\n"
+"        % if object.company_id.street2:\n"
+"            ${object.company_id.street2}<br/>\n"
+"        % endif\n"
+"        % if object.company_id.city or object.company_id.zip:\n"
+"            ${object.company_id.zip} ${object.company_id.city}<br/>\n"
+"        % endif\n"
+"        % if object.company_id.country_id:\n"
+"            ${object.company_id.state_id and ('%s, ' % object.company_id."
+"state_id.name) or ''} ${object.company_id.country_id.name or ''}<br/>\n"
+"        % endif\n"
+"        </span>\n"
+"        % if object.company_id.phone:\n"
+"            <div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: "
+"0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: "
+"0px; padding-left: 0px; \">\n"
+"                Phone:&nbsp; ${object.company_id.phone}\n"
+"            </div>\n"
+"        % endif\n"
+"        % if object.company_id.website:\n"
+"            <div>\n"
+"                Web :&nbsp;<a href=\"${object.company_id.website}\">${object."
+"company_id.website}</a>\n"
+"            </div>\n"
+"        %endif\n"
+"        <p></p>\n"
+"    </div>\n"
+"</div>\n"
+"            "
+msgstr ""
+"\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-"
+"serif; font-size: 12px; color: rgb(34, 34, 34); background-color: #FFF; \">\n"
+"\n"
+"    <p>你好 ${object.partner_id.name},</p>\n"
+"    \n"
+"    <p>这是你的 ${object.state in ('draft', 'sent') and '购车意向' or '订"
+"单'} 来自 ${object.company_id.name}: </p>\n"
+"\n"
+"    <p style=\"border-left: 1px solid #8e0000; margin-left: 30px;\">\n"
+"       &nbsp;&nbsp;<strong>摘要</strong><br />\n"
+"       &nbsp;&nbsp;合同号: <strong>${object.name}</strong><br />\n"
+"       &nbsp;&nbsp;合同总额: <strong>${object.amount_total} ${object."
+"pricelist_id.currency_id.name}</strong><br />\n"
+"       &nbsp;&nbsp;合同日期: ${object.date_order}<br />\n"
+"       % if object.origin:\n"
+"       &nbsp;&nbsp;合同偏向: ${object.origin}<br />\n"
+"       % endif\n"
+"       % if object.client_order_ref:\n"
+"       &nbsp;&nbsp;你的偏好: ${object.client_order_ref}<br />\n"
+"       % endif\n"
+"       % if object.user_id:\n"
+"       &nbsp;&nbsp;你的联系人: <a href=\"mailto:${object.user_id.email or "
+"''}?subject=Order%20${object.name}\">${object.user_id.name}</a>\n"
+"       % endif\n"
+"    </p>\n"
+"\n"
+"    % if object.paypal_url:\n"
+"    <br/>\n"
+"    <p>也可能直接通过贝宝支付:</p>\n"
+"        <a style=\"margin-left: 120px;\" href=\"${object.paypal_url}\">\n"
+"            <img class=\"oe_edi_paypal_button\" src=\"https://www.paypal.com/"
+"en_US/i/btn/btn_paynowCC_LG.gif\"/>\n"
+"        </a>\n"
+"    % endif\n"
+"\n"
+"    <br/>\n"
+"    <p>如果你有任何问题的话，请直接联系我们！</p>\n"
+"    <p>感谢您选择${object.company_id.name or 'us'}!</p>\n"
+"    <br/>\n"
+"    <br/>\n"
+"    <div style=\"width: 375px; margin: 0px; padding: 0px; background-color: "
+"#8E0000; border-top-left-radius: 5px 5px; border-top-right-radius: 5px 5px; "
+"background-repeat: repeat no-repeat;\">\n"
+"        <h3 style=\"margin: 0px; padding: 2px 14px; font-size: 12px; color: "
+"#DDD;\">\n"
+"            <strong style=\"text-transform:uppercase;\">${object.company_id."
+"name}</strong></h3>\n"
+"    </div>\n"
+"    <div style=\"width: 347px; margin: 0px; padding: 5px 14px; line-height: "
+"16px; background-color: #F2F2F2;\">\n"
+"        <span style=\"color: #222; margin-bottom: 5px; display: block; \">\n"
+"        % if object.company_id.street:\n"
+"            ${object.company_id.street}<br/>\n"
+"        % endif\n"
+"        % if object.company_id.street2:\n"
+"            ${object.company_id.street2}<br/>\n"
+"        % endif\n"
+"        % if object.company_id.city or object.company_id.zip:\n"
+"            ${object.company_id.zip} ${object.company_id.city}<br/>\n"
+"        % endif\n"
+"        % if object.company_id.country_id:\n"
+"            ${object.company_id.state_id and ('%s, ' % object.company_id."
+"state_id.name) or ''} ${object.company_id.country_id.name or ''}<br/>\n"
+"        % endif\n"
+"        </span>\n"
+"        % if object.company_id.phone:\n"
+"            <div style=\"margin-top: 0px; margin-right: 0px; margin-bottom: "
+"0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: "
+"0px; padding-left: 0px; \">\n"
+"                电话:&nbsp; ${object.company_id.phone}\n"
+"            </div>\n"
+"        % endif\n"
+"        % if object.company_id.website:\n"
+"            <div>\n"
+"                网址 :&nbsp;<a href=\"${object.company_id.website}\">"
+"${object.company_id.website}</a>\n"
+"            </div>\n"
+"        %endif\n"
+"        <p></p>\n"
+"    </div>\n"
+"</div>\n"
+"            "
+
+#. module: sale
+#: field:product.product,sales_count:0 field:product.template,sales_count:0
+msgid "# Sales"
+msgstr "笔合同单"
+
+#. module: sale
+#: field:sale.report,nbr:0
+msgid "# of Lines"
+msgstr "明细#"
+
+#. module: sale
+#: field:sale.report,product_uom_qty:0
+msgid "# of Qty"
+msgstr "数量#"
+
+#. module: sale
+#: field:res.partner,sale_order_count:0
+msgid "# of Sales Order"
+msgstr "购车合同的 #"
+
+#. module: sale
+#: model:email.template,report_name:sale.email_template_edi_sale
+msgid ""
+"${(object.name or '').replace('/','_')}_${object.state == 'draft' and "
+"'draft' or ''}"
+msgstr ""
+"${(object.name or '').replace('/','_')}_${object.state == 'draft' and '草稿' "
+"or ''}"
+
+#. module: sale
+#: model:email.template,subject:sale.email_template_edi_sale
+msgid ""
+"${object.company_id.name|safe} ${object.state in ('draft', 'sent') and "
+"'Quotation' or 'Order'} (Ref ${object.name or 'n/a' })"
+msgstr ""
+"${object.company_id.name|safe} ${object.state in ('draft', 'sent') and "
+"'Quotation' or 'Order'} (Ref ${object.name or 'n/a' })"
+
+#. module: sale
+#: view:sale.order:sale.view_order_form
+msgid "(update)"
+msgstr "（更新）"
+
+#. module: sale
+#: help:sale.order.line,state:0
+msgid ""
+"* The 'Draft' status is set when the related sales order in draft "
+"status.                     \n"
+"* The 'Confirmed' status is set when the related sales order is "
+"confirmed.                     \n"
+"* The 'Exception' status is set when the related sales order is set as "
+"exception.                     \n"
+"* The 'Done' status is set when the sales order line has been "
+"picked.                     \n"
+"* The 'Cancelled' status is set when a user cancel the sales order related."
+msgstr ""
+"*一个购车合同是草稿的时候，设置为“草稿”状态\n"
+"*合同定被用户确认后，状态切换为“已经确认”。\n"
+"*购车合同发生异常时（发货被取消等），状态为“异常”。\n"
+"*当购车合同收货以后，状态变成“完成”。\n"
+"*当用户取消了购车合同，状态成为“取消”。"
+
+#. module: sale
+#: model:ir.actions.act_window,help:sale.action_orders
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                    Click to create a quotation that can be converted into a "
+"sales\n"
+"                    order.\n"
+"                </p><p>\n"
+"                    Odoo will help you efficiently handle the complete sales "
+"flow:\n"
+"                    quotation, sales order, delivery, invoicing and "
+"payment.\n"
+"                </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                   单击此处创建购车意向，并能在之后转换成为购车合同。\n"
+"                </p><p>系统将帮助你高效地处理完整合同流程：购车意向、合同、发"
+"运、开票及付款。</p>\n"
+"            "
+
+#. module: sale
+#: model:ir.actions.act_window,help:sale.act_res_partner_2_sale_order
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                Click to create a quotation or sales order for this "
+"customer.\n"
+"              </p><p>\n"
+"                Odoo will help you efficiently handle the complete sale "
+"flow:\n"
+"                quotation, sales order, delivery, invoicing and\n"
+"                payment.\n"
+"              </p><p>\n"
+"                The social feature helps you organize discussions on each "
+"sales\n"
+"                order, and allow your customer to keep track of the "
+"evolution\n"
+"                of the sales order.\n"
+"              </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"               单击可以为你的客户创建一个购车意向或者购车合同。\n"
+"              </p><p>\n"
+"                Odoo可以高效的为你完成合同流程:\n"
+"                包括购车意向，购车合同，发货，开具发票和支付。\n"
+"              </p><p>\n"
+"                 社交功能可以帮助你组织关于每一个购车合同的讨论，还允许你的客"
+"户持续跟踪购车合同的变化。\n"
+"              </p>\n"
+"            "
+
+#. module: sale
+#: model:ir.actions.act_window,help:sale.action_orders_salesteams
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                Click to create a quotation that can be converted into a "
+"sales\n"
+"                order.\n"
+"              </p><p>\n"
+"                Odoo will help you efficiently handle the complete sales "
+"flow:\n"
+"                quotation, sales order, delivery, invoicing and payment.\n"
+"              </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\" >\n"
+"                点击创建一个购车意向(该能够转换成购车合同)。\n"
+"              </p><p>\n"
+"                 Odoo将帮助您高效处理完整的合同流程:\n"
+"                包括购车意向、购车合同、发货、开票和付款。\n"
+"              </p>\n"
+"            "
+
+#. module: sale
+#: model:ir.actions.act_window,help:sale.action_quotations
+#: model:ir.actions.act_window,help:sale.action_quotations_salesteams
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"                Click to create a quotation, the first step of a new sale.\n"
+"              </p><p>\n"
+"                Odoo will help you handle efficiently the complete sale "
+"flow:\n"
+"                from the quotation to the sales order, the\n"
+"                delivery, the invoicing and the payment collection.\n"
+"              </p><p>\n"
+"                The social feature helps you organize discussions on each "
+"sales\n"
+"                order, and allow your customers to keep track of the "
+"evolution\n"
+"                of the sales order.\n"
+"              </p>\n"
+"            "
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"               合同的第一步，单击创建一个购车意向。\n"
+"              </p><p>\n"
+"                Odoo将会高效的帮你完成整个合同流程：\n"
+"                从购车意向到购车合同，然后到发货，直至开具发票和支付。\n"
+"              </p><p>\n"
+"                社交功能可以帮助你组织关于每一个购车合同的讨论，还允许你的客"
+"户持续跟踪购车合同的变化。\n"
+"              </p>\n"
+"            "
+
+#. module: sale
+#: model:ir.actions.act_window,help:sale.action_order_line_tree2
+msgid ""
+"<p>\n"
+"                Here is a list of each sales order line to be invoiced. You "
+"can\n"
+"                invoice sales orders partially, by lines of sales order. You "
+"do\n"
+"                not need this list if you invoice from the delivery orders "
+"or\n"
+"                if you invoice sales totally.\n"
+"              </p>\n"
+"            "
+msgstr ""
+"<p>\n"
+"                这里是每个已经被开票的合同行的列表。\n"
+"                你能为逐行为部分合同开票。\n"
+"                如果你根据发货清单开票或者全额开票，就不需要这个清单。\n"
+"              </p>\n"
+"            "
+
+#. module: sale
+#: help:sale.order.line,address_allotment_id:0
+msgid "A partner to whom the particular product needs to be allotted."
+msgstr "需要分配特定产品的业务伙伴"
+
+#. module: sale
+#: model:res.groups,name:sale.group_delivery_invoice_address
+msgid "Addresses in Sales Orders"
+msgstr "在购车合同中的地址"
+
+#. module: sale
+#: model:product.template,name:sale.advance_product_0_product_template
+msgid "Advance"
+msgstr "预付款"
+
+#. module: sale
+#: field:sale.advance.payment.inv,amount:0
+msgid "Advance Amount"
+msgstr "预付款总额"
+
+#. module: sale
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:207
+#, python-format
+msgid "Advance Invoice"
+msgstr "预付款发票"
+
+#. module: sale
+#: field:sale.advance.payment.inv,product_id:0
+msgid "Advance Product"
+msgstr "预付款产品"
+
+#. module: sale
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:62
+#, python-format
+msgid "Advance of %s %%"
+msgstr "%s%% 的预付款"
+
+#. module: sale
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:62
+#, python-format
+msgid "Advance of %s %s"
+msgstr "预付款：%s %s"
+
+#. module: sale
+#: view:sale.advance.payment.inv:sale.view_sale_advance_payment_inv
+msgid ""
+"After clicking 'Show Lines to Invoice', select lines to invoice and create "
+"the invoice from the 'More' dropdown menu."
+msgstr "点击“显示要开票的行”"
+
+#. module: sale
+#: view:sale.order.line.make.invoice:sale.view_sale_order_line_make_invoice
+msgid ""
+"All items in these order lines will be invoiced. You can also invoice a "
+"percentage of the sales order\n"
+"                    or a fixed price (for advances) directly from the sales "
+"order form if you prefer."
+msgstr ""
+"这些合同行的所有项目将被开票。你也能按合同的比例开票，如果你喜欢，也能直接从"
+"合同表单的以固定价格（预付款）开票。"
+
+#. module: sale
+#: field:sale.order.line,address_allotment_id:0
+msgid "Allotment Partner"
+msgstr "分配给业务伙伴"
+
+#. module: sale
+#: field:sale.config.settings,group_sale_delivery_address:0
+msgid "Allow a different address for delivery and invoicing "
+msgstr "允许不一样的发运和开票地址。 "
+
+#. module: sale
+#: field:sale.config.settings,module_sale_journal:0
+msgid "Allow batch invoicing of delivery orders through journals"
+msgstr "允许通过日记账的发货单批量开票。"
+
+#. module: sale
+#: field:sale.config.settings,module_warning:0
+msgid "Allow configuring alerts by customer or products"
+msgstr "允许根据客户或者产品配置警告"
+
+#. module: sale
+#: field:sale.config.settings,module_website_quote:0
+msgid "Allow online quotations and templates"
+msgstr "允许在线购车意向及模版"
+
+#. module: sale
+#: field:sale.config.settings,group_discount_per_so_line:0
+msgid "Allow setting a discount on the sales order lines"
+msgstr "允许逐行设置折扣"
+
+#. module: sale
+#: help:sale.config.settings,module_warning:0
+msgid ""
+"Allow to configure notification on products and trigger them when a user "
+"wants to sell a given product or a given customer.\n"
+"Example: Product: this product is deprecated, do not purchase more than 5.\n"
+"Supplier: don't forget to ask for an express delivery."
+msgstr ""
+"允许在产品配置通知并触发他们当用户想卖一个给定的产品或特定客户。 n例如：产"
+"品：此产品已过时，购买数量不要超过5件。\n"
+"供应商：不要忘了找快递。"
+
+#. module: sale
+#: field:sale.config.settings,group_uom:0
+msgid "Allow using different units of measure"
+msgstr "允许使用不同的计量单位"
+
+#. module: sale
+#: help:sale.config.settings,module_account_analytic_analysis:0
+msgid ""
+"Allows to define your customer contracts conditions: invoicing method (fixed "
+"price, on timesheet, advance invoice), the exact pricing (650€/day for a "
+"developer), the duration (one year support contract).\n"
+"You will be able to follow the progress of the contract and invoice "
+"automatically.\n"
+"-It installs the account_analytic_analysis module."
+msgstr ""
+"允许定义你的客户购车合同条款：开票方法(固定价格，根据计工单，预付款发票),准确"
+"价格（每天每个开发人员650欧元），期间（一年的支援购车合同）。\n"
+"你讲能够自动跟踪购车合同和开票进程。\n"
+" - 安装account_analytic_analysis模块。"
+
+#. module: sale
+#: help:sale.config.settings,group_sale_pricelist:0
+msgid ""
+"Allows to manage different prices based on rules per category of customers.\n"
+"Example: 10% for retailers, promotion of 5 EUR on this product, etc."
+msgstr ""
+"允许基于每种客户类别的规则管理不同的价格。\n"
+"例如: 10%"
+
+#. module: sale
+#: help:sale.config.settings,module_sale_stock:0
+msgid ""
+"Allows you to Make Quotation, Sale Order using different Order policy and "
+"Manage Related Stock.\n"
+"-This installs the module sale_stock."
+msgstr ""
+"允许使用不同的合同策略制作购车意向、购车合同并管理相关的库存。\n"
+" - 安装sale_stock模块。"
+
+#. module: sale
+#: help:sale.config.settings,group_discount_per_so_line:0
+msgid "Allows you to apply some discount per sales order line."
+msgstr "允许在每个购车合同行 应用折扣"
+
+#. module: sale
+#: help:sale.config.settings,module_sale_journal:0
+msgid ""
+"Allows you to categorize your sales and deliveries (picking lists) between "
+"different journals, and perform batch operations on journals.\n"
+"-This installs the module sale_journal."
+msgstr ""
+"允许你对合同和发运（分拣单）在不同的分类账之间进行分类, 并且在分类账上进行批"
+"量操作。\n"
+" - 安装sale_journal模块。"
+
+#. module: sale
+#: help:sale.config.settings,module_analytic_user_function:0
+msgid ""
+"Allows you to define what is the default function of a specific user on a "
+"given account.\n"
+"This is mostly used when a user encodes his timesheet. The values are "
+"retrieved and the fields are auto-filled. But the possibility to change "
+"these values is still available.\n"
+"-This installs the module analytic_user_function."
+msgstr ""
+"对一个给定帐户的特定用户，允许你定义默认功能。\n"
+"这一功能主要用于用户编制时间表。检索值和字段是自动填充的。但是仍然可以改变这"
+"些值。\n"
+" - 安装analytic_user_function模块。"
+
+#. module: sale
+#: help:sale.config.settings,group_uom:0
+msgid ""
+"Allows you to select and maintain different units of measure for products."
+msgstr "允许你选择和维护产品的不同计量单位"
+
+#. module: sale
+#: help:account.config.settings,group_analytic_account_for_sales:0
+msgid "Allows you to specify an analytic account on sales orders."
+msgstr "允许你在购车合同指定一个辅助核算项"
+
+#. module: sale
+#: help:sale.config.settings,group_sale_delivery_address:0
+msgid ""
+"Allows you to specify different delivery and invoice addresses on a sales "
+"order."
+msgstr "允许你在合同单给运输和开票指定不同的地址"
+
+#. module: sale
+#: field:sale.report,analytic_account_id:0
+msgid "Analytic Account"
+msgstr "辅助核算项"
+
+#. module: sale
+#: model:res.groups,name:sale.group_analytic_accounting
+msgid "Analytic Accounting for Sales"
+msgstr "合同辅助核算"
+
+#. module: sale
+#: field:account.config.settings,group_analytic_account_for_sales:0
+msgid "Analytic accounting for sales"
+msgstr "合同辅助核算项"
+
+#. module: sale
+#: selection:sale.order,order_policy:0
+msgid "Before Delivery"
+msgstr "发运前"
+
+#. module: sale
+#: code:addons/sale/sale.py:1048
+#, python-format
+msgid ""
+"Before choosing a product,\n"
+" select a customer in the sales form."
+msgstr ""
+"在挑选产品前，\n"
+" 在合同表单中选择一个客户。"
+
+#. module: sale
+#: model:ir.filters,name:sale.filter_isale_report_product
+msgid "By Product"
+msgstr "产品"
+
+#. module: sale
+#: model:ir.filters,name:sale.filter_sale_report_salesteam
+msgid "By Salesteam"
+msgstr "按合同团队"
+
+#. module: sale
+#: view:sale.order.line:sale.view_order_line_form2
+msgid "Cancel Line"
+msgstr "取消"
+
+#. module: sale
+#: view:sale.order:sale.view_order_form
+msgid "Cancel Order"
+msgstr "取消合同"
+
+#. module: sale
+#: view:sale.order:sale.view_order_form
+msgid "Cancel Quotation"
+msgstr "取消购车意向"
+
+#. module: sale
+#: code:addons/sale/sale.py:588
+#, python-format
+msgid "Cannot cancel this sales order!"
+msgstr "不能取消这个购车合同！"
+
+#. module: sale
+#: code:addons/sale/sale.py:1171
+#, python-format
+msgid "Cannot delete a sales order line which is in state '%s'."
+msgstr "不能删除 '%s'状态的购车合同行。"
+
+#. module: sale
+#: code:addons/sale/sale.py:1140
+#, python-format
+msgid ""
+"Cannot find a pricelist line matching this product and quantity.\n"
+"You have to change either the product, the quantity or the pricelist."
+msgstr ""
+"找不到匹配这个产品和数量的价格表。\n"
+"你必须修改 产品、数量，或者价格表"
+
+#. module: sale
+#: view:sale.report:sale.view_order_product_search
+#: field:sale.report,categ_id:0
+msgid "Category of Product"
+msgstr "产品类别"
+
+#. module: sale
+#: help:sale.make.invoice,grouped:0
+msgid "Check the box to group the invoices for the same customers"
+msgstr "选择此项，发票将会按客户分组。"
+
+#. module: sale
+#: help:crm.case.section,use_quotations:0
+msgid "Check this box to manage quotations in this sales team."
+msgstr "选中复选框来管理此团队的合同购车意向。"
+
+#. module: sale
+#: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
+msgid "Click to acces the Sales Analysis."
+msgstr "点击进入合同分析。"
+
+#. module: sale
+#: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
+msgid "Click to see a detailed analysis of invoices."
+msgstr "点击查看发票的详细分析。"
+
+#. module: sale
+#: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
+msgid "Click to see a detailed analysis."
+msgstr "点击可查看详细的分析。"
+
+#. module: sale
+#: field:sale.report,delay:0
+msgid "Commitment Delay"
+msgstr "承诺延迟"
+
+#. module: sale
+#: model:ir.model,name:sale.model_res_company
+msgid "Companies"
+msgstr "公司"
+
+#. module: sale
+#: code:addons/sale/sale.py:1148
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:95
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:99
+#, python-format
+msgid "Configuration Error!"
+msgstr "设置错误!"
+
+#. module: sale
+#: view:sale.order:sale.view_order_form
+msgid "Confirm Sale"
+msgstr "确认合同"
+
+#. module: sale
+#: field:sale.order,date_confirm:0
+msgid "Confirmation Date"
+msgstr "确认日期"
+
+#. module: sale
+#: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
+msgid "Confirmed sales order lines, not yet delivered"
+msgstr "已经确认但是还没有发运的合同行"
+
+#. module: sale
+#: field:sale.order,project_id:0
+msgid "Contract / Analytic"
+msgstr "购车合同/辅助核算"
+
+#. module: sale
+#: view:sale.config.settings:sale.view_sales_config
+msgid "Contract Features"
+msgstr "购车合同特性"
+
+#. module: sale
+#: view:sale.config.settings:sale.view_sales_config
+msgid "Contracts Management"
+msgstr "购车合同管理"
+
+#. module: sale
+#: view:sale.order.line.make.invoice:sale.view_sale_order_line_make_invoice
+msgid "Create & View Invoice"
+msgstr "生成并查看发票"
+
+#. module: sale
+#: model:ir.actions.act_window,name:sale.action_view_sale_order_line_make_invoice
+#: view:sale.advance.payment.inv:sale.view_sale_advance_payment_inv
+#: view:sale.order:sale.view_order_form field:sale.order,order_policy:0
+#: view:sale.order.line:sale.view_order_line_form2
+msgid "Create Invoice"
+msgstr "生成发票"
+
+#. module: sale
+#: view:sale.make.invoice:sale.view_sale_order_make_invoice
+#: view:sale.order.line.make.invoice:sale.view_sale_order_line_make_invoice
+msgid "Create Invoices"
+msgstr "创建发票"
+
+#. module: sale
+#: view:sale.advance.payment.inv:sale.view_sale_advance_payment_inv
+msgid "Create and View Invoice"
+msgstr "生成并查看发票"
+
+#. module: sale
+#: view:sale.make.invoice:sale.view_sale_order_make_invoice
+#: view:sale.order.line.make.invoice:sale.view_sale_order_line_make_invoice
+msgid "Create invoices"
+msgstr "创建发票"
+
+#. module: sale
+#: code:addons/sale/sale.py:464
+#, python-format
+msgid "Customer Invoices"
+msgstr "客户发票"
+
+#. module: sale
+#: field:sale.report,date_confirm:0
+msgid "Date Confirm"
+msgstr "确认日期"
+
+#. module: sale
+#: field:sale.report,date:0
+msgid "Date Order"
+msgstr "合同日期"
+
+#. module: sale
+#: view:website:sale.report_saleorder_document
+msgid "Date Ordered:"
+msgstr "下单日期："
+
+#. module: sale
+#: help:sale.order,date_confirm:0
+msgid "Date on which sales order is confirmed."
+msgstr "购车合同的确认日期"
+
+#. module: sale
+#: help:sale.order,create_date:0
+msgid "Date on which sales order is created."
+msgstr "购车合同创建日期"
+
+#. module: sale
+#: view:sale.config.settings:sale.view_sales_config
+msgid "Default Options"
+msgstr "默认选项"
+
+#. module: sale
+#: field:res.company,sale_note:0
+msgid "Default Terms and Conditions"
+msgstr "默认条款"
+
+#. module: sale
+#: view:res.company:sale.view_company_inherit_form2
+msgid "Default terms & conditions..."
+msgstr "默认条款..."
+
+#. module: sale
+#: help:res.company,sale_note:0
+msgid "Default terms and conditions for quotations."
+msgstr "默认条款购车意向"
+
+#. module: sale
+#: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
+msgid ""
+"Define an invoicing target in the sales team settings to see the period's "
+"achievement and forecast at a glance."
+msgstr "在合同团队设置中定义开票目标，以便看到阶段性的成果和预测。"
+
+#. module: sale
+#: field:sale.order,partner_shipping_id:0
+msgid "Delivery Address"
+msgstr "送货地址"
+
+#. module: sale
+#: field:sale.order.line,delay:0
+msgid "Delivery Lead Time"
+msgstr "送货提前期"
+
+#. module: sale
+#: help:sale.order,partner_shipping_id:0
+msgid "Delivery address for current sales order."
+msgstr "当前购车合同的发运地址"
+
+#. module: sale
+#: view:website:sale.report_saleorder_document
+msgid "Disc.(%)"
+msgstr "折扣(%)"
+
+#. module: sale
+#: field:sale.order.line,discount:0
+msgid "Discount (%)"
+msgstr "折扣(%)"
+
+#. module: sale
+#: model:res.groups,name:sale.group_discount_per_so_line
+msgid "Discount on lines"
+msgstr "合同行折扣"
+
+#. module: sale
+#: field:sale.config.settings,module_sale_margin:0
+msgid "Display margins on sales orders"
+msgstr "显示利润在购车合同"
+
+#. module: sale
+#: view:sale.make.invoice:sale.view_sale_order_make_invoice
+msgid "Do you really want to create the invoice(s)?"
+msgstr "你真的要生成发票吗 ？"
+
+#. module: sale
+#: view:sale.order:sale.view_sales_order_filter selection:sale.order,state:0
+#: view:sale.order.line:sale.view_order_line_form2
+#: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
+#: selection:sale.order.line,state:0 selection:sale.report,state:0
+msgid "Done"
+msgstr "已完成"
+
+#. module: sale
+#: selection:sale.order,state:0
+msgid "Draft Quotation"
+msgstr "购车意向"
+
+#. module: sale
+#: code:addons/sale/edi/sale_order.py:140
+#, python-format
+msgid "EDI Pricelist (%s)"
+msgstr "EDI 价格表 (%s)"
+
+#. module: sale
+#: model:ir.actions.act_window,name:sale.action_email_templates
+msgid "Email Templates"
+msgstr "电子邮件模板"
+
+#. module: sale
+#: model:ir.model,name:sale.model_mail_compose_message
+msgid "Email composition wizard"
+msgstr "Email撰写向导"
+
+#. module: sale
+#: model:res.groups,name:sale.group_invoice_so_lines
+msgid "Enable Invoicing Sales order lines"
+msgstr "允许逐行开票"
+
+#. module: sale
+#: selection:sale.order.line,state:0
+msgid "Exception"
+msgstr "异常"
+
+#. module: sale
+#: view:res.partner:sale.res_partner_address_type
+msgid "False"
+msgstr "False"
+
+#. module: sale
+#: code:addons/sale/sale.py:589
+#, python-format
+msgid "First cancel all invoices attached to this sales order."
+msgstr "首先取消所有关联这个购车合同的发票。"
+
+#. module: sale
+#: field:sale.order,fiscal_position:0
+msgid "Fiscal Position"
+msgstr "财务结构"
+
+#. module: sale
+#: selection:sale.advance.payment.inv,advance_payment_method:0
+msgid "Fixed price (deposit)"
+msgstr "固定价格（押金）"
+
+#. module: sale
+#: help:sale.config.settings,timesheet:0
+msgid ""
+"For modifying account analytic view to show important data to project "
+"manager of services companies.You can also view the report of account "
+"analytic summary user-wise as well as month wise.\n"
+"-This installs the module account_analytic_analysis."
+msgstr ""
+"修改会计分析视图为服务公司的项目经理显示重要数据。你也可以查看每月用户的会计"
+"总结分析报告。\n"
+" - 安装account_analytic_analysis模块。"
+
+#. module: sale
+#: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
+msgid "Forecast"
+msgstr "预测"
+
+#. module: sale
+#: help:crm.case.section,invoiced_forecast:0
+msgid ""
+"Forecast of the invoice revenue for the current month. This is the amount "
+"the sales \n"
+"team should invoice this month. It is used to compute the progression "
+"ratio \n"
+" of the current and forecast revenue on the kanban view."
+msgstr ""
+"当月发票的收入预测。这是本月合同团队应该开出的发票金额。 \n"
+"它是用来在看板视图中计算实际和预测的收入之间的比例关系。"
+
+#. module: sale
+#: model:ir.actions.act_window,help:sale.action_account_invoice_report_salesteam
+msgid ""
+"From this report, you can have an overview of the amount invoiced to your "
+"customer. The tool search can also be used to personalise your Invoices "
+"reports and so, match this analysis to your needs."
+msgstr ""
+"根据此报告，你可总体上了解向客人开票的情况，这一工具也可用于生成个性化的发票"
+"报告，以满足你分析的需要。"
+
+#. module: sale
+#: field:sale.config.settings,group_invoice_so_lines:0
+msgid "Generate invoices based on the sales order lines"
+msgstr "基于购车合同行生成发票"
+
+#. module: sale
+#: help:sale.order.line,sequence:0
+msgid "Gives the sequence order when displaying a list of sales order lines."
+msgstr "给出合同行列表显示的排列顺序"
+
+#. module: sale
+#: help:sale.order,state:0
+msgid ""
+"Gives the status of the quotation or sales order.              \n"
+"The exception status is automatically set when a cancel operation "
+"occurs               in the invoice validation (Invoice Exception) or in the "
+"picking list process (Shipping Exception).\n"
+"The 'Waiting Schedule' status is set when the invoice is "
+"confirmed               but waiting for the scheduler to run on the order "
+"date."
+msgstr ""
+"产生购车意向或者购车合同的状态。\n"
+"当发票核准时（开票异常）或者 拣货单 处理时（运输异常）发生了取消操作，设置了"
+"异常状态。\n"
+"当发票被确认，但是等待在 合同日期排期的时候，设置为 “等待排期\" 状态。"
+
+#. module: sale
+#: field:sale.make.invoice,grouped:0
+msgid "Group the invoices"
+msgstr "发票组"
+
+#. module: sale
+#: code:addons/sale/res_config.py:100
+#, python-format
+msgid "Hour"
+msgstr "小时"
+
+#. module: sale
+#: code:addons/sale/sale.py:305
+#, python-format
+msgid ""
+"If you change the pricelist of this order (and eventually the currency), "
+"prices of existing order lines will not be updated."
+msgstr "如果你修改这合同的价格表（货币），现有合同明细的价格不会修改。"
+
+#. module: sale
+#: view:sale.order:sale.view_order_form
+msgid "Ignore Exception"
+msgstr "忽略异常"
+
+#. module: sale
+#: selection:sale.report,state:0
+msgid "In Progress"
+msgstr "处理中"
+
+#. module: sale
+#: code:addons/sale/sale.py:274
+#, python-format
+msgid "In order to delete a confirmed sales order, you must cancel it before!"
+msgstr "删除合同前必须先取消合同。"
+
+#. module: sale
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:105
+#, python-format
+msgid "Incorrect Data"
+msgstr "错误的数据"
+
+#. module: sale
+#: code:addons/sale/sale.py:274 code:addons/sale/sale.py:990
+#: code:addons/sale/sale.py:1171
+#, python-format
+msgid "Invalid Action!"
+msgstr "非法的动作"
+
+#. module: sale
+#: code:addons/sale/wizard/sale_line_invoice.py:127
+#: model:ir.model,name:sale.model_account_invoice
+#: view:sale.order:sale.view_order_form
+#, python-format
+msgid "Invoice"
+msgstr "发票"
+
+#. module: sale
+#: field:sale.order,partner_invoice_id:0
+msgid "Invoice Address"
+msgstr "发票地址"
+
+#. module: sale
+#: field:sale.make.invoice,invoice_date:0
+msgid "Invoice Date"
+msgstr "开票日期"
+
+#. module: sale
+#: selection:sale.order,state:0 selection:sale.report,state:0
+msgid "Invoice Exception"
+msgstr "发票异常"
+
+#. module: sale
+#: field:crm.case.section,invoiced_forecast:0
+msgid "Invoice Forecast"
+msgstr "发票预测"
+
+#. module: sale
+#: field:sale.order.line,invoice_lines:0
+msgid "Invoice Lines"
+msgstr "发票明细"
+
+#. module: sale
+#: model:ir.actions.act_window,name:sale.action_view_sale_advance_payment_inv
+msgid "Invoice Order"
+msgstr "开票合同"
+
+#. module: sale
+#: view:sale.advance.payment.inv:sale.view_sale_advance_payment_inv
+msgid "Invoice Sales Order"
+msgstr "购车合同开票"
+
+#. module: sale
+#: field:crm.case.section,invoiced_target:0
+msgid "Invoice Target"
+msgstr "发票目标"
+
+#. module: sale
+#: help:sale.order,partner_invoice_id:0
+msgid "Invoice address for current sales order."
+msgstr "当前购车合同的发票地址。"
+
+#. module: sale
+#: view:website:sale.report_saleorder_document
+msgid "Invoice address:"
+msgstr "发票寄送地址:"
+
+#. module: sale
+#: view:website:sale.report_saleorder_document
+msgid "Invoice and shipping address:"
+msgstr "发票和收货地址:"
+
+#. module: sale
+#: code:addons/sale/wizard/sale_line_invoice.py:113
+#, python-format
+msgid ""
+"Invoice cannot be created for this Sales Order Line due to one of the "
+"following reasons:\n"
+"1.The state of this sales order line is either \"draft\" or \"cancel\"!\n"
+"2.The Sales Order Line is Invoiced!"
+msgstr ""
+"由于以下原因不能为此购车合同明细生成发票：\n"
+"1. 购车合同明细的状态是“草稿”或者“取消”！\n"
+"2. 购车合同明细已经开票！"
+
+#. module: sale
+#: code:addons/sale/wizard/sale_line_invoice.py:102
+#, python-format
+msgid "Invoice created"
+msgstr "开票日期。"
+
+#. module: sale
+#: code:addons/sale/sale.py:1224
+#, python-format
+msgid "Invoice paid"
+msgstr "发票已付清"
+
+#. module: sale
+#: selection:sale.advance.payment.inv,advance_payment_method:0
+msgid "Invoice the whole sales order"
+msgstr "为整个购车合同开票"
+
+#. module: sale
+#: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
+#: field:sale.order,invoice_exists:0 field:sale.order.line,invoiced:0
+msgid "Invoiced"
+msgstr "已开票"
+
+#. module: sale
+#: field:sale.order,invoiced_rate:0
+msgid "Invoiced Ratio"
+msgstr "开票率"
+
+#. module: sale
+#: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
+#: model:ir.actions.act_window,name:sale.action_invoice_salesteams
+#: field:sale.order,invoice_ids:0
+msgid "Invoices"
+msgstr "发票"
+
+#. module: sale
+#: model:ir.actions.act_window,name:sale.action_account_invoice_report_salesteam
+msgid "Invoices Analysis"
+msgstr "发票分析"
+
+#. module: sale
+#: model:ir.model,name:sale.model_account_invoice_report
+msgid "Invoices Statistics"
+msgstr "发票统计"
+
+#. module: sale
+#: view:sale.config.settings:sale.view_sales_config
+msgid "Invoicing Process"
+msgstr "开发票过程"
+
+#. module: sale
+#: help:sale.order,invoiced:0
+msgid "It indicates that an invoice has been paid."
+msgstr "它表示发票已经支付。"
+
+#. module: sale
+#: help:sale.order,invoice_exists:0
+msgid "It indicates that sales order has at least one invoice."
+msgstr "它表明,购车合同至少有一个发票。"
+
+#. module: sale
+#: model:ir.actions.act_window,name:sale.action_sale_order_make_invoice
+msgid "Make Invoices"
+msgstr "生成发票"
+
+#. module: sale
+#: selection:sale.report,state:0
+msgid "Manual In Progress"
+msgstr "手动处理"
+
+#. module: sale
+#: view:sale.report:sale.view_order_product_search
+msgid "My Sales"
+msgstr "我的购车合同"
+
+#. module: sale
+#: view:sale.order.line:sale.view_sales_order_line_filter
+#: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
+msgid "My Sales Order Lines"
+msgstr "我的购车合同明细"
+
+#. module: sale
+#: view:sale.order:sale.view_order_form
+msgid "New Copy of Quotation"
+msgstr "复制此购车意向"
+
+#. module: sale
+#: code:addons/sale/sale.py:1048
+#, python-format
+msgid "No Customer Defined!"
+msgstr "未定义客户！"
+
+#. module: sale
+#: code:addons/sale/sale.py:1132
+#, python-format
+msgid "No Pricelist ! : "
+msgstr "没价格表！： "
+
+#. module: sale
+#: code:addons/sale/sale.py:1143
+#, python-format
+msgid "No valid pricelist line found ! :"
+msgstr "明细没有找到有效的价格表！"
+
+#. module: sale
+#: help:sale.order.line,delay:0
+msgid ""
+"Number of days between the order confirmation and the shipping of the "
+"products to the customer"
+msgstr "合同被确认和产品交付给客户之间的天数"
+
+#. module: sale
+#: model:ir.actions.act_window,name:sale.action_order_tree
+msgid "Old Quotations"
+msgstr "旧的购车意向"
+
+#. module: sale
+#: selection:sale.order,order_policy:0
+msgid "On Delivery Order"
+msgstr "根据发运单"
+
+#. module: sale
+#: selection:sale.order,order_policy:0
+msgid "On Demand"
+msgstr "需求"
+
+#. module: sale
+#: help:sale.order,order_policy:0
+msgid ""
+"On demand: A draft invoice can be created from the sales order when "
+"needed. \n"
+"On delivery order: A draft invoice can be created from the delivery order "
+"when the products have been delivered. \n"
+"Before delivery: A draft invoice is created from the sales order and must be "
+"paid before the products can be delivered."
+msgstr ""
+"立即:当需要时，从购车合同创建发票草稿。\n"
+"发运时：当有产品被发运时，从发运单创建发票草稿。\n"
+"发运前：从购车合同创建发票草稿，并且必须在产品发运前付款。"
+
+#. module: sale
+#: field:sale.config.settings,module_analytic_user_function:0
+msgid "One employee can have different roles per contract"
+msgstr "每个购车合同里，一个员工能有不同的角色"
+
+#. module: sale
+#: view:sale.order.line:sale.view_sales_order_line_filter
+#: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
+msgid "Order"
+msgstr "合同"
+
+#. module: sale
+#: view:sale.order:sale.view_order_form field:sale.order,order_line:0
+msgid "Order Lines"
+msgstr "合同明细"
+
+#. module: sale
+#: model:ir.actions.act_window,name:sale.action_order_line_tree2
+msgid "Order Lines to Invoice"
+msgstr "合同行开票"
+
+#. module: sale
+#: view:sale.order:sale.view_sales_order_filter
+#: view:sale.report:sale.view_order_product_search
+msgid "Order Month"
+msgstr "合同月份"
+
+#. module: sale
+#: view:sale.order:sale.view_order_tree
+msgid "Order Number"
+msgstr "合同编号"
+
+#. module: sale
+#: view:website:sale.report_saleorder_document
+msgid "Order N°"
+msgstr "单号"
+
+#. module: sale
+#: field:sale.order,name:0 field:sale.order.line,order_id:0
+msgid "Order Reference"
+msgstr "合同关联"
+
+#. module: sale
+#: sql_constraint:sale.order:0
+msgid "Order Reference must be unique per Company!"
+msgstr "合同号必须在一个公司范围内唯一"
+
+#. module: sale
+#: field:sale.report,state:0
+msgid "Order Status"
+msgstr "合同状态"
+
+#. module: sale
+#: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
+msgid "Order reference"
+msgstr "合同关联单号"
+
+#. module: sale
+#: view:sale.report:sale.view_order_product_search
+msgid "Ordered date of the sales order"
+msgstr "购车合同的订购日期"
+
+#. module: sale
+#: view:sale.order:sale.view_order_form
+msgid "Other Information"
+msgstr "其它信息"
+
+#. module: sale
+#: field:sale.order,invoiced:0
+msgid "Paid"
+msgstr "支付"
+
+#. module: sale
+#: field:sale.order,payment_term:0
+msgid "Payment Term"
+msgstr "付款条款"
+
+#. module: sale
+#: view:website:sale.report_saleorder_document
+msgid "Payment Term:"
+msgstr "支付条款："
+
+#. module: sale
+#: field:sale.order,paypal_url:0
+msgid "Paypal Url"
+msgstr "Paypal Url"
+
+#. module: sale
+#: selection:sale.advance.payment.inv,advance_payment_method:0
+msgid "Percentage"
+msgstr "百分比"
+
+#. module: sale
+#: code:addons/sale/sale.py:935
+#, python-format
+msgid "Please define income account for this product: \"%s\" (id:%d)."
+msgstr "请为这个产品定义收益科目: \"%s\" (id:%d)."
+
+#. module: sale
+#: code:addons/sale/sale.py:391
+#, python-format
+msgid "Please define sales journal for this company: \"%s\" (id:%d)."
+msgstr "轻微公司 \"%s\" (id:%d) 定义合同分类账"
+
+#. module: sale
+#: field:sale.config.settings,timesheet:0
+msgid "Prepare invoices based on timesheets"
+msgstr "准备基于计工单的发票"
+
+#. module: sale
+#: view:website:sale.report_saleorder_document
+msgid "Price"
+msgstr "价格"
+
+#. module: sale
+#: field:sale.order.line,price_reduce:0
+msgid "Price Reduce"
+msgstr "降价"
+
+#. module: sale
+#: field:sale.order,pricelist_id:0 field:sale.report,pricelist_id:0
+msgid "Pricelist"
+msgstr "价格表"
+
+#. module: sale
+#: code:addons/sale/sale.py:304
+#, python-format
+msgid "Pricelist Warning!"
+msgstr "价格表警告！"
+
+#. module: sale
+#: help:sale.order,pricelist_id:0
+msgid "Pricelist for current sales order."
+msgstr "当前购车合同的价格表。"
+
+#. module: sale
+#: view:sale.order:sale.view_order_form
+msgid "Print"
+msgstr "打印"
+
+#. module: sale
+#: model:ir.model,name:sale.model_procurement_order
+msgid "Procurement"
+msgstr "需求"
+
+#. module: sale
+#: field:sale.order,procurement_group_id:0
+msgid "Procurement group"
+msgstr "补货组"
+
+#. module: sale
+#: field:sale.order.line,procurement_ids:0
+msgid "Procurements"
+msgstr "需求单"
+
+#. module: sale
+#: view:sale.config.settings:sale.view_sales_config
+msgid "Product Features"
+msgstr "产品特性"
+
+#. module: sale
+#: model:ir.model,name:sale.model_product_template
+msgid "Product Template"
+msgstr "产品模板"
+
+#. module: sale
+#: field:sale.order.line,product_uos:0
+msgid "Product UoS"
+msgstr "产品销售单位"
+
+#. module: sale
+#: field:sale.config.settings,module_project:0
+msgid "Project"
+msgstr "项目"
+
+#. module: sale
+#: model:res.groups,name:sale.group_mrp_properties
+msgid "Properties on lines"
+msgstr "行上的属性"
+
+#. module: sale
+#: view:sale.order.line:sale.view_order_line_tree
+msgid "Qty"
+msgstr "数量"
+
+#. module: sale
+#: field:sale.advance.payment.inv,qtty:0
+#: field:sale.order.line,product_uom_qty:0
+#: view:website:sale.report_saleorder_document
+msgid "Quantity"
+msgstr "数量"
+
+#. module: sale
+#: field:sale.order.line,product_uos_qty:0
+msgid "Quantity (UoS)"
+msgstr "数量(销售单位)"
+
+#. module: sale
+#: view:sale.order:sale.view_order_form
+#: view:sale.order:sale.view_quotation_tree selection:sale.report,state:0
+msgid "Quotation"
+msgstr "购车意向"
+
+#. module: sale
+#: model:ir.actions.report.xml,name:sale.report_sale_order
+msgid "Quotation / Order"
+msgstr "购车意向/合同"
+
+#. module: sale
+#: view:website:sale.report_saleorder_document
+msgid "Quotation Date:"
+msgstr "购车意向日期："
+
+#. module: sale
+#: view:sale.order:sale.view_quotation_tree
+msgid "Quotation Number"
+msgstr "合同编号"
+
+#. module: sale
+#: view:website:sale.report_saleorder_document
+msgid "Quotation N°"
+msgstr "合同号"
+
+#. module: sale
+#: model:mail.message.subtype,name:sale.mt_salesteam_order_sent
+msgid "Quotation Send"
+msgstr "购车意向已经发送"
+
+#. module: sale
+#: selection:sale.order,state:0
+msgid "Quotation Sent"
+msgstr "购车意向发送"
+
+#. module: sale
+#: model:mail.message.subtype,description:sale.mt_order_confirmed
+msgid "Quotation confirmed"
+msgstr "购车意向已经确认"
+
+#. module: sale
+#: code:addons/sale/sale.py:362
+#, python-format
+msgid "Quotation created"
+msgstr "建立购车意向"
+
+#. module: sale
+#: model:mail.message.subtype,description:sale.mt_order_sent
+#: model:mail.message.subtype,name:sale.mt_order_sent
+msgid "Quotation sent"
+msgstr "购车意向发送"
+
+#. module: sale
+#: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
+#: field:crm.case.section,use_quotations:0
+#: model:ir.actions.act_window,name:sale.action_quotations
+#: model:ir.actions.act_window,name:sale.action_quotations_salesteams
+#: model:ir.ui.menu,name:sale.menu_sale_quotations
+#: view:sale.order:sale.view_sales_order_filter
+msgid "Quotations"
+msgstr "购车意向"
+
+#. module: sale
+#: model:ir.actions.act_window,name:sale.action_order_report_quotation_salesteam
+msgid "Quotations Analysis"
+msgstr "购车意向分析"
+
+#. module: sale
+#: model:ir.actions.act_window,name:sale.act_res_partner_2_sale_order
+msgid "Quotations and Sales"
+msgstr "购车意向或购车合同"
+
+#. module: sale
+#: field:crm.case.section,monthly_quoted:0
+msgid "Rate of created quotation per duration"
+msgstr "创建购车意向时间率"
+
+#. module: sale
+#: field:crm.case.section,monthly_invoiced:0
+msgid "Rate of sent invoices per duration"
+msgstr "发送发票时间率"
+
+#. module: sale
+#: field:crm.case.section,monthly_confirmed:0
+msgid "Rate of validate sales orders per duration"
+msgstr "一段持续时间验证购车合同率"
+
+#. module: sale
+#: view:sale.order:sale.view_order_form
+msgid "Recreate Invoice"
+msgstr "重新生成发票"
+
+#. module: sale
+#: help:sale.order,origin:0
+msgid "Reference of the document that generated this sales order request."
+msgstr "生成此购车合同相关的请求单据"
+
+#. module: sale
+#: field:sale.order,client_order_ref:0
+msgid "Reference/Description"
+msgstr "参考/描述"
+
+#. module: sale
+#: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
+msgid "Revenue of confirmed sales orders per month."
+msgstr "每月确认的购车合同收入。"
+
+#. module: sale
+#: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
+msgid "Revenue of created quotations per month."
+msgstr "每月创建购车意向收入。"
+
+#. module: sale
+#: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
+msgid "Revenue of sent invoices per month."
+msgstr "发送每月收入发票。"
+
+#. module: sale
+#: field:procurement.order,sale_line_id:0
+msgid "Sale Order Line"
+msgstr "购车合同明细"
+
+#. module: sale
+#: model:ir.model,name:sale.model_sale_order_line_make_invoice
+msgid "Sale OrderLine Make_invoice"
+msgstr "购车合同明细开票"
+
+#. module: sale
+#: selection:sale.order,state:0
+msgid "Sale to Invoice"
+msgstr "合同待开票"
+
+#. module: sale
+#: view:product.product:sale.product_form_view_sale_order_button
+#: view:product.template:sale.product_template_form_view_sale_order_button
+#: view:res.company:sale.view_company_inherit_form2
+#: view:res.partner:sale.crm_lead_partner_kanban_view
+#: view:res.partner:sale.res_partner_view_buttons
+#: view:sale.order:sale.view_sales_order_filter
+#: view:sale.report:sale.view_order_product_search
+msgid "Sales"
+msgstr "合同"
+
+#. module: sale
+#: model:ir.model,name:sale.model_sale_advance_payment_inv
+msgid "Sales Advance Payment Invoice"
+msgstr "合同预付款发票"
+
+#. module: sale
+#: model:ir.actions.act_window,name:sale.action_order_report_all
+#: model:ir.actions.act_window,name:sale.action_order_report_so_salesteam
+#: model:ir.ui.menu,name:sale.menu_report_product_all
+#: view:sale.report:sale.view_order_product_graph
+#: view:sale.report:sale.view_order_product_search
+msgid "Sales Analysis"
+msgstr "合同分析表"
+
+#. module: sale
+#: model:ir.filters,name:sale.filter_sale_report_sales_funnel
+msgid "Sales Funnel"
+msgstr "合同漏斗"
+
+#. module: sale
+#: model:ir.model,name:sale.model_sale_make_invoice
+msgid "Sales Make Invoice"
+msgstr "购车合同生成发票"
+
+#. module: sale
+#: code:addons/sale/sale.py:284 model:ir.model,name:sale.model_sale_order
+#: field:res.partner,sale_order_ids:0
+#: model:res.request.link,name:sale.req_link_sale_order
+#: view:sale.order:sale.view_order_form
+#: view:sale.order:sale.view_sales_order_filter selection:sale.order,state:0
+#, python-format
+msgid "Sales Order"
+msgstr "购车合同"
+
+#. module: sale
+#: model:mail.message.subtype,name:sale.mt_order_confirmed
+#: model:mail.message.subtype,name:sale.mt_salesteam_order_confirmed
+msgid "Sales Order Confirmed"
+msgstr "购车合同已经确认"
+
+#. module: sale
+#: model:ir.model,name:sale.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "购车合同明细"
+
+#. module: sale
+#: model:ir.actions.act_window,name:sale.action_order_line_product_tree
+#: view:sale.order:sale.view_order_form
+#: view:sale.order.line:sale.view_order_line_form2
+#: view:sale.order.line:sale.view_order_line_tree
+msgid "Sales Order Lines"
+msgstr "购车合同明细"
+
+#. module: sale
+#: view:sale.order.line:sale.view_sales_order_line_filter
+msgid "Sales Order Lines ready to be invoiced"
+msgstr "购车合同行已经被开票"
+
+#. module: sale
+#: view:sale.order.line:sale.view_sales_order_line_filter
+msgid "Sales Order Lines related to a Sales Order of mine"
+msgstr "购车合同明细与我的购车合同"
+
+#. module: sale
+#: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
+msgid ""
+"Sales Order Lines that are confirmed, done or in exception state and haven't "
+"yet been invoiced"
+msgstr "已经确认、完成或者意外状态和还没开票的购车合同"
+
+#. module: sale
+#: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
+msgid "Sales Order Lines that are in 'done' state"
+msgstr "购车合同行在完成状态"
+
+#. module: sale
+#: view:sale.order:sale.view_sales_order_filter
+msgid "Sales Order done"
+msgstr "购车合同完成"
+
+#. module: sale
+#: model:ir.actions.act_window,name:sale.action_orders_in_progress
+msgid "Sales Order in Progress"
+msgstr "购车合同处理中"
+
+#. module: sale
+#: view:sale.order:sale.view_sales_order_filter
+msgid "Sales Order ready to be invoiced"
+msgstr "待开票的购车合同"
+
+#. module: sale
+#: view:sale.order:sale.view_sales_order_filter
+msgid "Sales Order that haven't yet been confirmed"
+msgstr "购车合同尚未被确认"
+
+#. module: sale
+#: view:crm.case.section:sale.crm_case_section_salesteams_view_kanban
+#: model:ir.actions.act_window,name:sale.action_orders
+#: model:ir.actions.act_window,name:sale.action_orders_salesteams
+#: model:ir.ui.menu,name:sale.menu_sale_order
+#: view:sale.order:sale.view_order_tree
+#: view:sale.order:sale.view_sale_order_calendar
+#: view:sale.order:sale.view_sale_order_graph
+msgid "Sales Orders"
+msgstr "购车合同"
+
+#. module: sale
+#: model:ir.model,name:sale.model_sale_report
+msgid "Sales Orders Statistics"
+msgstr "购车合同统计"
+
+#. module: sale
+#: model:ir.actions.act_window,name:sale.action_orders_exception
+msgid "Sales in Exception"
+msgstr "合同异常"
+
+#. module: sale
+#: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
+msgid "Sales order lines done"
+msgstr "购车合同行完成"
+
+#. module: sale
+#: view:website:sale.report_saleorder_document
+msgid "Salesperson:"
+msgstr "品系顾问："
+
+#. module: sale
+#: view:sale.order:sale.view_sales_order_filter
+#: view:sale.order.line:sale.view_sales_order_line_filter
+msgid "Search Sales Order"
+msgstr "查找购车合同"
+
+#. module: sale
+#: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
+msgid "Search Uninvoiced Lines"
+msgstr "查找未开票明细"
+
+#. module: sale
+#: help:sale.advance.payment.inv,product_id:0
+msgid ""
+"Select a product of type service which is called 'Advance Product'.\n"
+"                You may have to create it and set it as a default value on "
+"this field."
+msgstr ""
+"选择一个叫做“预付款产品”的服务类型的产品，。你可以在这个字段创建并且设置默认"
+"值。"
+
+#. module: sale
+#: view:sale.advance.payment.inv:sale.view_sale_advance_payment_inv
+msgid ""
+"Select how you want to invoice this order. This\n"
+"                        will create a draft invoice that can be modified\n"
+"                        before validation."
+msgstr "选择怎样为合同开票。这将建立一个可在核准前进行修改的发票草稿。"
+
+#. module: sale
+#: view:sale.order:sale.view_order_form
+msgid "Send by Email"
+msgstr "以邮件发送"
+
+#. module: sale
+#: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
+msgid "Shipped"
+msgstr "已送货"
+
+#. module: sale
+#: selection:sale.order,state:0 selection:sale.report,state:0
+msgid "Shipping Exception"
+msgstr "送货异常"
+
+#. module: sale
+#: view:website:sale.report_saleorder_document
+msgid "Shipping address:"
+msgstr "收货地址:"
+
+#. module: sale
+#: view:sale.advance.payment.inv:sale.view_sale_advance_payment_inv
+msgid "Show Lines to Invoice"
+msgstr "显示要开票的行"
+
+#. module: sale
+#: selection:sale.advance.payment.inv,advance_payment_method:0
+msgid "Some order lines"
+msgstr "一些合同行"
+
+#. module: sale
+#: field:sale.order,origin:0
+msgid "Source Document"
+msgstr "源单据"
+
+#. module: sale
+#: field:sale.order.line,price_subtotal:0
+msgid "Subtotal"
+msgstr "小计"
+
+#. module: sale
+#: help:crm.case.section,invoiced_target:0
+msgid ""
+"Target of invoice revenue for the current month. This is the amount the "
+"sales \n"
+"team estimates to be able to invoice this month."
+msgstr "当月发票收入目标。这是合同团队本月预计能够开出的发票。"
+
+#. module: sale
+#: field:sale.order,amount_tax:0 field:sale.order.line,tax_id:0
+#: view:website:sale.report_saleorder_document
+msgid "Taxes"
+msgstr "税"
+
+#. module: sale
+#: field:sale.order,note:0
+msgid "Terms and conditions"
+msgstr "条款和条件"
+
+#. module: sale
+#: view:sale.order:sale.view_order_form
+msgid "Terms and conditions..."
+msgstr "条款和条件 ..."
+
+#. module: sale
+#: help:sale.advance.payment.inv,amount:0
+msgid "The amount to be invoiced in advance."
+msgstr "预付款发票金额"
+
+#. module: sale
+#: help:sale.order,amount_untaxed:0
+msgid "The amount without tax."
+msgstr "除税后总额。"
+
+#. module: sale
+#: help:sale.order,project_id:0
+msgid "The analytic account related to a sales order."
+msgstr "购车合同相关的辅助核算项。"
+
+#. module: sale
+#: field:sale.config.settings,time_unit:0
+msgid "The default working time unit for services is"
+msgstr "默认的服务工作时间单位是"
+
+#. module: sale
+#: help:sale.order,amount_tax:0
+msgid "The tax amount."
+msgstr "税额。"
+
+#. module: sale
+#: help:sale.order,amount_total:0
+msgid "The total amount."
+msgstr "总金额。"
+
+#. module: sale
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:106
+#, python-format
+msgid "The value of Advance Amount must be positive."
+msgstr "定金必须是正的"
+
+#. module: sale
+#: code:addons/sale/sale.py:952
+#, python-format
+msgid ""
+"There is no Fiscal Position defined or Income category account defined for "
+"default properties of Product categories."
+msgstr "产品类别的属性中，没有定义财务结构或者 收益类科目。"
+
+#. module: sale
+#: code:addons/sale/sale.py:154
+#, python-format
+msgid "There is no default company for the current user!"
+msgstr "当前用户没有设置默认的公司！"
+
+#. module: sale
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:96
+#, python-format
+msgid "There is no income account defined as global property."
+msgstr "没有收益科目定义为全局属性"
+
+#. module: sale
+#: code:addons/sale/wizard/sale_make_invoice_advance.py:100
+#, python-format
+msgid "There is no income account defined for this product: \"%s\" (id:%d)."
+msgstr "在这个产品没有定义收益科目: \"%s\" (id:%d)."
+
+#. module: sale
+#: view:sale.report:sale.view_order_product_search
+msgid "This Year"
+msgstr "本年度"
+
+#. module: sale
+#: help:sale.config.settings,module_sale_margin:0
+msgid ""
+"This adds the 'Margin' on sales order.\n"
+"This gives the profitability by calculating the difference between the Unit "
+"Price and Cost Price.\n"
+"-This installs the module sale_margin."
+msgstr ""
+"在购车合同中增加“利润”。\n"
+"通过单价和成本价计算利润率。\n"
+"要安装sale_margin模块。"
+
+#. module: sale
+#: help:sale.config.settings,module_website_quote:0
+msgid "This adds the online quotation"
+msgstr "增加在线购车意向"
+
+#. module: sale
+#: help:account.config.settings,module_sale_analytic_plans:0
+msgid "This allows install module sale_analytic_plans."
+msgstr "允许安装模块sale_analytic_plans."
+
+#. module: sale
+#: help:sale.order,invoice_ids:0
+msgid ""
+"This is the list of invoices that have been generated for this sales order. "
+"The same sales order may have been invoiced in several times (by line for "
+"example)."
+msgstr ""
+"这是为此购车合同生成的发票列表。同一购车合同可能会多次开票（比如按合同明"
+"细）。"
+
+#. module: sale
+#: model:ir.actions.act_window,help:sale.action_order_report_all
+msgid ""
+"This report performs analysis on your quotations and sales orders. Analysis "
+"check your sales revenues and sort it by different group criteria (salesman, "
+"partner, product, etc.) Use this report to perform analysis on sales not "
+"having invoiced yet. If you want to analyse your turnover, you should use "
+"the Invoice Analysis report in the Accounting application."
+msgstr ""
+"这个报表会对你的购车意向和购车合同进行分析。分析检查你的合同收入，并且按照不"
+"同的标准分组（品系顾问，合作伙伴，产品等）。用这个报表对还没有开票的购车合同进"
+"行分析。 如果你想分析你的营业额，你应该用会计模块里的发票分析报表。"
+
+#. module: sale
+#: model:ir.actions.act_window,help:sale.action_order_report_quotation_salesteam
+msgid ""
+"This report performs analysis on your quotations. Analysis check your sales "
+"revenues and sort it by different group criteria (salesman, partner, "
+"product, etc.) Use this report to perform analysis on sales not having "
+"invoiced yet. If you want to analyse your turnover, you should use the "
+"Invoice Analysis report in the Accounting application."
+msgstr ""
+"这个报表会对你的购车意向和购车合同进行分析。检查你的合同收入，并且按照不同的"
+"标准排序（品系顾问，业务伙伴，产品等）。用这个报表对还没有开票的购车合同进行分"
+"析。 如果你想分析你的营业额，你应该用会计模块里的发票分析报表功能。"
+
+#. module: sale
+#: model:ir.actions.act_window,help:sale.action_order_report_so_salesteam
+msgid ""
+"This report performs analysis on your sales orders. Analysis check your "
+"sales revenues and sort it by different group criteria (salesman, partner, "
+"product, etc.) Use this report to perform analysis on sales not having "
+"invoiced yet. If you want to analyse your turnover, you should use the "
+"Invoice Analysis report in the Accounting application."
+msgstr ""
+"这个报表会对你的购车合同进行分析。分析检查你的合同收入，并且按照不同的标准分"
+"组（品系顾问，业务伙伴，产品等）进行排序。用这个报表对还没有开票的购车合同进行"
+"分析。 如果你想分析你的营业额，你应该用会计模块里的发票分析报表。"
+
+#. module: sale
+#: view:sale.order:sale.view_sales_order_filter
+#: view:sale.order.line:sale.view_sales_order_line_filter
+msgid "To Invoice"
+msgstr "待开票"
+
+#. module: sale
+#: help:sale.config.settings,group_invoice_so_lines:0
+msgid ""
+"To allow your salesman to make invoices for sales order lines using the menu "
+"'Lines to Invoice'."
+msgstr "允许品系顾问用“逐行开票”菜单为购车合同行开票"
+
+#. module: sale
+#: field:sale.order,amount_total:0
+#: view:sale.order.line:sale.view_order_line_tree
+#: view:website:sale.report_saleorder_document
+msgid "Total"
+msgstr "合计"
+
+#. module: sale
+#: field:sale.report,price_total:0
+msgid "Total Price"
+msgstr "总价"
+
+#. module: sale
+#: view:sale.order:sale.view_order_tree
+#: view:sale.order:sale.view_quotation_tree
+msgid "Total Tax Included"
+msgstr "含税总金额"
+
+#. module: sale
+#: view:website:sale.report_saleorder_document
+msgid "Total Without Taxes"
+msgstr "不含税总金额"
+
+#. module: sale
+#: field:sale.config.settings,module_sale_stock:0
+msgid "Trigger delivery orders automatically from sales orders"
+msgstr "自动从购车合同触发发运单"
+
+#. module: sale
+#: view:sale.order.line:sale.view_sales_order_uninvoiced_line_filter
+msgid "Uninvoiced"
+msgstr "未开票"
+
+#. module: sale
+#: model:ir.actions.act_window,name:sale.action_order_line_tree3
+msgid "Uninvoiced and Delivered Lines"
+msgstr "未开票已送货明细"
+
+#. module: sale
+#: field:sale.order.line,price_unit:0
+#: view:website:sale.report_saleorder_document
+msgid "Unit Price"
+msgstr "单价"
+
+#. module: sale
+#: view:sale.order.line:sale.view_order_line_tree
+#: field:sale.report,product_uom:0
+msgid "Unit of Measure"
+msgstr "计量单位"
+
+#. module: sale
+#: field:sale.order.line,product_uom:0
+msgid "Unit of Measure "
+msgstr "计量单位 "
+
+#. module: sale
+#: field:sale.order,amount_untaxed:0
+msgid "Untaxed Amount"
+msgstr "不含税金额"
+
+#. module: sale
+#: view:sale.order:sale.view_order_form
+msgid "UoS"
+msgstr "销售单位"
+
+#. module: sale
+#: help:sale.advance.payment.inv,advance_payment_method:0
+msgid ""
+"Use Invoice the whole sale order to create the final invoice.\n"
+"                Use Percentage to invoice a percentage of the total amount.\n"
+"                Use Fixed Price to invoice a specific amound in advance.\n"
+"                Use Some Order Lines to invoice a selection of the sales "
+"order lines."
+msgstr ""
+"用购车合同来生成最终的发票。\n"
+"    按总额百分比开具发票。\n"
+"    按预设固定量开具固定价格发票。\n"
+"    按选择的购车合同开具发票。"
+
+#. module: sale
+#: view:sale.config.settings:sale.view_sales_config
+msgid ""
+"Use contract to be able to manage your services with\n"
+"                        multiple invoicing as part of the same contract "
+"with\n"
+"                        your customer."
+msgstr "使用购车合同 管理 多次开票的服务作为你的客户的相同购车合同的一部分。"
+
+#. module: sale
+#: field:sale.config.settings,module_account_analytic_analysis:0
+msgid "Use contracts management"
+msgstr "使用购车合同管理"
+
+#. module: sale
+#: field:account.config.settings,module_sale_analytic_plans:0
+msgid "Use multiple analytic accounts on sales"
+msgstr "在购车合同使用多重辅助核算项"
+
+#. module: sale
+#: field:sale.config.settings,group_sale_pricelist:0
+msgid "Use pricelists to adapt your price per customers"
+msgstr "为每个客户使用价格表来适配你的价格"
+
+#. module: sale
+#: view:website:sale.report_saleorder_document
+msgid "VAT:"
+msgstr "增值税："
+
+#. module: sale
+#: view:sale.order:sale.view_order_form
+msgid "View Invoice"
+msgstr "查看发票"
+
+#. module: sale
+#: selection:sale.order,state:0 selection:sale.report,state:0
+msgid "Waiting Schedule"
+msgstr "等待排期"
+
+#. module: sale
+#: view:sale.config.settings:sale.view_sales_config
+msgid "Warehouse Features"
+msgstr "仓库特性"
+
+#. module: sale
+#: field:sale.order,website_message_ids:0
+msgid "Website Messages"
+msgstr "网站消息"
+
+#. module: sale
+#: help:sale.order,website_message_ids:0
+msgid "Website communication history"
+msgstr "网站沟通记录"
+
+#. module: sale
+#: field:sale.order.line,th_weight:0
+msgid "Weight"
+msgstr "重量"
+
+#. module: sale
+#: field:sale.advance.payment.inv,advance_payment_method:0
+msgid "What do you want to invoice?"
+msgstr "你要开什么发票？"
+
+#. module: sale
+#: code:addons/sale/sale.py:990
+#, python-format
+msgid "You cannot cancel a sales order line that has already been invoiced."
+msgstr "你不能取消已经开票的购车合同行"
+
+#. module: sale
+#: code:addons/sale/sale.py:605
+#, python-format
+msgid "You cannot confirm a sales order which has no line."
+msgstr "不能确认没有明细行的购车合同"
+
+#. module: sale
+#: code:addons/sale/wizard/sale_make_invoice.py:42
+#, python-format
+msgid "You cannot create invoice when sales order is not confirmed."
+msgstr "当购车合同未经确认时， 您不能创建发票。"
+
+#. module: sale
+#: code:addons/sale/sale.py:523
+#, python-format
+msgid ""
+"You cannot group sales having different currencies for the same partner."
+msgstr "你不能对有不同货币结算的同一个业务伙伴的购车合同进行分组。"
+
+#. module: sale
+#: code:addons/sale/sale.py:1130
+#, python-format
+msgid ""
+"You have to select a pricelist or a customer in the sales form !\n"
+"Please set one before choosing a product."
+msgstr ""
+"你必须在合同界面选一个客户或价格表！\n"
+"请在选择产品前设置。"
+
+#. module: sale
+#: code:addons/sale/wizard/sale_make_invoice.py:55
+#, python-format
+msgid "You shouldn't manually invoice the following sale order %s"
+msgstr "您不可以为下列购车合同 %s 手工开票"
+
+#. module: sale
+#: view:website:sale.report_saleorder_document
+msgid "Your Reference:"
+msgstr "您的关联单号："
+
+#. module: sale
+#: view:res.partner:sale.res_partner_address_type
+msgid "sale.group_delivery_invoice_address"
+msgstr "sale.group_delivery_invoice_address"
+
+#. module: sale_crm
+#: help:crm.make.sale,close:0
+msgid ""
+"Check this to close the opportunity after having created the sales order."
+msgstr "选中 此项，创建购车合同后，将关闭线索"
+
+#. module: sale_crm
+#: view:crm.lead:sale_crm.crm_case_form_view_oppor
+#: view:crm.make.sale:sale_crm.view_crm_make_sale
+msgid "Convert to Quotation"
+msgstr "转为购车意向"
+
+#. module: sale_crm
+#: view:crm.lead:sale_crm.crm_case_form_view_oppor
+msgid "Create Quotation"
+msgstr "创建购车意向"
+
+#. module: sale_crm
+#: code:addons/sale_crm/wizard/crm_make_sale.py:91
+#, python-format
+msgid "Insufficient Data!"
+msgstr "数据不足！"
+
+#. module: sale_crm
+#: model:ir.actions.act_window,name:sale_crm.action_crm_make_sale
+msgid "Make Quotation"
+msgstr "建立购车意向"
+
+#. module: sale_crm
+#: model:ir.model,name:sale_crm.model_crm_make_sale
+msgid "Make sales"
+msgstr "生成购车合同"
+
+#. module: sale_crm
+#: code:addons/sale_crm/wizard/crm_make_sale.py:91
+#, python-format
+msgid "No address(es) defined for this customer."
+msgstr "此客户地址尚未设定."
+
+#. module: sale_crm
+#: code:addons/sale_crm/wizard/crm_make_sale.py:111
+#, python-format
+msgid "Opportunity has been <b>converted</b> to the quotation <em>%s</em>."
+msgstr "线索 <b>被转换</b> 购车意向 <em>%s</em>."
+
+#. module: sale_crm
+#: code:addons/sale_crm/wizard/crm_make_sale.py:94
+#, python-format
+msgid "Opportunity: %s"
+msgstr "线索： %s"
+
+#. module: sale_crm
+#: view:crm.make.sale:sale_crm.view_crm_make_sale
+msgid "_Create"
+msgstr "创建(_C)"

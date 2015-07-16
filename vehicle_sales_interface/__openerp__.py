@@ -22,7 +22,7 @@
     'category': 'Uncategorized',
     'version': '0.1',
 
-    'depends': ['crm', 'sale', 'purchase', 'account_accountant', 'stock'],
+    'depends': ['vehicle_sales_base'],
 
     'data': [
         'templates.xml',
