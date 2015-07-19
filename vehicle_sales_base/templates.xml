@@ -22,5 +22,48 @@
         </record>
 
 
+        <record model="ir.ui.view" id="view_move_form_vehicle_sn">
+            <field name="name">stock.production.lot.form</field>
+            <field name="model">stock.production.lot</field>
+            <field name="inherit_id" ref="stock.view_production_lot_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='main_group']" position="after">
+                    <group string="车辆信息">
+                        <group>
+                            <field name="vehicle_vin_sn"/>
+                            <field name="vehicle_engine_sn"/>
+                        </group>
+                        <group>
+
+                        </group>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_quant_form_vehicle_sn">
+            <field name="name">stock.quant.form</field>
+            <field name="model">stock.quant</field>
+            <field name="inherit_id" ref="stock.view_stock_quant_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='lot_id']" position="after">
+                    <field name="vehicle_vin_sn" groups="stock.group_production_lot"/>
+                    <field name="vehicle_engine_sn" groups="stock.group_production_lot"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_quant_tree_vehicle_sn">
+            <field name="name">stock.quant.tree</field>
+            <field name="model">stock.quant</field>
+            <field name="inherit_id" ref="stock.view_stock_quant_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='lot_id']" position="after">
+                    <field name="vehicle_vin_sn" groups="stock.group_production_lot"/>
+                    <field name="vehicle_engine_sn" groups="stock.group_production_lot"/>
+                </xpath>
+            </field>
+        </record>
+
     </data>
 </openerp>

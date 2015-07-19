@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-
-from openerp.osv import osv
+import openerp
+from openerp.osv import fields, osv
 from openerp import SUPERUSER_ID
 from lxml import etree
 from lxml.builder import E
@@ -85,3 +85,36 @@ class groups_view(osv.Model):
             xml_content = etree.tostring(xml, pretty_print=True, xml_declaration=True, encoding="utf-8")
             view.write({'arch': xml_content})
         return True
+
+
+class stock_production_lot(osv.osv):
+    _inherit = 'stock.production.lot'
+
+    _columns = {
+        'vehicle_vin_sn': fields.char(u'车架号'),
+        'vehicle_engine_sn': fields.char(u'发动机号'),
+    }
+
+    _defaults = {
+
+    }
+
+
+class stock_quant(osv.osv):
+    _inherit = 'stock.quant'
+
+    def _get_quants(self, cr, uid, ids, context=None):
+        return self.pool.get('stock.quant').search(cr, uid, [('lot_id', 'in', ids)], context=context)
+
+    _columns = {
+        'vehicle_vin_sn': fields.related('lot_id', 'vehicle_vin_sn', type='char', string=u'车架号',
+                                         store={
+                                             'stock.quant': (lambda self, cr, uid, ids, ctx: ids, ['lot_id'], 20),
+                                             'stock.production.lot': (_get_quants, ['vehicle_vin_sn'], 20),
+                                         }),
+        'vehicle_engine_sn': fields.related('lot_id', 'vehicle_engine_sn', type='char', string=u'发动机号',
+                                            store={
+                                                'stock.quant': (lambda self, cr, uid, ids, ctx: ids, ['lot_id'], 20),
+                                                'stock.production.lot': (_get_quants, ['vehicle_engine_sn'], 20),
+                                            }),
+    }
