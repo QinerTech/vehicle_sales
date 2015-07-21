@@ -19,7 +19,7 @@
     'category': 'Uncategorized',
     'version': '0.1',
 
-    'depends': ['crm', 'sale_order_dates',  'stock'],
+    'depends': ['vehicle_sales_base', 'sale_order_dates'],
 
     'data': [
         'report_contract.xml',

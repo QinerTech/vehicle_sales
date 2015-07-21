@@ -6,6 +6,114 @@ from lxml import etree
 from lxml.builder import E
 from openerp.tools.translate import _
 from openerp.addons.base.res.res_users import name_boolean_group, name_selection_groups
+from openerp import tools
+
+
+class CountryCity(osv.Model):
+    _description = "Country City"
+    _name = 'res.country.city'
+    _columns = {
+        'state_id': fields.many2one('res.country.state', 'State',
+                                    required=True),
+        'name': fields.char('City Name', required=True,
+                            help='City name of a country.'),
+
+    }
+    _order = 'name'
+
+
+class res_partner(osv.Model):
+    _inherit = "res.partner"
+
+    _columns = {
+        'city': fields.many2one("res.country.city", 'City', ondelete='restrict'),
+        'phone_home': fields.char(u'家庭电话'),
+        'contact': fields.selection([
+            ('mobile', u'移动电话'),
+            ('phone', u'工作电话'),
+            ('phone_home', u'家庭电话'),
+        ], string=u'主要联系方式'),
+        'contact_favorite': fields.selection([
+            ('visit', u'亲访'),
+            ('letter', u'信函'),
+            ('call', u'电话'),
+            ('message', u'短信'),
+            ('email', u'邮件'),
+        ], string=u'希望联系方式'),
+        'identification': fields.selection([
+            ('identity_card', u'身份证'),
+            ('passport', u'护照'),
+            ('driving_license', u'驾照'),
+            ('certificate_officer', u'军官证'),
+            ('other', u'其他'),
+        ], string=u'证件类型'),
+        'identification_code': fields.char(u'证件号码'),
+        'organization_code': fields.char(u'组织机构代码'),
+        'tax_registration': fields.char(u'税务登记号'),
+    }
+
+    def onchange_city(self, cr, uid, ids, city, context=None):
+        if city:
+            city_obj = self.pool.get('res.country.city').browse(cr, uid, city, context=context)
+            return {'value': {'state_id': city_obj.state_id.id}}
+        return {}
+
+
+class crm_lead(osv.Model):
+    _inherit = "crm.lead"
+
+    _columns = {
+        'city': fields.many2one("res.country.city", 'City', ondelete='restrict'),
+        'phone_home': fields.char(u'家庭电话'),
+        'contact': fields.selection([
+            ('mobile', u'移动电话'),
+            ('phone', u'工作电话'),
+            ('phone_home', u'家庭电话'),
+        ], string=u'主要联系方式'),
+        'contact_favorite': fields.selection([
+            ('visit', u'亲访'),
+            ('letter', u'信函'),
+            ('call', u'电话'),
+            ('message', u'短信'),
+            ('email', u'邮件'),
+        ], string=u'希望联系方式'),
+    }
+
+    def onchange_city(self, cr, uid, ids, city, context=None):
+        if city:
+            city_obj = self.pool.get('res.country.city').browse(cr, uid, city, context=context)
+            return {'value': {'state_id': city_obj.state_id.id}}
+        return {}
+
+    def _lead_create_contact(self, cr, uid, lead, name, is_company, parent_id=False, context=None):
+        partner = self.pool.get('res.partner')
+        vals = {'name': name,
+                'user_id': lead.user_id.id,
+                'comment': lead.description,
+                'section_id': lead.section_id.id or False,
+                'parent_id': parent_id,
+                'phone': lead.phone,
+                'mobile': lead.mobile,
+                'email': tools.email_split(lead.email_from) and tools.email_split(lead.email_from)[0] or False,
+                'fax': lead.fax,
+                'title': lead.title and lead.title.id or False,
+                'function': lead.function,
+                'street': lead.street,
+                'street2': lead.street2,
+                'zip': lead.zip,
+                'city': lead.city,
+                'country_id': lead.country_id and lead.country_id.id or False,
+                'state_id': lead.state_id and lead.state_id.id or False,
+                'is_company': is_company,
+                'type': 'contact',
+                # add additional field
+                'phone_home': lead.phone_home and lead.phone_home or False,
+                'contact': lead.contact and lead.contact or False,
+                'contact_favorite': lead.contact_favorite and lead.contact_favorite or False,
+
+                }
+        partner = partner.create(cr, uid, vals, context=context)
+        return partner
 
 
 class res_users(osv.Model):

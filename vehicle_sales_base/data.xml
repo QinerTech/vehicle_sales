@@ -40,5 +40,121 @@
             </field>
         </record>
 
+
+        <record model="crm.tracking.source" id="crm_source_referral">
+            <field name="name">介绍</field>
+        </record>
+        <record model="crm.tracking.source" id="crm_source_ad">
+            <field name="name">广告</field>
+        </record>
+        <record model="crm.tracking.source" id="crm_source_event">
+            <field name="name">活动</field>
+        </record>
+        <record model="crm.tracking.source" id="crm_source_insurance">
+            <field name="name">走保</field>
+        </record>
+        <record model="crm.tracking.source" id="crm_source_visitation">
+            <field name="name">销售拜访</field>
+        </record>
+        <record model="crm.tracking.source" id="crm_source_random">
+            <field name="name">随机</field>
+        </record>
+
+
+        <record id="res_partner_category_industry" model="res.partner.category">
+            <field name="name">行业</field>
+        </record>
+
+        <record id="base.res_partner_category_industry_0" model="res.partner.category">
+            <field name="name">冷链（含工业食品）</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+
+        <record id="base.res_partner_category_industry_1" model="res.partner.category">
+            <field name="name">家电及通讯设备</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+
+        <record id="base.res_partner_category_industry_2" model="res.partner.category">
+            <field name="name">市政环卫</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+
+        <record id="base.res_partner_category_industry_3" model="res.partner.category">
+            <field name="name">快递</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+        <record id="base.res_partner_category_industry_4" model="res.partner.category">
+            <field name="name">机械设备</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+
+        <record id="base.res_partner_category_industry_5" model="res.partner.category">
+            <field name="name">水泥</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+
+        <record id="base.res_partner_category_industry_6" model="res.partner.category">
+            <field name="name">烟草</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+
+        <record id="base.res_partner_category_industry_7" model="res.partner.category">
+            <field name="name">煤炭</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+
+        <record id="base.res_partner_category_industry_8" model="res.partner.category">
+            <field name="name">石油石化（危化品）</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+
+        <record id="base.res_partner_category_industry_9" model="res.partner.category">
+            <field name="name">矿石渣土</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+
+        <record id="base.res_partner_category_industry_10" model="res.partner.category">
+            <field name="name">纺织服装</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+
+        <record id="base.res_partner_category_industry_11" model="res.partner.category">
+            <field name="name">轿运</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+
+        <record id="base.res_partner_category_industry_12" model="res.partner.category">
+            <field name="name">钢铁</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+
+        <record id="base.res_partner_category_industry_13" model="res.partner.category">
+            <field name="name">零担</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+
+        <record id="base.res_partner_category_industry_14" model="res.partner.category">
+            <field name="name">其他</field>
+            <field name="parent_id" ref="res_partner_category_industry"/>
+        </record>
+
+        <record id="res_partner_category_property" model="res.partner.category">
+            <field name="name">单位客户性质</field>
+        </record>
+
+        <record id="base.res_partner_category_property_0" model="res.partner.category">
+            <field name="name">单位终端</field>
+            <field name="parent_id" ref="res_partner_category_property"/>
+        </record>
+        <record id="base.res_partner_category_property_1" model="res.partner.category">
+            <field name="name">二级经销商</field>
+            <field name="parent_id" ref="res_partner_category_property"/>
+        </record>
+        <record id="base.res_partner_category_property_2" model="res.partner.category">
+            <field name="name">改装厂</field>
+            <field name="parent_id" ref="res_partner_category_property"/>
+        </record>
+
     </data>
 </openerp>
