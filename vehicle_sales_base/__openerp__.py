@@ -27,7 +27,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['crm', 'sale', 'purchase', 'account_voucher', 'account_accountant', 'stock'],
+    'depends': ['crm', 'sale', 'purchase', 'account_voucher', 'account_accountant', 'stock', 'mail', 'email_template'],
 
     # always loaded
     'data': [
