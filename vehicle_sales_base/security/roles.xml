@@ -64,17 +64,16 @@
         <record id="crm_rule_all_sales_team" model="ir.rule">
             <field name="name">All Sales Team</field>
             <field ref="sales_team.model_crm_case_section" name="model_id"/>
-                   <field name="domain_force">
+            <field name="domain_force">
                 ['|','|',('user_id','=',user.id),('user_id','=',False),('member_ids','child_of',
                 [user.id])]
             </field>
             <field name="groups" eval="[(4, ref('base.group_sale_salesman_all_leads'))]"/>
         </record>
 
-        <delete id="crm.crm_rule_all_partner" model="ir.rule"></delete>
 
-        <record id="crm_rule_all_partner" model="ir.rule">
-            <field name="name">All Partner Team Owned</field>
+        <record id="crm.crm_rule_all_partner" model="ir.rule">
+            <field name="name">All Partner</field>
             <field ref="crm.model_res_partner" name="model_id"/>
             <field name="domain_force">
                 ['|','|','|',('user_id','=',user.id),('user_id','=',False),('section_id.member_ids','child_of',
@@ -83,10 +82,18 @@
             <field name="groups" eval="[(4, ref('base.group_sale_salesman'))]"/>
         </record>
 
-        <delete id="crm.crm_rule_all_phones" model="ir.rule"></delete>
+        <record id="crm_rule_all_partner" model="ir.rule">
+            <field name="name">All Partner</field>
+            <field ref="crm.model_res_partner" name="model_id"/>
+            <field name="domain_force">
+                [(1,'=',1)]
+            </field>
+            <field name="groups" eval="[(4, ref('vehicle_sales_base.group_sale_manager'))]"/>
+        </record>
 
-        <record id="crm_rule_all_phones" model="ir.rule">
-            <field name="name">All PhoneCall Team Owned</field>
+
+        <record id="crm.crm_rule_all_phones" model="ir.rule">
+            <field name="name">All Phone Call</field>
             <field ref="crm.model_crm_phonecall" name="model_id"/>
             <field name="domain_force">
                 ['|','|','|',('user_id','=',user.id),('user_id','=',False),('section_id.member_ids','child_of',
@@ -95,10 +102,19 @@
             <field name="groups" eval="[(4, ref('base.group_sale_salesman_all_leads'))]"/>
         </record>
 
-        <delete id="crm.crm_rule_all_lead" model="ir.rule"></delete>
 
-        <record id="crm_rule_all_lead" model="ir.rule">
-            <field name="name">All Leads Team Owned</field>
+        <record id="crm_rule_all_phones" model="ir.rule">
+            <field name="name">All Phone Call</field>
+            <field ref="crm.model_crm_phonecall" name="model_id"/>
+            <field name="domain_force">
+                [(1,'=',1)]
+            </field>
+            <field name="groups" eval="[(4, ref('vehicle_sales_base.group_sale_manager'))]"/>
+        </record>
+
+
+        <record id="crm.crm_rule_all_lead" model="ir.rule">
+            <field name="name">All Leads</field>
             <field ref="crm.model_crm_lead" name="model_id"/>
             <field name="domain_force">
                 ['|','|','|',('user_id','=',user.id),('user_id','=',False),('section_id.member_ids','child_of',
@@ -107,10 +123,19 @@
             <field name="groups" eval="[(4, ref('base.group_sale_salesman_all_leads'))]"/>
         </record>
 
-        <delete id="crm.crm_rule_all_lead_report" model="ir.rule"></delete>
 
-        <record id="crm_rule_all_lead_report" model="ir.rule">
-            <field name="name">All Leads Analysis Team Owned</field>
+        <record id="crm_rule_all_lead" model="ir.rule">
+            <field name="name">All Leads</field>
+            <field ref="crm.model_crm_lead" name="model_id"/>
+            <field name="domain_force">
+                [(1,'=',1)]
+            </field>
+            <field name="groups" eval="[(4, ref('vehicle_sales_base.group_sale_manager'))]"/>
+        </record>
+
+
+        <record id="crm.crm_rule_all_lead_report" model="ir.rule">
+            <field name="name">All Leads Analysis</field>
             <field ref="crm.model_crm_lead_report" name="model_id"/>
             <field name="domain_force">
                 ['|','|','|',('user_id','=',user.id),('user_id','=',False),('section_id.member_ids','child_of',
@@ -119,10 +144,18 @@
             <field name="groups" eval="[(4, ref('base.group_sale_salesman_all_leads'))]"/>
         </record>
 
-        <delete id="sale.sale_order_see_all" model="ir.rule"></delete>
+        <record id="crm_rule_all_lead_report" model="ir.rule">
+            <field name="name">All Leads Analysis</field>
+            <field ref="crm.model_crm_lead_report" name="model_id"/>
+            <field name="domain_force">
+                [(1,'=',1)]
+            </field>
+            <field name="groups" eval="[(4, ref('vehicle_sales_base.group_sale_manager'))]"/>
+        </record>
 
-        <record id="sale_order_see_all" model="ir.rule">
-            <field name="name">All Orders Team Owned</field>
+
+        <record id="sale.sale_order_see_all" model="ir.rule">
+            <field name="name">All Orders</field>
             <field ref="sale.model_sale_order" name="model_id"/>
             <field name="domain_force">
                 ['|','|','|',('user_id','=',user.id),('user_id','=',False),('section_id.member_ids','child_of',
@@ -131,10 +164,18 @@
             <field name="groups" eval="[(4, ref('base.group_sale_salesman_all_leads'))]"/>
         </record>
 
-        <delete id="sale.sale_order_report_see_all" model="ir.rule"></delete>
+        <record id="sale_order_see_all" model="ir.rule">
+            <field name="name">All Orders</field>
+            <field ref="sale.model_sale_order" name="model_id"/>
+            <field name="domain_force">
+                [(1,'=',1)]
+            </field>
+            <field name="groups" eval="[(4, ref('vehicle_sales_base.group_sale_manager'))]"/>
+        </record>
 
-        <record id="sale_order_report_see_all" model="ir.rule">
-            <field name="name">All Orders Analysis Team Owned</field>
+
+        <record id="sale.sale_order_report_see_all" model="ir.rule">
+            <field name="name">All Orders Analysis</field>
             <field ref="sale.model_sale_report" name="model_id"/>
             <field name="domain_force">
                 ['|','|','|',('user_id','=',user.id),('user_id','=',False),('section_id.member_ids','child_of',
@@ -143,16 +184,33 @@
             <field name="groups" eval="[(4, ref('base.group_sale_salesman_all_leads'))]"/>
         </record>
 
-        <delete id="sale.sale_order_line_see_all" model="ir.rule"></delete>
+        <record id="sale_order_report_see_all" model="ir.rule">
+            <field name="name">All Orders Analysis</field>
+            <field ref="sale.model_sale_report" name="model_id"/>
+            <field name="domain_force">
+                [(1,'=',1)]
+            </field>
+            <field name="groups" eval="[(4, ref('vehicle_sales_base.group_sale_manager'))]"/>
+        </record>
+
 
         <record id="sale.sale_order_line_see_all" model="ir.rule">
-            <field name="name">All Orders Lines Team Owned</field>
+            <field name="name">All Orders Lines</field>
             <field ref="sale.model_sale_order_line" name="model_id"/>
             <field name="domain_force">
                 ['|','|','|',('user_id','=',user.id),('user_id','=',False),('section_id.member_ids','child_of',
                 [user.id]),('section_id.user_id','=',user.id)]
             </field>
             <field name="groups" eval="[(4, ref('base.group_sale_salesman_all_leads'))]"/>
+        </record>
+
+        <record id="sale_order_line_see_all" model="ir.rule">
+            <field name="name">All Orders Lines</field>
+            <field ref="sale.model_sale_order_line" name="model_id"/>
+            <field name="domain_force">
+                [(1,'=',1)]
+            </field>
+            <field name="groups" eval="[(4, ref('vehicle_sales_base.group_sale_manager'))]"/>
         </record>
 
     </data>
