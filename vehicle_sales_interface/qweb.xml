@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates xml:space="preserve">
+    <t t-extend="UserMenu">
+        <t t-jquery="ul.dropdown-menu  li:eq(1)"  t-operation="replace" >
+        </t>
+        <t t-jquery="ul.dropdown-menu  li:eq(2)"  t-operation="replace" >
+        </t>
+        <t t-jquery="ul.dropdown-menu  li:eq(3)"  t-operation="replace" >
+        </t>
+    </t>
+</templates>

@@ -2515,7 +2515,7 @@ msgstr "参考"
 #. module: crm
 #: field:crm.lead,referred:0
 msgid "Referred By"
-msgstr "参考来自"
+msgstr "引荐"
 
 #. module: crm
 #: field:crm.lead2opportunity.partner,action:0

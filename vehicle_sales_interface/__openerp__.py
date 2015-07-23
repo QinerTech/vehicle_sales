@@ -27,4 +27,7 @@
     'data': [
         'templates.xml',
     ],
+    'qweb': [
+        "qweb.xml",
+    ],
 }
