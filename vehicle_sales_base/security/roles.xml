@@ -20,7 +20,7 @@
             <field name="name">销售副总</field>
             <field name="category_id" ref="vehicle_sales_base.module_category_vehicle_sales"/>
             <field name="implied_ids"
-                   eval="[(4, ref('vehicle_sales_base.group_sale_salesman_all_leads')),(4, ref('base.group_sale_manager'))]"/>
+                   eval="[(4, ref('vehicle_sales_base.group_sale_salesman')),(4, ref('base.group_sale_salesman_all_leads'))]"/>
         </record>
 
         <record id="vehicle_sales_base.group_finance_manager" model="res.groups">
