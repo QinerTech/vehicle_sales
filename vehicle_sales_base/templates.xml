@@ -107,17 +107,17 @@
             </field>
         </record>
 
-        <record model="ir.ui.view" id="res_partner_opt_out_form_vehicle">
-            <field name="name">res.partner.form</field>
-            <field name="model">res.partner</field>
-            <field name="inherit_id" ref="email_template.res_partner_opt_out_form"/>
-            <field name="arch" type="xml">
-                <data>
-                    <xpath expr="//field[@name='opt_out']" position="replace">
-                    </xpath>
-                </data>
-            </field>
-        </record>
+        <!--<record model="ir.ui.view" id="res_partner_opt_out_form_vehicle">-->
+            <!--<field name="name">res.partner.form</field>-->
+            <!--<field name="model">res.partner</field>-->
+            <!--<field name="inherit_id" ref="email_template.res_partner_opt_out_form"/>-->
+            <!--<field name="arch" type="xml">-->
+                <!--<data>-->
+                    <!--<xpath expr="//field[@name='opt_out']" position="replace">-->
+                    <!--</xpath>-->
+                <!--</data>-->
+            <!--</field>-->
+        <!--</record>-->
 
         <record model="ir.ui.view" id="crm_case_form_view_leads_city">
             <field name="name">CRM - Leads Form</field>
